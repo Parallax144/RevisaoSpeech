@@ -1,0 +1,15 @@
+# Dropbox
+.dropbox
+.dropbox.attr
+desktop.ini
+
+# Windows
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Office temp files
+~$*
+*.tmp
