@@ -1,0 +1,159 @@
+% ============================================================
+% Revisão Bibliográfica Sistemática em Speech Analytics
+% Resumo estruturado — PRISMA 2020
+% ============================================================
+
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[
+  top=2.5cm, bottom=2.5cm,
+  left=3cm,  right=2.5cm
+]{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = blue,
+  linkcolor  = black,
+  citecolor  = black
+}
+
+\titleformat{\section}{\normalfont\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries\itshape}{\thesubsection.}{0.5em}{}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+\begin{center}
+  {\large\bfseries
+    Speech Analytics e Comunicação Clínica:\\
+    Uma Revisão Sistemática da Literatura
+  }\\[0.8em]
+  Rafael Baena Neto\\
+  Universidade São Francisco (USF)\\[0.4em]
+  {\small Mestrado em Ciência de Dados em Saúde}
+\end{center}
+
+\bigskip
+\hrule
+\bigskip
+
+% ============================================================
+\begin{abstract}
+\setlength{\parskip}{0.6em}
+\onehalfspacing
+
+\textbf{Contexto:}
+A comunicação profissional-paciente constitui uma fonte densa de informação
+clínica que permanece predominantemente não estruturada e subutilizada
+analiticamente. Avanços recentes em reconhecimento automático de fala
+(\textit{Automatic Speech Recognition} --- ASR), processamento de linguagem
+natural (PLN/NLP) e análise de biomarcadores vocais têm ampliado a capacidade
+de extrair dados estruturados a partir de interações clínicas. Ainda assim,
+poucos estudos operacionalizam essas interações como variáveis mensuráveis
+derivadas da fala, especialmente no que diz respeito a marcadores
+comunicacionais e comportamentais.
+
+\textbf{Objetivo:}
+Identificar, sintetizar e avaliar criticamente as evidências sobre a aplicação
+de \textit{Speech Analytics} e NLP à comunicação clínica profissional-paciente,
+mapeando abordagens metodológicas, marcadores identificados, desafios técnicos
+e lacunas para pesquisa futura.
+
+\textbf{Métodos:}
+Revisão sistemática conduzida segundo as diretrizes PRISMA~2020
+\cite{page2021prisma} e as recomendações de Kitchenham \& Charters para
+revisões em Engenharia de Software \cite{kitchenham2007guidelines}. Foram
+consultadas as bases IEEE~Xplore, ACM~Digital~Library, PubMed/MEDLINE, Scopus,
+Web of Science e arXiv, cobrindo o período de janeiro de~2018 a maio de~2025.
+A triagem foi realizada em duas fases --- título/resumo e leitura completa ---
+por dois revisores independentes, com cálculo do coeficiente de concordância
+$\kappa$. A qualidade metodológica dos estudos incluídos foi avaliada pelo
+\textit{checklist} de Dybå \& Dingsøyr \cite{dyba2008empirical}
+(Q1--Q5, pontuação $\{0;\;0{,}5;\;1\}$), sendo elegíveis para síntese
+quantitativa apenas estudos com \textit{score} $\geq 2{,}5$. Foram aplicados
+critérios de inclusão centrados em estudos que descrevem aplicação de
+\textit{Speech Analytics}, NLP ou ASR a contextos clínicos, com análise de
+comunicação profissional-paciente ou extração de informação de consultas.
+
+\textbf{Resultados:}
+Foram identificados $n = \mathbf{[X]}$ registros nas bases eletrônicas, com
+$n = \mathbf{[X]}$ registros adicionais de fontes complementares. Após remoção
+de duplicatas, $n = \mathbf{[X]}$ registros foram submetidos à triagem por
+título e resumo, resultando em $n = \mathbf{[X]}$ artigos para leitura completa.
+Destes, $n = \mathbf{[X]}$ foram incluídos na síntese qualitativa e
+$n = \mathbf{[X]}$ na síntese quantitativa. Os estudos foram organizados em
+quatro eixos temáticos: (\textit{A})~NLP clínico e extração de entidades
+biomédicas, com destaque para modelos \textit{transformer} e BERT aplicados à
+extração de sintomas relatados pelo paciente; (\textit{B})~documentação clínica
+automatizada, incluindo sistemas de transcrição automática, diarização e
+geração de notas SOAP; (\textit{C})~comunicação médico-paciente, literacia em
+saúde e adesão ao tratamento, com evidências de que padrões microscópicos da
+fala predizem desfechos clínicos; e (\textit{D})~biomarcadores vocais e análise
+multimodal, com \textit{pipeline} de captura de características acústicas e
+linguísticas indicativas de estados clínicos. Os desafios mais recorrentes
+incluem escassez de dados clínicos anotados, limitações de ASR em linguagem
+coloquial, falta de estudos de validação prospectiva em ambiente real e ausência
+de métricas padronizadas para avaliação da qualidade da interação.
+
+\textbf{Conclusões:}
+A literatura disponível demonstra avanços consolidados em NLP clínico e
+transcrição automatizada, mas revela uma lacuna consistente: a maioria das
+abordagens foca em diagnóstico ou documentação, negligenciando a análise da
+comunicação como objeto de estudo em si. A extração sistemática de marcadores
+comunicacionais e comportamentais derivados da fala clínica --- como indicadores
+de dúvida, barreira, engajamento e qualidade da interação --- permanece pouco
+explorada. Esta revisão evidencia a necessidade de estudos que operacionalizem a
+anamnese clínica como unidade de dados estruturáveis por meio de
+\textit{Speech Analytics}.
+
+\end{abstract}
+
+\bigskip
+\hrule
+\bigskip
+
+\noindent\textbf{Palavras-chave:}
+\textit{Speech Analytics};
+revisão sistemática;
+comunicação clínica;
+processamento de linguagem natural;
+reconhecimento automático de fala;
+marcadores comunicacionais;
+\textit{digital scribe};
+anamnese.
+
+% ============================================================
+% Referências citadas no resumo
+% ============================================================
+\bigskip
+\begin{thebibliography}{9}
+
+\bibitem{page2021prisma}
+PAGE, M.~J. et al.
+The PRISMA~2020 statement: an updated guideline for reporting systematic
+reviews.
+\textit{BMJ}, v.~372, p.~n71, 2021.
+
+\bibitem{kitchenham2007guidelines}
+KITCHENHAM, B.; CHARTERS, S.
+Guidelines for performing systematic literature reviews in software
+engineering.
+\textit{EBSE Technical Report} EBSE-2007-01, Keele University, 2007.
+
+\bibitem{dyba2008empirical}
+DYBÅ, T.; DINGSØYR, T.
+Empirical studies of agile software development: a systematic review.
+\textit{Information and Software Technology}, v.~50, n.~9--10,
+p.~833--859, 2008.
+
+\end{thebibliography}
+
+\end{document}
