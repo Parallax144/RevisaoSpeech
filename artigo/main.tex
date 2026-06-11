@@ -117,11 +117,11 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 }
 
 \cortext[1]{Autor correspondente}
-\fntext[1]{}
-\fntext[2]{}
-\fntext[3]{}
-\fntext[4]{}
-\fntext[5]{}
+\fntext[1]{Mestrando, Programa de Pós-Graduação em Ciência de Dados em Saúde, USF.}
+\fntext[2]{Docente e orientador, Programa de Pós-Graduação em Ciência de Dados em Saúde, USF.}
+\fntext[3]{Aluno de Iniciação Científica, Engenharia da Computação, USF.}
+\fntext[4]{Aluno de Iniciação Científica, Engenharia da Computação, USF.}
+\fntext[5]{Aluno de Iniciação Científica, Engenharia da Computação, USF.}
 
 %% ----------------------------------------------------------------
 %% Resumo — máximo 250 palavras (IJMI)
@@ -160,8 +160,8 @@ Os estudos evidenciam avanços consolidados em NLP clínico (modelos baseados
 em \textit{transformers}, BERT lidera o Reconhecimento de Entidades Nomeadas)
 e em transcrição automatizada (WER $\approx$9\% alcançável com
 Whisper/PyAnnote). A comunicação centrada no paciente demonstra impacto
-mensurável em desfechos objetivos de saúde. Marcadores comunicacionais ---
-autorreparo, engajamento, suporte emocional e indicadores de barreira ---
+mensurável em desfechos objetivos de saúde. Marcadores comunicacionais —
+autorreparo, engajamento, suporte emocional e indicadores de barreira —
 são identificados como preditores de adesão. A análise multimodal
 (acústica\,+\,semântica) permanece em estado inicial; a maioria das
 abordagens foca em automação documental, negligenciando a interação clínica
@@ -215,11 +215,11 @@ raramente convertidas em dados analisáveis \citep{Wang2018,Koleck2019}.
 
 A qualidade da interação profissional-paciente demonstra impacto mensurável
 sobre a adesão e os desfechos clínicos objetivos \citep{Kelley2014}. Barreiras
-comunicacionais --- incluindo lacunas de literacia em saúde, expectativas
-desalinhadas e padrões de miscomunicação --- associam-se à baixa adesão
+comunicacionais —incluindo lacunas de literacia em saúde, expectativas
+desalinhadas e padrões de miscomunicação —associam-se à baixa adesão
 terapêutica e pior prognóstico \citep{McCabe2018,Alkhamees2023}.
 
-O \textit{Speech Analytics} --- análise computacional da linguagem falada ---
+O \textit{Speech Analytics} — análise computacional da linguagem falada —
 oferece um caminho para extrair indicadores estruturados e mensuráveis
 dessas interações. Avanços recentes em ASR, especialmente modelos baseados
 em \textit{transformers} como o Whisper \citep{Radford2023}, combinados a
@@ -232,6 +232,22 @@ de um protocolo de \textit{Speech Analytics} para monitoramento da reabilitaçã
 ortopédica em sistema público de saúde \citep{BaenaNeto2026} exemplifica o
 potencial translacional dessas tecnologias e evidencia a necessidade de um
 mapa consolidado de evidências para subsidiar o desenho de estudos prospectivos.
+
+Revisões recentes têm abordado aspectos parcialmente sobrepostos a este
+escopo. Falcetta et al. \citeyearpar{Falcetta2023} identificaram ausência
+de validação prospectiva em sistemas de documentação automática de
+interações clínicas. Ng et al. \citeyearpar{Ng2025} avaliaram o desempenho
+técnico de sistemas de ASR para documentação clínica, reportando WER
+entre 8,7\% e mais de 50\% conforme o contexto. Alabbad e Alhoshan
+\citeyearpar{Alabbad2026} mapearam aplicações de ASR na saúde na era
+pós-LLM. Albert et al. \citeyearpar{Albert2024} realizaram uma revisão de
+escopo sobre métodos de IA, fala e NLP para avaliação da comunicação
+clínico-paciente. Nenhuma dessas revisões, contudo, concentra-se na
+operacionalização da interação clínica como conjunto de \textbf{variáveis
+mensuráveis derivadas da fala} — especialmente marcadores comunicacionais
+e comportamentais (autorreparo, engajamento, barreiras, literacia) — como
+objeto de análise em si, independente da documentação ou do diagnóstico.
+É precisamente essa lacuna que a presente revisão se propõe a mapear.
 
 Esta revisão bibliográfica tem como objetivo mapear as evidências sobre
 \textit{Speech Analytics} e NLP aplicados à comunicação clínica,
@@ -362,12 +378,20 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 %%   texto completo avaliado=[N]; excluídos no texto completo
 %%   (com justificativa)=[N]; incluídos na síntese=[N].
 
+%% CONTAGENS PRELIMINARES (busca de calibração, jun/2026):
+%% PubMed com string completa (3 blocos): 8 registros — string restritiva,
+%% recomenda-se testar pares de blocos para ampliar o pool.
+%% IEEE Xplore, ACM DL, Scopus e WoS requerem acesso institucional USF;
+%% estimativas: IEEE ~50–200, ACM ~20–80, Scopus ~150–400, WoS ~100–300.
+%% TODO [Murilo]: executar buscas com login institucional e registrar n exato
+%% por base antes de preencher os [N] abaixo.
+
 As buscas nas seis bases recuperaram [N]~registros no total
 (PubMed/MEDLINE:~[N]; Scopus:~[N]; IEEE~Xplore:~[N];
 ACM~Digital~Library:~[N]; Web~of~Science:~[N]; arXiv:~[N]).
 Após remoção de [N]~duplicatas, [N]~registros foram triados por título e
 resumo. A concordância entre os dois revisores primários foi $\kappa = $[VALOR]
-(Fabricio e Murilo). Após avaliação de texto completo de [N]~registros,
+(F.E.S. e M.M.). Após avaliação de texto completo de [N]~registros,
 [N]~artigos atenderam a todos os critérios de elegibilidade e foram incluídos
 na síntese. O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
 
@@ -415,7 +439,7 @@ A Tabela~\ref{tab:estudos} resume suas características principais.
 \end{longtable}
 
 % ---------------------------------------------------------------
-\subsection{Eixo A --- NLP clínico e extração de entidades biomédicas}
+\subsection{Eixo A —NLP clínico e extração de entidades biomédicas}
 \label{subsec:eixoA}
 % Responsável: Murilo Minutti
 % ---------------------------------------------------------------
@@ -435,7 +459,7 @@ A Tabela~\ref{tab:estudos} resume suas características principais.
 [Síntese do Eixo A — a ser redigida por Murilo]
 
 % ---------------------------------------------------------------
-\subsection{Eixo B --- Documentação clínica automatizada e ASR}
+\subsection{Eixo B —Documentação clínica automatizada e ASR}
 \label{subsec:eixoB}
 % Responsável: Fabricio Evangelista dos Santos
 % ---------------------------------------------------------------
@@ -453,7 +477,7 @@ A Tabela~\ref{tab:estudos} resume suas características principais.
 [Síntese do Eixo B — a ser redigida por Fabricio]
 
 % ---------------------------------------------------------------
-\subsection{Eixo C --- Comunicação médico-paciente}
+\subsection{Eixo C —Comunicação médico-paciente}
 \label{subsec:eixoC}
 % Responsável: Lucas Kenso Terrazzin
 % ---------------------------------------------------------------
@@ -473,7 +497,7 @@ A Tabela~\ref{tab:estudos} resume suas características principais.
 [Síntese do Eixo C — a ser redigida por Lucas]
 
 % ---------------------------------------------------------------
-\subsection{Eixo D --- Biomarcadores vocais e análise multimodal}
+\subsection{Eixo D —Biomarcadores vocais e análise multimodal}
 \label{subsec:eixoD}
 % Responsável: Fabricio Evangelista dos Santos
 % ---------------------------------------------------------------
