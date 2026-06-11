@@ -1,0 +1,518 @@
+%%
+%% Speech Analytics and Natural Language Processing Applied to
+%% Clinical Communication: A Scoping Review
+%%
+%% Authors: Rafael Baena Neto, Vicente Idalberto Becerra Sablón,
+%%          Fabricio Evangelista dos Santos, Lucas Kenso Terrazzin,
+%%          Murilo Minutti
+%%
+%% Target journal: International Journal of Medical Informatics (IJMI)
+%% APC covered: CAPES/Elsevier Read & Publish 2026–2028
+%% Class: cas-sc.cls v2.4 (single-column, for submission/review)
+%%
+
+\documentclass[a4paper,fleqn]{cas-sc}
+
+\usepackage[authoryear,longnamesfirst]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+%% ================================================================
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+%% ----------------------------------------------------------------
+%% Running head
+%% ----------------------------------------------------------------
+\shorttitle{Speech Analytics in Clinical Communication}
+\shortauthors{R. Baena Neto et~al.}
+
+%% ----------------------------------------------------------------
+%% Title
+%% ----------------------------------------------------------------
+\title[mode=title]{Speech Analytics and Natural Language Processing
+Applied to Clinical Communication: A Scoping Review}
+
+%% ----------------------------------------------------------------
+%% Authors and affiliations
+%% Affiliation [1]: Graduate Program in Health Data Science, USF
+%% Affiliation [2]: Department of Computer Engineering, USF
+%% ----------------------------------------------------------------
+\author[1]{Rafael Baena Neto}[%
+  type=editor,
+  orcid=0009-0005-2122-4665,
+  role=Researcher
+]
+\cormark[1]
+\fnmark[1]
+\ead{rafael.baena@mail.usf.edu.br}
+\credit{Conceptualisation, Methodology, Data curation, Formal analysis,
+        Writing -- original draft}
+
+\affiliation[1]{%
+  organization={Graduate Program in Health Data Science,
+                Universidade São Francisco (USF)},
+  addressline={Rua Alexandre Rodrigues Barbosa, 45},
+  city={Bragança Paulista},
+  postcode={12916-900},
+  state={SP},
+  country={Brazil}
+}
+
+\author[1]{Vicente Idalberto Becerra Sablón}[%
+  orcid=0000-0003-3127-1906
+]
+\fnmark[2]
+\ead{vicente.sablon@usf.edu.br}
+\credit{Supervision, Conceptualisation, Writing -- review and editing}
+
+\author[2]{Fabricio Evangelista dos Santos}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[3]
+\ead{fabricio.evangelista@mail.usf.edu.br}
+\credit{Investigation, Data curation, Methodology, Software,
+        Writing -- review and editing}
+
+\author[2]{Lucas Kenso Terrazzin}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[4]
+\ead{lucas.ida@mail.usf.edu.br}
+\credit{Investigation, Data curation, Formal analysis,
+        Writing -- review and editing}
+
+\author[2]{Murilo Minutti}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[5]
+\ead{murilo.minutti@mail.usf.edu.br}
+\credit{Investigation, Data curation, Formal analysis, Visualisation,
+        Writing -- review and editing}
+
+\affiliation[2]{%
+  organization={Department of Computer Engineering,
+                Universidade São Francisco (USF)},
+  addressline={Rua Alexandre Rodrigues Barbosa, 45},
+  city={Bragança Paulista},
+  postcode={12916-900},
+  state={SP},
+  country={Brazil}
+}
+
+\cortext[1]{Corresponding author}
+\fntext[1]{}
+\fntext[2]{}
+\fntext[3]{}
+\fntext[4]{}
+\fntext[5]{}
+
+%% ----------------------------------------------------------------
+%% Abstract — max 250 words (IJMI)
+%% ----------------------------------------------------------------
+\begin{abstract}
+\textbf{Background:}
+Professional--patient communication is a dense yet predominantly unstructured
+and analytically underutilised source of clinical information. Advances in
+automatic speech recognition (ASR), natural language processing (NLP), and
+vocal biomarker analysis have expanded the capacity to extract structured data
+from clinical interactions; nonetheless, few studies operationalise these
+interactions as measurable speech-derived variables, particularly
+communicational and behavioural markers relevant to patient assessment.
+
+\textbf{Objective:}
+To identify, synthesise, and critically evaluate evidence on the application
+of speech analytics and NLP to professional--patient clinical communication,
+mapping methodological approaches, identified markers, technical challenges,
+and research gaps.
+
+\textbf{Methods:}
+Scoping review following PRISMA-ScR \citep{Tricco2018} and JBI guidelines
+\citep{Peters2020}. Searches were conducted in PubMed/MEDLINE, Scopus,
+IEEE~Xplore, ACM~Digital~Library, Web~of~Science, and arXiv. The corpus
+comprised [N]~articles selected from [N]~records, organised across four
+thematic axes: (A)~clinical NLP and biomedical entity extraction;
+(B)~automated clinical documentation and ASR; (C)~physician--patient
+communication; (D)~vocal biomarkers and multimodal analysis.
+%% TODO: replace [N] with final counts after search completion
+
+\textbf{Results:}
+Included studies document advances in clinical NLP (transformer-based models,
+BERT leading named-entity recognition) and automated transcription (word error
+rate $\approx$9\% with Whisper/PyAnnote). Patient-centred communication
+demonstrates measurable impact on objective health outcomes. Communicational
+markers --- self-repair, engagement, emotional support, and barrier indicators
+--- are identified as adherence predictors. Multimodal acoustic--semantic
+analysis remains nascent; most approaches focus on documentary automation
+rather than treating clinical interaction as an analytic object.
+
+\textbf{Conclusions:}
+A consistent gap is confirmed: few studies operationalise clinical interactions
+as measurable speech-derived variables, particularly communicational and
+behavioural markers extracted from anamnesis. This review supports the design
+of prospective studies integrating speech analytics into structured clinical
+communication analysis for adherence monitoring and care quality assessment.
+
+\textbf{Registration:} PROSPERO [CRD number to be assigned]
+\end{abstract}
+
+%% ----------------------------------------------------------------
+%% Research Highlights — MANDATORY for IJMI (3 items, max 85 chars each)
+%% ----------------------------------------------------------------
+\begin{highlights}
+\item BERT-based models lead clinical NER; WER $\approx$9\% achievable
+      with Whisper/PyAnnote pipelines
+\item Communicational markers (self-repair, engagement, barrier indicators)
+      predict therapeutic adherence
+\item Consistent gap: clinical interactions rarely operationalised as
+      measurable speech-derived variables
+\end{highlights}
+
+%% ----------------------------------------------------------------
+%% Keywords
+%% ----------------------------------------------------------------
+\begin{keywords}
+Speech analytics \sep
+Natural language processing \sep
+Clinical communication \sep
+Automatic speech recognition \sep
+Communicational markers \sep
+Digital scribe
+\end{keywords}
+
+\maketitle
+
+%% ================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Clinical communication constitutes one of the richest yet most underutilised
+sources of health data. In public health systems, anamneses and therapeutic
+orientations predominantly occur as unstructured verbal exchanges rarely
+converted into analysable data \citep{Wang2018,Koleck2019}.
+
+The quality of the professional--patient interaction has been shown to
+influence adherence and objective clinical outcomes \citep{Kelley2014}.
+Communication barriers --- including health literacy gaps, misaligned
+expectations, and miscommunication patterns --- are associated with impaired
+therapeutic adherence and poorer prognosis \citep{McCabe2018,Alkhamees2023}.
+
+Speech analytics --- the computational analysis of spoken language --- offers a
+pathway to extract structured, measurable indicators from verbal clinical
+interactions. Recent advances in ASR, particularly transformer-based models
+such as Whisper \citep{Radford2023}, alongside instruction-tuned large
+language models (LLMs), have lowered barriers to deploying end-to-end NLP
+pipelines in healthcare \citep{Klusty2025}. Nonetheless, most existing
+approaches target diagnostic support or documentation automation rather than
+treating the clinical interaction itself as an object of structured analysis
+\citep{vanBuchem2021}. The development of a speech analytics protocol for
+monitoring orthopedic rehabilitation in a public health system
+\citep{BaenaNeto2026} exemplifies the translational potential of these
+technologies and underscores the need for a consolidated evidence map to
+support prospective study design.
+
+This scoping review aims to map the evidence on speech analytics and NLP
+applied to clinical communication, characterising the methodological
+landscape and identifying gaps for future prospective studies.
+
+%% ================================================================
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Study design}
+
+This scoping review follows the methodological framework proposed by
+\citet{Arksey2005}, refined by \citet{Levac2010} and the Joanna Briggs
+Institute (JBI) \citep{Peters2020}. Reporting adheres to the Preferred
+Reporting Items for Systematic Reviews and Meta-Analyses extension for
+Scoping Reviews (PRISMA-ScR) \citep{Tricco2018}.
+
+\subsection{Research questions}
+
+\begin{itemize}
+  \item \textbf{Q1:} What speech analytics approaches have been applied to
+        clinical communication in the last five years?
+  \item \textbf{Q2:} What NLP and ASR methods are used for automated
+        transcription and analysis of clinical consultations?
+  \item \textbf{Q3:} What communicational and behavioural markers have been
+        identified or proposed in professional--patient interaction?
+  \item \textbf{Q4:} What are the technical, ethical, and methodological
+        challenges for automated analysis of clinical communication?
+\end{itemize}
+
+\subsection{Eligibility criteria}
+
+\subsubsection{Inclusion criteria}
+\begin{itemize}
+  \item \textbf{IC1:} Study applies speech analytics, NLP, or ASR to a
+        clinical context
+  \item \textbf{IC2:} Full text available in English, Portuguese, or Spanish
+  \item \textbf{IC3:} Analyses professional--patient communication or
+        information extraction from clinical consultations
+  \item \textbf{IC4:} Describes methods, results, or markers applicable to
+        clinical interaction
+  \item \textbf{IC5:} Published between January 2014 and 2026
+\end{itemize}
+
+\subsubsection{Exclusion criteria}
+\begin{itemize}
+  \item \textbf{EC1:} Publications prior to 2014
+  \item \textbf{EC2:} Extended abstracts, tutorials, or white papers without
+        empirical data
+  \item \textbf{EC3:} Exclusively focused on voice-based diagnosis of physical
+        pathologies without analysis of the communicational interaction
+  \item \textbf{EC4:} Studies on non-clinical populations without explicitly
+        stated methodological transferability
+\end{itemize}
+
+\subsection{Information sources and search strategy}
+
+Searches were conducted in six electronic databases: PubMed/MEDLINE, Scopus,
+IEEE~Xplore, ACM~Digital~Library, Web~of~Science, and arXiv. The reference
+list of \citet{BaenaNeto2026} was also hand-searched for additional records.
+Searches were performed between [DATE\_START] and [DATE\_END].
+%% TODO [Murilo]: insert search dates
+
+The combined Boolean search string below was adapted to the controlled
+vocabulary of each database. Database-specific strings are provided as
+supplementary material.
+
+\begin{verbatim}
+("speech analytics" OR "automatic speech recognition" OR "ASR"
+OR "natural language processing" OR "NLP" OR "large language model"
+OR "speech-to-text" OR "voice recognition" OR "vocal biomarkers"
+OR "speaker diarization")
+AND
+("clinical communication" OR "doctor-patient" OR "physician-patient"
+OR "anamnesis" OR "medical consultation" OR "health interaction"
+OR "patient-clinician communication" OR "therapeutic adherence")
+AND
+("clinical notes" OR "SOAP notes" OR "medical transcription"
+OR "digital scribe" OR "electronic health record"
+OR "communicational markers" OR "behavioural markers")
+\end{verbatim}
+
+\subsection{Study selection}
+
+Records retrieved from the six databases were imported into Rayyan
+\citep{Ouzzani2016} for deduplication and screening. Titles and abstracts
+were independently screened by two reviewers (F.E.S. and M.M.), with
+inter-rater agreement assessed using Cohen's kappa ($\kappa$). Disagreements
+were resolved by a third reviewer (L.K.T.) or by the corresponding author.
+Full texts of potentially eligible records were then retrieved and assessed
+against the eligibility criteria. The selection process is documented in a
+PRISMA-ScR flow diagram (Fig.~\ref{fig:prisma}).
+%% TODO [Lucas]: insert final kappa value once calculated
+%% TODO [Murilo]: insert final n per stage after all database searches complete
+
+\subsection{Data charting}
+
+Data were extracted using a standardised charting form including: author(s),
+year, country, study design, clinical setting, population characteristics,
+technology stack (ASR model, NLP framework, LLM), clinical variables
+extracted, outcomes reported, ethical framework, and limitations.
+
+\subsection{Synthesis}
+
+A narrative synthesis was conducted. Findings are organised around four
+thematic axes: (A)~clinical NLP and biomedical entity extraction,
+(B)~automated documentation and ASR, (C)~physician--patient communication,
+and (D)~vocal biomarkers and multimodal analysis.
+
+%% ================================================================
+\section{Results}
+\label{sec:results}
+
+% ---------------------------------------------------------------
+\subsection{Study selection}
+% ---------------------------------------------------------------
+
+%% TODO [Murilo]: insert PRISMA-ScR flow figure and fill all [N] values
+%%   after all database searches are complete and deduplicated in Rayyan.
+%%   Template: Records identified (PubMed=[N], Scopus=[N], IEEE=[N],
+%%   ACM=[N], WoS=[N], arXiv=[N]); duplicates removed=[N];
+%%   screened=[N]; excluded on title/abstract=[N]; full-text assessed=[N];
+%%   excluded on full-text (with reasons)=[N]; included=[N].
+
+Database searches retrieved [N]~records in total
+(PubMed/MEDLINE:~[N]; Scopus:~[N]; IEEE~Xplore:~[N];
+ACM~Digital~Library:~[N]; Web~of~Science:~[N]; arXiv:~[N]).
+After removal of [N]~duplicates, [N]~records were screened by title and
+abstract. Inter-rater agreement was $\kappa = $ [VALUE] (Fabricio and
+Murilo as primary reviewers). Following full-text assessment of [N]~records,
+[N]~articles met all eligibility criteria and were included in the synthesis.
+A PRISMA-ScR flow diagram is presented in Fig.~\ref{fig:prisma}.
+
+\begin{figure}[h]
+  \centering
+  %% TODO [Murilo]: insert PRISMA-ScR flow diagram image here
+  %% \includegraphics[width=\linewidth]{prisma_flow.pdf}
+  \caption{PRISMA-ScR flow diagram of the study selection process.}
+  \label{fig:prisma}
+\end{figure}
+
+% ---------------------------------------------------------------
+\subsection{Characteristics of included studies}
+% ---------------------------------------------------------------
+
+%% TODO [Murilo]: populate the table below with all included studies.
+%%   One row per study. Columns: Code | First author, year | Type |
+%%   Axis | Technology | Main outcome/metric | Country
+
+The [N]~included studies span [YEAR\_RANGE]. Table~\ref{tab:studies}
+summarises their key characteristics.
+
+\begin{longtable}{p{0.8cm} p{2.8cm} p{1.6cm} p{0.8cm} p{2.5cm} p{3.0cm}}
+\caption{Characteristics of included studies.}
+\label{tab:studies}\\
+\toprule
+\textbf{Code} & \textbf{Author, year} & \textbf{Type} &
+\textbf{Axis} & \textbf{Technology} & \textbf{Main outcome} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\small\textit{(continued)}}\\
+\toprule
+\textbf{Code} & \textbf{Author, year} & \textbf{Type} &
+\textbf{Axis} & \textbf{Technology} & \textbf{Main outcome} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+%% TODO [Murilo]: add one row per included study, e.g.:
+%% S01 & Bazoge et al., 2023 & Syst.\ review & A & BERT/transformers
+%%     & NER F1, phenotyping \\
+%% S02 & Navarro et al., 2023 & Syst.\ review & A & BERT, BioBERT
+%%     & NER entities (problems, treatments) \\
+[N] & [Author, year] & [Type] & [X] & [Technology] & [Outcome] \\
+\end{longtable}
+
+% ---------------------------------------------------------------
+\subsection{Axis A --- Clinical NLP and biomedical entity extraction}
+\label{subsec:axisA}
+% Responsible: Murilo Minutti
+% ---------------------------------------------------------------
+
+%% TODO [Murilo]: write the narrative synthesis for Axis A.
+%%   Key studies to include: Bazoge2023, Navarro2023, Watabe2025,
+%%   Sezgin2023, Koleck2019, Wang2018.
+%%   Focus: transition from rule-based to transformer models,
+%%   BERT/BioBERT leadership in NER, symptom extraction from
+%%   free-text and patient-generated data, zero-shot approaches,
+%%   performance metrics (F1 > 0.8 in Watabe2025), gaps in
+%%   real-world deployment.
+%%   Cite each claim with its source. Do not assert results not
+%%   present in the extracted data.
+
+[Axis A narrative — to be completed by Murilo]
+
+% ---------------------------------------------------------------
+\subsection{Axis B --- Automated clinical documentation and ASR}
+\label{subsec:axisB}
+% Responsible: Fabricio Evangelista dos Santos
+% ---------------------------------------------------------------
+
+%% TODO [Fabricio]: write the narrative synthesis for Axis B.
+%%   Key studies to include: Krishna2021, Klusty2025, Abbasian2024,
+%%   Aleksic2017, Tran2023, Schloss2020, vanBuchem2021.
+%%   Focus: SOAP note generation, ASR pipelines (Whisper/PyAnnote,
+%%   WER ~9%), speaker diarisation, digital scribe design,
+%%   on-premise privacy requirements, LLM safety metrics
+%%   (groundedness/RAG), challenges in colloquial speech.
+%%   Cite each claim with its source. Do not assert results not
+%%   present in the extracted data.
+
+[Axis B narrative — to be completed by Fabricio]
+
+% ---------------------------------------------------------------
+\subsection{Axis C --- Physician--patient communication}
+\label{subsec:axisC}
+% Responsible: Lucas Kenso Terrazzin
+% ---------------------------------------------------------------
+
+%% TODO [Lucas]: write the narrative synthesis for Axis C.
+%%   Key studies to include: Shao2025, Muscat2020, Kelley2014,
+%%   Rucinski2022, McCabe2018, Alkhamees2023.
+%%   Focus: DPCQ scale (Shao2025), impact of communication quality
+%%   on objective health outcomes (Kelley2014 meta-analysis),
+%%   self-repair as adherence predictor (McCabe2018), shared
+%%   decision-making and health literacy (Muscat2020), intercultural
+%%   barriers (Alkhamees2023), measurement gaps.
+%%   Cite each claim with its source. Do not assert results not
+%%   present in the extracted data.
+
+[Axis C narrative — to be completed by Lucas]
+
+% ---------------------------------------------------------------
+\subsection{Axis D --- Vocal biomarkers and multimodal analysis}
+\label{subsec:axisD}
+% Responsible: Fabricio Evangelista dos Santos
+% ---------------------------------------------------------------
+
+%% TODO [Fabricio]: write the narrative synthesis for Axis D.
+%%   Key studies to include: Fagherazzi2021, Albert2024, Imel2022.
+%%   Focus: acoustic feature pipelines (prosody, voice quality),
+%%   topic modelling from consultation audio (Imel2022),
+%%   vocal biomarkers for health-state detection (Fagherazzi2021),
+%%   gap in non-verbal/silence analysis (Albert2024),
+%%   nascent state of multimodal acoustic+semantic integration.
+%%   Cite each claim with its source. Do not assert results not
+%%   present in the extracted data.
+
+[Axis D narrative — to be completed by Fabricio]
+
+%% ================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+%% TODO: complete after results synthesis
+
+%% ================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+%% TODO: complete
+
+%% ================================================================
+\section*{Declarations}
+
+\subsection*{Funding}
+This study received no specific funding.
+The article processing charge (APC) is covered under the Read and Publish
+agreement between CAPES and Elsevier (2026--2028).
+
+\subsection*{Conflict of interest}
+The authors declare no conflict of interest.
+
+\subsection*{Ethics approval}
+Not applicable. This scoping review is based on publicly available
+published literature and does not involve human participants.
+
+\subsection*{Data availability}
+The data charting form and full search strategies are available as
+supplementary material upon acceptance.
+
+\subsection*{AI use disclosure}
+In accordance with Elsevier's Generative AI Policy: AI tools were used
+solely for language support and literature searches. All intellectual
+content, analysis, and conclusions are the sole responsibility of the
+authors.
+
+\printcredits
+
+%% ================================================================
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+
+\end{document}

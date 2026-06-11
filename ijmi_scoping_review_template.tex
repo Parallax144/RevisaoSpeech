@@ -1,0 +1,561 @@
+%%
+%% Speech Analytics and Natural Language Processing Applied to
+%% Clinical Communication: A Scoping Review
+%%
+%% Rafael Baena Neto · Vicente Idalberto Becerra Sablón
+%% Graduate Program in Health Data Science — Universidade São Francisco (USF)
+%% Target journal: International Journal of Medical Informatics (IJMI)
+%% APC covered: CAPES/Elsevier Read & Publish 2026–2028
+%%
+%% Compiled with: cas-sc.cls v2.4 (single-column, for submission/review)
+%% Dependencies (copy from /latex/): cas-sc.cls, cas-common.sty,
+%%   cas-model2-names.bst
+%%
+
+\documentclass[a4paper,fleqn]{cas-sc}
+
+\usepackage[authoryear,longnamesfirst]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+%% ================================================================
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+%% ----------------------------------------------------------------
+%% Running head
+%% ----------------------------------------------------------------
+\shorttitle{Speech Analytics in Clinical Communication}
+\shortauthors{R. Baena Neto et~al.}
+
+%% ----------------------------------------------------------------
+%% Title
+%% ----------------------------------------------------------------
+\title[mode=title]{Speech Analytics and Natural Language Processing
+Applied to Clinical Communication: A Scoping Review}
+
+%% ----------------------------------------------------------------
+%% Authors
+%% Affiliation [1]: Graduate Program in Health Data Science, USF
+%% Affiliation [2]: Department of Computer Engineering, USF (IC students)
+%% Rafael  ORCID: 0009-0005-2122-4665
+%% Vicente ORCID: 0000-0003-3127-1906
+%% IC students ORCID: register at orcid.org before submission
+%% ----------------------------------------------------------------
+\author[1]{Rafael Baena Neto}[%
+  type=editor,
+  orcid=0009-0005-2122-4665,
+  role=Researcher
+]
+\cormark[1]
+\fnmark[1]
+\ead{rafael.baena@mail.usf.edu.br}
+
+\credit{Conceptualisation, Methodology, Data curation, Formal analysis,
+        Writing -- original draft}
+
+\affiliation[1]{%
+  organization={Graduate Program in Health Data Science,
+                Universidade São Francisco (USF)},
+  addressline={Rua Alexandre Rodrigues Barbosa, 45},
+  city={Bragança Paulista},
+  postcode={12916-900},
+  state={SP},
+  country={Brazil}
+}
+
+\author[1]{Vicente Idalberto Becerra Sablón}[%
+  orcid=0000-0003-3127-1906
+]
+\fnmark[2]
+\ead{vicente.sablon@usf.edu.br}
+
+\credit{Supervision, Conceptualisation, Writing -- review and editing}
+
+\author[2]{Fabricio Evangelista dos Santos}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[3]
+\ead{fabricio.evangelista@mail.usf.edu.br}
+
+\credit{Data curation, Formal analysis, Writing -- review and editing}
+
+\author[2]{Lucas Kenso Terrazzin}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[4]
+\ead{lucas.ida@mail.usf.edu.br}
+
+\credit{Data curation, Formal analysis, Writing -- review and editing}
+
+\author[2]{Murilo Minutti}[%
+  orcid=0000-0000-0000-0000
+]
+\fnmark[5]
+\ead{murilo.minutti@mail.usf.edu.br}
+
+\credit{Data curation, Formal analysis, Writing -- review and editing}
+
+\affiliation[2]{%
+  organization={Department of Computer Engineering,
+                Universidade São Francisco (USF)},
+  addressline={Rua Alexandre Rodrigues Barbosa, 45},
+  city={Bragança Paulista},
+  postcode={12916-900},
+  state={SP},
+  country={Brazil}
+}
+
+%% ----------------------------------------------------------------
+%% Footnotes / correspondence
+%% ----------------------------------------------------------------
+\cortext[1]{Corresponding author}
+\fntext[1]{}
+\fntext[2]{}
+\fntext[3]{}
+\fntext[4]{}
+\fntext[5]{}
+
+%% ----------------------------------------------------------------
+%% Abstract (250 words max — IJMI)
+%% Current count: ~235 words
+%% ----------------------------------------------------------------
+\begin{abstract}
+\textbf{Background:}
+Professional–patient communication is a dense yet predominantly unstructured
+and analytically underutilised source of clinical information. Advances in
+automatic speech recognition (ASR), natural language processing (NLP), and
+vocal biomarker analysis have expanded the capacity to extract structured data
+from clinical interactions; nonetheless, few studies operationalise these
+interactions as measurable speech-derived variables, particularly
+communicational and behavioural markers relevant to patient assessment.
+
+\textbf{Objective:}
+To identify, synthesise, and critically evaluate evidence on the application
+of speech analytics and NLP to professional–patient clinical communication,
+mapping methodological approaches, identified markers, technical challenges,
+and research gaps.
+
+\textbf{Methods:}
+Scoping review following PRISMA-ScR \citep{Tricco2018} and JBI guidelines
+\citep{Peters2020}. The corpus comprised 27 articles selected from 36 records
+retrieved from three documentary bases, organised across four thematic axes:
+(A)~clinical NLP and biomedical entity extraction; (B)~automated clinical
+documentation and ASR; (C)~physician–patient communication; (D)~vocal
+biomarkers and multimodal analysis.
+
+\textbf{Results:}
+Included studies document advances in clinical NLP (transformer-based models,
+BERT leading named-entity recognition) and automated transcription (word error
+rate $\approx$9\% with Whisper/PyAnnote). Patient-centred communication
+demonstrates measurable impact on objective health outcomes. Communicational
+markers — self-repair, engagement, emotional support, and barrier indicators —
+are identified as adherence predictors. Multimodal acoustic–semantic analysis
+remains nascent; most approaches focus on documentary automation rather than
+treating clinical interaction as an analytic object.
+
+\textbf{Conclusions:}
+A consistent gap is confirmed: few studies operationalise clinical interactions
+as measurable speech-derived variables, particularly communicational and
+behavioural markers extracted from anamnesis. This review supports the design
+of prospective studies integrating speech analytics into structured clinical
+communication analysis for adherence monitoring and care quality assessment.
+
+\textbf{Registration:} PROSPERO [CRD number to be assigned]
+\end{abstract}
+
+%% ----------------------------------------------------------------
+%% Research Highlights — MANDATORY for IJMI (3 bullet points)
+%% Each item: ≤ 85 characters
+%% ----------------------------------------------------------------
+\begin{highlights}
+\item BERT-based transformer models lead clinical NER; WER $\approx$9\%
+      achievable with Whisper/PyAnnote pipelines
+\item Communicational markers (self-repair, engagement, barrier indicators)
+      predict therapeutic adherence
+\item Consistent gap: clinical interactions rarely operationalised as
+      measurable speech-derived variables
+\end{highlights}
+
+%% ----------------------------------------------------------------
+%% Keywords (4–6 per IJMI guidelines)
+%% ----------------------------------------------------------------
+\begin{keywords}
+Speech analytics \sep
+Natural language processing \sep
+Clinical communication \sep
+Automatic speech recognition \sep
+Communicational markers \sep
+Digital scribe
+\end{keywords}
+
+\maketitle
+
+%% ================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Clinical communication constitutes one of the richest yet most underutilised
+sources of health data. In public health systems, anamneses and therapeutic
+orientations predominantly occur as unstructured verbal exchanges rarely
+converted into analysable data \citep{Wang2018,Koleck2019}.
+
+The quality of the professional–patient interaction has been shown to
+influence adherence and objective clinical outcomes \citep{Kelley2014}.
+Communication barriers — including health literacy gaps, misaligned
+expectations, and miscommunication patterns — are associated with impaired
+therapeutic adherence and poorer prognosis
+\citep{McCabe2018,Alkhamees2023}.
+
+Speech analytics — the computational analysis of spoken language — offers a
+pathway to extract structured, measurable indicators from verbal clinical
+interactions. Recent advances in ASR, particularly transformer-based models
+such as Whisper \citep{Radford2023}, alongside instruction-tuned large
+language models (LLMs), have lowered barriers to deploying end-to-end NLP
+pipelines in healthcare \citep{Klusty2025}. Nonetheless, most existing
+approaches target diagnostic support or documentation automation rather than
+treating the clinical interaction itself as an object of structured analysis
+\citep{vanBuchem2021}. The development of a speech analytics protocol for
+monitoring orthopedic rehabilitation in a public health system
+\citep{BaenaNeto2026} exemplifies the translational potential of these
+technologies and underscores the need for a consolidated evidence map to
+support prospective study design.
+
+This scoping review aims to map the evidence on speech analytics and NLP
+applied to clinical communication, characterising the methodological
+landscape and identifying gaps for future prospective studies.
+
+%% ================================================================
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Study design}
+
+This scoping review follows the methodological framework proposed by
+\citet{Arksey2005}, refined by \citet{Levac2010} and the Joanna Briggs
+Institute (JBI) \citep{Peters2020}. Reporting adheres to the Preferred
+Reporting Items for Systematic Reviews and Meta-Analyses extension for
+Scoping Reviews (PRISMA-ScR) \citep{Tricco2018}.
+
+\subsection{Research questions}
+
+\begin{itemize}
+  \item \textbf{Q1:} What speech analytics approaches have been applied to
+        clinical communication in the last five years?
+  \item \textbf{Q2:} What NLP and ASR methods are used for automated
+        transcription and analysis of clinical consultations?
+  \item \textbf{Q3:} What communicational and behavioural markers have been
+        identified or proposed in professional–patient interaction?
+  \item \textbf{Q4:} What are the technical, ethical, and methodological
+        challenges for automated analysis of clinical communication?
+\end{itemize}
+
+\subsection{Eligibility criteria}
+
+\subsubsection{Inclusion criteria}
+
+\begin{itemize}
+  \item \textbf{IC1:} Study applies speech analytics, NLP, or ASR to a
+        clinical context
+  \item \textbf{IC2:} Full text available in English, Portuguese, or Spanish
+  \item \textbf{IC3:} Analyses professional–patient communication or
+        information extraction from clinical consultations
+  \item \textbf{IC4:} Describes methods, results, or markers applicable to
+        clinical interaction
+  \item \textbf{IC5:} Published between January 2014 and 2026
+\end{itemize}
+
+\subsubsection{Exclusion criteria}
+
+\begin{itemize}
+  \item \textbf{EC1:} Publications prior to 2014
+  \item \textbf{EC2:} Extended abstracts, tutorials, or white papers without
+        empirical data
+  \item \textbf{EC3:} Exclusively focused on voice-based diagnosis of physical
+        pathologies without analysis of the communicational interaction
+  \item \textbf{EC4:} Studies on non-clinical populations without explicitly
+        stated methodological transferability
+\end{itemize}
+
+\subsection{Information sources and search strategy}
+
+Searches were conducted in [specify the three documentary bases]. The
+combined Boolean search string is presented below.
+
+\begin{verbatim}
+("speech analytics" OR "automatic speech recognition" OR "ASR"
+OR "natural language processing" OR "NLP" OR "large language model"
+OR "speech-to-text" OR "voice recognition" OR "vocal biomarkers"
+OR "speaker diarization")
+AND
+("clinical communication" OR "doctor-patient" OR "physician-patient"
+OR "anamnesis" OR "medical consultation" OR "health interaction"
+OR "patient-clinician communication" OR "therapeutic adherence")
+AND
+("clinical notes" OR "SOAP notes" OR "medical transcription"
+OR "digital scribe" OR "electronic health record"
+OR "communicational markers" OR "behavioural markers")
+\end{verbatim}
+
+\subsection{Study selection}
+
+Titles and abstracts were screened independently by two reviewers. A total
+of 36 records were retrieved from three documentary bases. After two-phase
+screening (title/abstract then full text), 27 articles were included in the
+final corpus. Disagreements were resolved by consensus or adjudication by a
+third reviewer. The selection process is documented in a PRISMA-ScR flow
+diagram (Fig.~\ref{fig:prisma}).
+
+\subsection{Data charting}
+
+Data were extracted using a standardised charting form including: author(s),
+year, country, study design, clinical setting, population characteristics,
+technology stack (ASR model, NLP framework, LLM), clinical variables
+extracted, outcomes reported, ethical framework, and limitations.
+
+\subsection{Synthesis}
+
+A narrative synthesis was conducted. Findings are organised around the
+four thematic axes defined in eligibility screening: (A)~clinical NLP
+and biomedical entity extraction, (B)~automated documentation and ASR,
+(C)~physician–patient communication, and (D)~vocal biomarkers and
+multimodal analysis.
+
+%% ================================================================
+\section{Results}
+\label{sec:results}
+
+%% [To be completed after full data extraction]
+%%
+%% Suggested structure:
+%% 3.1 Study selection
+%%     PRISMA-ScR flow diagram: 36 screened → 27 included
+%%     Table of excluded studies with reasons
+%% 3.2 Characteristics of included studies
+%%     Table: code | authors | year | type | axis | main metric | notes
+%% 3.3 Axis A — Clinical NLP and biomedical entity extraction
+%%     Key findings: transformer transition, BERT NER leadership,
+%%     BERT-CRF F1 > 0.8 (Watabe 2025), zero-shot NER (Sezgin 2023)
+%% 3.4 Axis B — Automated documentation and ASR
+%%     Key findings: WER ~9% (Klusty 2025), SOAP generation (Krishna 2021,
+%%     Schloss 2020), diarisation challenges (Tran 2023)
+%% 3.5 Axis C — Physician–patient communication
+%%     Key findings: self-repair as adherence predictor (McCabe 2018),
+%%     DPCQ scale (Shao 2025), meta-analysis on outcomes (Kelley 2014),
+%%     health literacy (Muscat 2020), intercultural barriers (Alkhamees 2023)
+%% 3.6 Axis D — Vocal biomarkers and multimodal analysis
+%%     Key findings: nascent state (Albert 2024), acoustic pipeline
+%%     (Fagherazzi 2021), topic modelling (Imel 2022)
+%% 3.7 Ethical and regulatory frameworks
+%%     Key findings: on-premise requirement (Klusty 2025), LLM safety
+%%     metrics (Abbasian 2024)
+
+%% ================================================================
+\section{Discussion}
+\label{sec:discussion}
+
+%% [To be completed]
+%%
+%% Key themes:
+%% - Methodological heterogeneity across four axes
+%% - Gap confirmed: clinical interaction treated as means, not object
+%% - Communicational and behavioural markers from anamnesis: underexplored
+%% - Implications for prospective protocol design (Fase 2 / Sablon protocol)
+%% - Limitations: English-dominant corpus, three-base coverage,
+%%   heterogeneous study quality, no date restriction pre-2014
+%% - Ethical note: voice as biometry, LGPD, consent requirements,
+%%   on-premise processing
+
+%% ================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+%% [To be completed]
+%% Core points:
+%% - Consolidated advances in clinical NLP and ASR confirmed
+%% - Consistent gap: few studies operationalise clinical interactions as
+%%   measurable speech-derived variables
+%% - Need for prospective studies integrating speech analytics into
+%%   structured clinical communication analysis
+
+%% ================================================================
+\section*{Declarations}
+
+\subsection*{Funding}
+This study received no specific funding.
+The article processing charge (APC) is covered under the Read and Publish
+agreement between CAPES and Elsevier (2026--2028).
+
+\subsection*{Conflict of interest}
+The authors declare no conflict of interest.
+
+\subsection*{Ethics approval}
+Not applicable. This scoping review is based on publicly available
+published literature and does not involve human participants.
+
+\subsection*{Data availability}
+The data charting form and full search strategies are available as
+supplementary material upon acceptance.
+
+\subsection*{AI use disclosure}
+In accordance with Elsevier's Generative AI Policy: AI tools were used
+solely for language support and literature searches. All intellectual
+content, analysis, and conclusions are the sole responsibility of the
+authors.
+
+%% ----------------------------------------------------------------
+%% CRediT authorship — prints the \credit{} entries above
+%% ----------------------------------------------------------------
+\printcredits
+
+%% ================================================================
+%% Bibliography
+%% ================================================================
+\bibliographystyle{cas-model2-names}
+\bibliography{references}
+
+%% Manual references — use until references.bib is ready
+%%
+%% \begin{thebibliography}{99}
+%%
+%% \bibitem[Baena~Neto and Becerra~Sablón(2026)]{BaenaNeto2026}
+%% Baena~Neto, R., Becerra~Sablón, V.I., 2026. A speech analytics-based
+%% methodological protocol for monitoring orthopedic rehabilitation in the
+%% Brazilian Unified Health System.
+%% Int. J. Environ. Res. Public Health 23, 626.
+%% doi:10.3390/ijerph23050626
+%%
+%% \bibitem[Abbasian et~al.(2024)]{Abbasian2024}
+%% Abbasian, M., et al., 2024. Foundation metrics for evaluating
+%% effectiveness of healthcare conversations powered by generative AI.
+%% npj Digit. Med. 7, 82.
+%%
+%% \bibitem[Alkhamees and Alasqah(2023)]{Alkhamees2023}
+%% Alkhamees, M., Alasqah, I., 2023. Patient-physician communication in
+%% intercultural settings: an integrative review.
+%% Heliyon 9, e22667.
+%%
+%% \bibitem[Albert et~al.(2024)]{Albert2024}
+%% Albert, P., et al., 2024. A scoping review of AI, speech and NLP methods
+%% for assessment of clinician-patient communication. medRxiv.
+%% doi:10.1101/2024.12.13.24318778 [preprint]
+%%
+%% \bibitem[Arksey and O'Malley(2005)]{Arksey2005}
+%% Arksey, H., O'Malley, L., 2005. Scoping studies: towards a methodological
+%% framework. Int. J. Soc. Res. Methodol. 8, 19--32.
+%%
+%% \bibitem[Bazoge et~al.(2023)]{Bazoge2023}
+%% Bazoge, A., et al., 2023. Applying NLP to textual data from clinical
+%% data warehouses: systematic review.
+%% JMIR Med. Inform. 11, e42477.
+%%
+%% \bibitem[Fagherazzi et~al.(2021)]{Fagherazzi2021}
+%% Fagherazzi, G., et al., 2021. Voice for health: the use of vocal
+%% biomarkers from research to clinical practice.
+%% Digit. Biomark. 5, 78--88.
+%%
+%% \bibitem[Imel et~al.(2022)]{Imel2022}
+%% Imel, Z., et al., 2022. Identifying topics in patient and doctor
+%% conversations using NLP methods. PCORI Final Research Report.
+%% doi:10.25302/08.2021.me.160234167
+%%
+%% \bibitem[Kelley et~al.(2014)]{Kelley2014}
+%% Kelley, J.M., et al., 2014. The influence of the patient-clinician
+%% relationship on healthcare outcomes: a systematic review and
+%% meta-analysis. PLoS ONE 9, e94207.
+%%
+%% \bibitem[Klusty et~al.(2025)]{Klusty2025}
+%% Klusty, M.A., et al., 2025. Toward automated clinical transcriptions.
+%% PMC12150720.
+%%
+%% \bibitem[Koleck et~al.(2019)]{Koleck2019}
+%% Koleck, T.A., et al., 2019. NLP of symptoms documented in free-text
+%% narratives of EHRs: a systematic review.
+%% J. Am. Med. Inform. Assoc. 26, 364--379.
+%%
+%% \bibitem[Krishna et~al.(2021)]{Krishna2021}
+%% Krishna, K., et al., 2021. Generating SOAP notes from doctor-patient
+%% conversations. arXiv:2005.01795.
+%%
+%% \bibitem[Levac et~al.(2010)]{Levac2010}
+%% Levac, D., et al., 2010. Scoping studies: advancing the methodology.
+%% Implement. Sci. 5, 69.
+%%
+%% \bibitem[McCabe and Healey(2018)]{McCabe2018}
+%% McCabe, R., Healey, P.G.T., 2018. Miscommunication in doctor-patient
+%% communication. Top. Cogn. Sci. 10, 409--424.
+%%
+%% \bibitem[Muscat et~al.(2020)]{Muscat2020}
+%% Muscat, D.M., et al., 2020. Health literacy and shared decision-making.
+%% J. Gen. Intern. Med. 35, 2992--2999.
+%%
+%% \bibitem[Navarro et~al.(2023)]{Navarro2023}
+%% Navarro, D.F., et al., 2023. Clinical NER and relation extraction using
+%% NLP of medical free text: a systematic review.
+%% Int. J. Med. Inform. 174, 105122.
+%%
+%% \bibitem[Peters et~al.(2020)]{Peters2020}
+%% Peters, M.D.J., et al., 2020. Chapter 11: Scoping Reviews.
+%% JBI Manual for Evidence Synthesis. JBI, Adelaide.
+%%
+%% \bibitem[Radford et~al.(2023)]{Radford2023}
+%% Radford, A., et al., 2023. Robust speech recognition via large-scale
+%% weak supervision. Proc. ICML 2023.
+%%
+%% \bibitem[Rucinski et~al.(2022)]{Rucinski2022}
+%% Rucinski, K., et al., 2022. Patient and healthcare team adherence in
+%% orthopaedics: a systematic review.
+%% J. Patient Care 8, 203.
+%%
+%% \bibitem[Schloss and Konam(2020)]{Schloss2020}
+%% Schloss, B., Konam, S., 2020. Towards an automated SOAP note.
+%% Proc. Mach. Learn. Res. arXiv:2007.08749.
+%%
+%% \bibitem[Sezgin et~al.(2023)]{Sezgin2023}
+%% Sezgin, E., et al., 2023. Extracting medical information from free-text
+%% patient-generated health data using NLP. JMIR Form. Res. 7, e43014.
+%%
+%% \bibitem[Shao et~al.(2025)]{Shao2025}
+%% Shao, J., et al., 2025. Development of a measurement of doctor-patient
+%% communication quality scale.
+%% Front. Public Health 13, 1606403.
+%%
+%% \bibitem[Tran et~al.(2023)]{Tran2023}
+%% Tran, B.D., et al., 2023. ASR performance for digital scribes:
+%% comparison between general-purpose and specialised models.
+%% AMIA Annu. Symp. Proc. PMC10148344.
+%%
+%% \bibitem[Tricco et~al.(2018)]{Tricco2018}
+%% Tricco, A.C., et al., 2018. PRISMA Extension for Scoping Reviews
+%% (PRISMA-ScR). Ann. Intern. Med. 169, 467--473.
+%%
+%% \bibitem[vanBuchem et~al.(2021)]{vanBuchem2021}
+%% van Buchem, M.M., et al., 2021. The digital scribe in clinical practice:
+%% a scoping review and research agenda.
+%% npj Digit. Med. 4, 57.
+%%
+%% \bibitem[Wang et~al.(2018)]{Wang2018}
+%% Wang, Y., et al., 2018. Clinical information extraction applications:
+%% a literature review.
+%% J. Biomed. Inform. 77, 34--49.
+%%
+%% \bibitem[Watabe et~al.(2025)]{Watabe2025}
+%% Watabe, S., et al., 2025. A patient-centered approach to developing
+%% and validating an NLP model for extracting patient-reported symptoms.
+%% Sci. Rep. 15. doi:10.1038/s41598-025-12845-3
+%%
+%% \end{thebibliography}
+
+\end{document}

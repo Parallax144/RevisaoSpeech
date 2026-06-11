@@ -1,6 +1,7 @@
 % ============================================================
-% Revisão Bibliográfica Sistemática em Speech Analytics
-% Resumo estruturado — PRISMA 2020
+% Revisão Bibliográfica em Speech Analytics e Comunicação Clínica
+% Resumo estruturado — Scoping Review (PRISMA-ScR / JBI)
+% Rafael Baena Neto · Universidade São Francisco (USF)
 % ============================================================
 
 \documentclass[12pt, a4paper]{article}
@@ -15,6 +16,9 @@
 \usepackage{setspace}
 \usepackage{parskip}
 \usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
 \usepackage{hyperref}
 
 \hypersetup{
@@ -34,7 +38,7 @@
 \begin{center}
   {\large\bfseries
     Speech Analytics e Comunicação Clínica:\\
-    Uma Revisão Sistemática da Literatura
+    Uma Revisão Bibliográfica
   }\\[0.8em]
   Rafael Baena Neto\\
   Universidade São Francisco (USF)\\[0.4em]
@@ -52,14 +56,15 @@
 
 \textbf{Contexto:}
 A comunicação profissional-paciente constitui uma fonte densa de informação
-clínica que permanece predominantemente não estruturada e subutilizada
-analiticamente. Avanços recentes em reconhecimento automático de fala
-(\textit{Automatic Speech Recognition} --- ASR), processamento de linguagem
-natural (PLN/NLP) e análise de biomarcadores vocais têm ampliado a capacidade
-de extrair dados estruturados a partir de interações clínicas. Ainda assim,
-poucos estudos operacionalizam essas interações como variáveis mensuráveis
-derivadas da fala, especialmente no que diz respeito a marcadores
-comunicacionais e comportamentais.
+clínica que ainda permanece predominantemente não estruturada e subutilizada
+analiticamente. Avanços recentes em Reconhecimento Automático de Fala (ASR),
+Processamento de Linguagem Natural (NLP) e análise de biomarcadores vocais
+têm ampliado a capacidade de extrair dados estruturados a partir de interações
+clínicas na anamnese. Ainda assim, poucos estudos operacionalizam essas
+interações como variáveis mensuráveis derivadas da fala, especialmente no que
+diz respeito a marcadores comunicacionais e comportamentais que podem ser
+utilizados para análise de dados e avaliação de resultados no cuidado do
+paciente.
 
 \textbf{Objetivo:}
 Identificar, sintetizar e avaliar criticamente as evidências sobre a aplicação
@@ -68,51 +73,31 @@ mapeando abordagens metodológicas, marcadores identificados, desafios técnicos
 e lacunas para pesquisa futura.
 
 \textbf{Métodos:}
-Revisão sistemática conduzida segundo as diretrizes PRISMA~2020
-\cite{page2021prisma} e as recomendações de Kitchenham \& Charters para
-revisões em Engenharia de Software \cite{kitchenham2007guidelines}. Foram
-consultadas as bases IEEE~Xplore, ACM~Digital~Library, PubMed/MEDLINE, Scopus,
-Web of Science e arXiv, cobrindo o período de janeiro de~2018 a maio de~2025.
-A triagem foi realizada em duas fases --- título/resumo e leitura completa ---
-por dois revisores independentes, com cálculo do coeficiente de concordância
-$\kappa$. A qualidade metodológica dos estudos incluídos foi avaliada pelo
-\textit{checklist} de Dybå \& Dingsøyr \cite{dyba2008empirical}
-(Q1--Q5, pontuação $\{0;\;0{,}5;\;1\}$), sendo elegíveis para síntese
-quantitativa apenas estudos com \textit{score} $\geq 2{,}5$. Foram aplicados
-critérios de inclusão centrados em estudos que descrevem aplicação de
-\textit{Speech Analytics}, NLP ou ASR a contextos clínicos, com análise de
-comunicação profissional-paciente ou extração de informação de consultas.
+Revisão bibliográfica. O corpus de análise foi composto por 27 artigos incluídos
+após triagem de 36 registros provenientes de três bases documentais, organizados
+em quatro eixos temáticos: (A)~NLP clínico e extração de entidades biomédicas;
+(B)~documentação clínica automatizada e ASR; (C)~comunicação médico-paciente;
+(D)~biomarcadores vocais e análise multimodal.
 
 \textbf{Resultados:}
-Foram identificados $n = \mathbf{[X]}$ registros nas bases eletrônicas, com
-$n = \mathbf{[X]}$ registros adicionais de fontes complementares. Após remoção
-de duplicatas, $n = \mathbf{[X]}$ registros foram submetidos à triagem por
-título e resumo, resultando em $n = \mathbf{[X]}$ artigos para leitura completa.
-Destes, $n = \mathbf{[X]}$ foram incluídos na síntese qualitativa e
-$n = \mathbf{[X]}$ na síntese quantitativa. Os estudos foram organizados em
-quatro eixos temáticos: (\textit{A})~NLP clínico e extração de entidades
-biomédicas, com destaque para modelos \textit{transformer} e BERT aplicados à
-extração de sintomas relatados pelo paciente; (\textit{B})~documentação clínica
-automatizada, incluindo sistemas de transcrição automática, diarização e
-geração de notas SOAP; (\textit{C})~comunicação médico-paciente, literacia em
-saúde e adesão ao tratamento, com evidências de que padrões microscópicos da
-fala predizem desfechos clínicos; e (\textit{D})~biomarcadores vocais e análise
-multimodal, com \textit{pipeline} de captura de características acústicas e
-linguísticas indicativas de estados clínicos. Os desafios mais recorrentes
-incluem escassez de dados clínicos anotados, limitações de ASR em linguagem
-coloquial, falta de estudos de validação prospectiva em ambiente real e ausência
-de métricas padronizadas para avaliação da qualidade da interação.
+Os estudos evidenciam avanços consolidados em NLP clínico --- transição para
+\textit{transformers}, BERT lidera tarefas de Reconhecimento de Entidades
+Nomeadas (NER) --- e em transcrição automatizada (WER $\approx 9\%$ alcançável
+com Whisper/PyAnnote). A comunicação centrada no paciente demonstra impacto
+mensurável em desfechos objetivos de saúde. Marcadores comunicacionais como
+autorreparo, engajamento, suporte emocional e indicadores de barreira são
+identificados como preditores de adesão. A análise multimodal
+(acústica\,+\,semântica) permanece em estado inicial. A maioria das abordagens
+foca em automação documental, negligenciando a interação clínica como objeto
+de análise em si.
 
 \textbf{Conclusões:}
-A literatura disponível demonstra avanços consolidados em NLP clínico e
-transcrição automatizada, mas revela uma lacuna consistente: a maioria das
-abordagens foca em diagnóstico ou documentação, negligenciando a análise da
-comunicação como objeto de estudo em si. A extração sistemática de marcadores
-comunicacionais e comportamentais derivados da fala clínica --- como indicadores
-de dúvida, barreira, engajamento e qualidade da interação --- permanece pouco
-explorada. Esta revisão evidencia a necessidade de estudos que operacionalizem a
-anamnese clínica como unidade de dados estruturáveis por meio de
-\textit{Speech Analytics}.
+Confirma-se uma lacuna consistente: poucos estudos operacionalizam interações
+clínicas como variáveis mensuráveis derivadas da fala, especialmente marcadores
+comunicacionais e comportamentais extraídos da anamnese. Esta revisão
+fundamenta a necessidade de estudos que integrem \textit{Speech Analytics} à
+análise estruturada da comunicação clínica como fonte de dados para
+monitoramento de adesão e qualidade do cuidado.
 
 \end{abstract}
 
@@ -122,16 +107,56 @@ anamnese clínica como unidade de dados estruturáveis por meio de
 
 \noindent\textbf{Palavras-chave:}
 \textit{Speech Analytics};
-revisão sistemática;
+revisão bibliográfica;
 comunicação clínica;
-processamento de linguagem natural;
-reconhecimento automático de fala;
+NLP;
+ASR;
 marcadores comunicacionais;
 \textit{digital scribe};
 anamnese.
 
 % ============================================================
-% Referências citadas no resumo
+\section{Perguntas de Pesquisa}
+% ============================================================
+
+\begin{itemize}
+  \item \textbf{Q1:} Quais abordagens de \textit{Speech Analytics} têm sido
+        aplicadas à comunicação clínica nos últimos cinco anos?
+  \item \textbf{Q2:} Quais métodos de NLP e ASR são utilizados para transcrição
+        e análise automatizada de consultas clínicas?
+  \item \textbf{Q3:} Quais marcadores comunicacionais e comportamentais foram
+        identificados ou propostos na interação profissional-paciente?
+  \item \textbf{Q4:} Quais são os desafios técnicos, éticos e metodológicos
+        para a análise automatizada da comunicação clínica?
+\end{itemize}
+
+% ============================================================
+\section{Critérios de Inclusão e Exclusão}
+% ============================================================
+
+\begin{longtable}{p{1.8cm} p{10.5cm}}
+\toprule
+\textbf{Critério} & \textbf{Descrição} \\
+\midrule
+\endhead
+IC1 & Estudo aplica \textit{Speech Analytics}, NLP ou ASR a contexto clínico \\[0.4em]
+IC2 & Texto completo disponível em inglês, português ou espanhol \\[0.4em]
+IC3 & Analisa comunicação profissional-paciente ou extração de informação de
+      consultas clínicas \\[0.4em]
+IC4 & Descreve métodos, resultados ou marcadores aplicáveis à interação clínica \\[0.4em]
+IC5 & Publicação no período de janeiro de 2014 a 2026 \\
+\midrule
+EC1 & Publicações anteriores a 2014 \\[0.4em]
+EC2 & Resumos estendidos, tutoriais ou \textit{white papers} sem dados empíricos \\[0.4em]
+EC3 & Foco exclusivo em diagnóstico por voz de patologias físicas sem análise
+      da interação comunicacional \\[0.4em]
+EC4 & Estudos sobre populações não clínicas sem transferibilidade metodológica
+      explicitada \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+% Referências
 % ============================================================
 \bigskip
 \begin{thebibliography}{9}
@@ -142,17 +167,16 @@ The PRISMA~2020 statement: an updated guideline for reporting systematic
 reviews.
 \textit{BMJ}, v.~372, p.~n71, 2021.
 
-\bibitem{kitchenham2007guidelines}
-KITCHENHAM, B.; CHARTERS, S.
-Guidelines for performing systematic literature reviews in software
-engineering.
-\textit{EBSE Technical Report} EBSE-2007-01, Keele University, 2007.
+\bibitem{tricco2018prisma}
+TRICCO, A.~C. et al.
+PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and
+Explanation.
+\textit{Annals of Internal Medicine}, v.~169, n.~7, p.~467--473, 2018.
 
-\bibitem{dyba2008empirical}
-DYBÅ, T.; DINGSØYR, T.
-Empirical studies of agile software development: a systematic review.
-\textit{Information and Software Technology}, v.~50, n.~9--10,
-p.~833--859, 2008.
+\bibitem{peters2020jbi}
+PETERS, M.~D.~J. et al.
+Chapter 11: Scoping Reviews.
+In: \textit{JBI Manual for Evidence Synthesis}. Adelaide: JBI, 2020.
 
 \end{thebibliography}
 
