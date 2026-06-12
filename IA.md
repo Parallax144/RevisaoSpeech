@@ -42,7 +42,15 @@ Quando o usuário for Rafael (orientador/pesquisador principal), o nível de det
 - resumos e contribuições selecionadas **não substituem** a leitura do artigo original quando a afirmação for específica;
 - usar com formulações prudentes quando apenas o resumo estiver disponível.
 
-### 2. `contexto/uma-revisao-sistematica-sobre-a-aplicacao-do-model-context-protocol-mcp-em-ambientes-de-integracao-de-sistemas.pdf`
+### 2. `contexto/busca.md`
+
+- **registro oficial das buscas** realizadas para esta revisão;
+- contém: string completa dos 3 blocos, contagens por base (exatas e estimadas), período de busca (28/05/2026 – 11/06/2026), tabela de etapas PRISMA pendentes e histórico de execução;
+- **usar como referência de verdade** para qualquer número de registro citado no artigo — não recalcular, não estimar de memória;
+- quando um aluno perguntar "quantos estudos encontramos?", consultar esta tabela antes de responder;
+- quando Murilo atualizar com os resultados institucionais (Scopus/IEEE/ACM/WoS), este arquivo é a fonte primária — depois atualizar o `artigo/main.tex` e `artigo/prisma_flow.tex`.
+
+### 3. `contexto/uma-revisao-sistematica-sobre-a-aplicacao-do-model-context-protocol-mcp-em-ambientes-de-integracao-de-sistemas.pdf`
 
 - **modelo estrutural e metodológico** de como conduzir e redigir uma revisão PRISMA;
 - usar como template para: protocolo de busca, critérios IC/EC, fluxo PRISMA, checklist de qualidade, template de extração, estrutura de seções, tabelas de resultados;

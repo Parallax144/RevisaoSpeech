@@ -23,6 +23,8 @@ RevisaoSpeech/
 ├── MEMORIA.md                     ← este arquivo
 └── contexto/
     ├── BaseCitacoes.md            ← corpus principal de referências (Grupos A–D + ética)
+    ├── busca.md                   ← registro oficial das buscas: strings, contagens por base,
+    │                                 período (28/05–11/06/2026), PRISMA pendente, histórico
     └── uma-revisao-sistematica-sobre-a-aplicacao-do-model-context-protocol-mcp-em-ambientes-de-integracao-de-sistemas.pdf
                                    ← modelo estrutural PRISMA (tema MCP, estrutura reutilizável)
 ```
@@ -70,17 +72,17 @@ A revisão sistemática deve estabelecer o estado da arte e confirmar a lacuna q
 
 | Etapa | n | Status |
 |-------|---|--------|
-| Registros identificados (bases eletrônicas) | — | Em construção |
-| Registros de fontes adicionais (BaseCitacoes.md) | — | Em construção |
-| Após remoção de duplicatas | — | — |
-| Triagem por título/resumo | — | — |
-| Excluídos na triagem | — | — |
-| Leitura completa | — | — |
-| Excluídos após leitura completa | — | — |
-| Incluídos na síntese qualitativa | — | — |
-| Incluídos na síntese quantitativa | — | — |
+| Registros identificados (bases eletrônicas) | ≈686 (PubMed=8 exato; demais estimados) | Parcial — ver `contexto/busca.md` |
+| Registros de fontes adicionais (BaseCitacoes.md) | 22 | Corpus inicial disponível |
+| Após remoção de duplicatas | [N] | Aguarda buscas institucionais (Murilo) |
+| Triagem por título/resumo | [N] | Aguarda Gate 2 |
+| Excluídos na triagem | [N] | — |
+| Leitura completa | [N] | — |
+| Excluídos após leitura completa | [N] | — |
+| Incluídos na síntese qualitativa | [N] | — |
+| Incluídos na síntese quantitativa | [N] | — |
 
-Atualizar esta tabela a cada rodada de busca.
+**Fonte de verdade para contagens:** `contexto/busca.md` — atualizar lá primeiro, depois aqui.
 
 ---
 
@@ -107,3 +109,5 @@ Atualizar esta tabela a cada rodada de busca.
 |------|---------|---------|
 | 2026-05-21 | IA.md criado para guiar alunos de IC na revisão PRISMA de Speech Analytics | Alunos conduzem a revisão em paralelo à coleta de dados da Fase 2 |
 | 2026-05-21 | PDF do artigo MCP usado apenas como template PRISMA estrutural | O tema da revisão é Speech Analytics, não MCP |
+| 2026-06-11 | `contexto/busca.md` criado como registro oficial das buscas | Centraliza strings, contagens e histórico; evita divergência entre artigo, fluxograma e memória |
+| 2026-06-11 | Workflow de execução mudou: Rafael + Claude executam TODOs, alunos revisam | TODOs viram REVISAR nos arquivos LaTeX |
