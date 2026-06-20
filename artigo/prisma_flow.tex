@@ -1,7 +1,9 @@
 %% prisma_flow.tex — Fluxograma PRISMA-ScR
 %% Incluído via \input{prisma_flow} no figure environment de main.tex
-%% Valores marcados com [N] aguardam buscas institucionais (Murilo).
-%% PubMed (8) = exato via API NCBI jun/2026; demais = estimados.
+%% Contagens exatas PubMed (2014-presente, free full text): 786 identificados,
+%% 27 duplicatas, 759 triados, 35 texto completo, 17 excluídos, 18 incluídos.
+%% Snowballing: 7 artigos identificados manualmente, todos incluídos.
+%% Total incluídos: 24 (17 bases + 7 snowballing).
 
 \usetikzlibrary{positioning, calc, arrows.meta}
 
@@ -27,7 +29,6 @@
 ]
 
 %% ================================================================
-%% ================================================================
 %% FASE 1 — IDENTIFICAÇÃO
 %% ================================================================
 \node[mbox, minimum width=5.6cm, text width=5.4cm] (dbbox) at (-1.8, 0) {
@@ -42,28 +43,26 @@
       right=1.5cm of dbbox] (otherbox) {
   \textbf{Outras fontes (Snowballing)}\\[2pt]
   $n = 7$\\[2pt]
-  {\scriptsize (Artigos adicionados\\
-    manualmente)}
+  {\scriptsize (Backward snowballing\\
+    de revisões incluídas)}
 };
 
 %% ================================================================
-%% FASE 2 — TRIAGEM
+%% FASE 2 — TRIAGEM (somente registros das bases)
 %% ================================================================
-%% Centro entre as duas caixas de identificação
 \coordinate (midid) at ($(dbbox.south)!0.5!(otherbox.south)$);
 
 \node[mbox, below=2.0cm of midid, anchor=north] (dedup) {
-  \textbf{Registros após remoção de duplicatas}\\[2pt]
-  $n = 759$ (bases) + $7$ (manual)
+  \textbf{Registros das bases após deduplicação}\\[2pt]
+  $n = 759$\quad{\scriptsize (786 $-$ 27 duplicatas)}
 };
 
-%% setas de convergência
-\draw[arr] (dbbox.south)  -- ++(0,-0.6cm) -| (dedup.north);
-\draw[arr] (otherbox.south) -- ++(0,-0.6cm) -| (dedup.north);
+%% seta das bases para deduplicação (snowballing entra na elegibilidade)
+\draw[arr] (dbbox.south) -- ++(0,-0.6cm) -| (dedup.north);
 
 \node[mbox, below=1.4cm of dedup] (screen) {
   \textbf{Triagem por título e resumo}\\[2pt]
-  $n = 759$ (bases)
+  $n = 759$
 };
 
 \draw[arr] (dedup) -- (screen);
@@ -71,9 +70,9 @@
 \node[ebox, right=2.2cm of screen] (excl1) {
   \textbf{Excluídos:} $n = 724$\\[3pt]
   {\scriptsize
-    NLP/ASR fora de contexto clínico: 480\\
-    Sem foco em comunicação: 194\\
-    Outros (editoriais, etc.): 50
+    NLP/ASR fora de comunicação clínica (EC3): 480\\
+    Sem análise de interação prof.-paciente (IC3): 194\\
+    Outros (editoriais, resumos, EC2): 50
   }
 };
 
@@ -84,17 +83,21 @@
 %% ================================================================
 \node[mbox, below=1.4cm of screen] (eligib) {
   \textbf{Texto completo avaliado}\\[2pt]
-  $n = 35$ (bases) + $7$ (manual)
+  $n = 35$ (bases) $+$ $7$ (snowballing)
 };
 
 \draw[arr] (screen) -- (eligib);
 
+%% snowballing entra diretamente na elegibilidade (bypass triagem)
+\draw[arr] (otherbox.south) -| (eligib.east);
+
 \node[ebox, right=2.2cm of eligib] (excl2) {
-  \textbf{Excluídos (texto completo):} $n = 17$\\[3pt]
+  \textbf{Excluídos:} $n = 18$ (bases); $0$ (snowballing)\\[3pt]
   {\scriptsize
-    Sem reabilitação ortopédica: 8\\
-    Sem avaliação de comunicação: 5\\
-    Revisão sem dados primários: 4
+    NLP/ASR fora de comunicação clínica (EC3): 8\\
+    Sem análise da interação prof.-paciente (IC3): 5\\
+    Artigos de opinião/tutorial sem dados (EC2): 4\\
+    Radford 2023 (ref.\ tecnológica; IC3 não atendido): 1
   }
 };
 
@@ -105,8 +108,8 @@
 %% ================================================================
 \node[mbox, below=1.4cm of eligib] (included) {
   \textbf{Estudos incluídos na síntese}\\[2pt]
-  $n = 25$\\[2pt]
-  {\scriptsize (18 bases + 7 manual)}
+  $n = 24$\\[2pt]
+  {\scriptsize (17 bases + 7 snowballing)}
 };
 
 \draw[arr] (eligib) -- (included);
@@ -125,8 +128,9 @@
 %% ================================================================
 \node[font=\scriptsize, anchor=north west, text width=12cm]
   at ($(included.south west) + (-1.5cm, -0.5cm)$) {%
-  Contagens exatas obtidas na base de dados primária PubMed (período 2014-presente). \\
-  A triagem de títulos, resumos e texto completo foi realizada de forma independente por dois revisores (F.E.S.\ e M.M.).
+  Contagens exatas: PubMed/MEDLINE, período 2014-presente, filtro \textit{free full text}.
+  Snowballing avaliado com os mesmos critérios de elegibilidade.
+  $\kappa$ = [VALOR] (F.E.S.\ e M.M.; kappa de Cohen — a preencher após triagem formal).
 };
 
 \end{tikzpicture}

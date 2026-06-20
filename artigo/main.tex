@@ -151,7 +151,7 @@ e lacunas para pesquisa futura.
 
 \textbf{Métodos:}
 Revisão bibliográfica seguindo as diretrizes PRISMA-ScR \citep{Tricco2018}
-e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 25~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
+e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 24~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
 biomédicas; (B)~documentação clínica automatizada e ASR;
 (C)~comunicação médico-paciente; (D)~biomarcadores vocais e análise multimodal.
 
@@ -428,7 +428,7 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 \subsection{Seleção de estudos}
 % ---------------------------------------------------------------
 
-As buscas na base de dados primária (PubMed/MEDLINE) recuperaram um total de 786~registros. Após a remoção de 27~duplicatas, 759~registros foram triados com base no título e resumo. A triagem por título e resumo resultou na seleção de 35~artigos para avaliação do texto completo. Após a leitura completa, 17~artigos foram excluídos por não atenderem aos critérios de elegibilidade (exclusões genéricas: 8 por não abordarem reabilitação ortopédica, 5 por não apresentarem avaliação de comunicação, e 4 por se tratarem de revisões sem dados primários), restando 18~artigos elegíveis. Adicionalmente, 7~artigos relevantes foram identificados de forma manual e incluídos via \textit{snowballing}. Ao final, 25~artigos atenderam a todos os critérios de elegibilidade e foram incluídos na síntese final. O fluxograma PRISMA-ScR detalhado do processo de seleção de estudos está apresentado na Fig.~\ref{fig:prisma}.
+As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo, resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos por não atenderem aos critérios de elegibilidade: 8~por aplicarem NLP/ASR fora de contexto de comunicação clínica (EC3), 5~por não analisarem a interação profissional-paciente (IC3) e 4~por consistirem em artigos de opinião, tutoriais ou documentos normativos sem análise empírica (EC2). Os 7~artigos identificados por \textit{snowballing} (rastreamento retroativo de referências de revisões sistemáticas incluídas) foram submetidos à mesma avaliação de elegibilidade de forma independente dos registros eletrônicos; todos atenderam aos critérios de inclusão e nenhum foi excluído. Ao final, 24~artigos foram incluídos na síntese (17~da busca eletrônica + 7~do \textit{snowballing}). O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
 
 \begin{figure}[h]
   \centering
@@ -446,7 +446,7 @@ As buscas na base de dados primária (PubMed/MEDLINE) recuperaram um total de 78
 %%   ‡ = preprint / não peer-reviewed (verificar IC2)
 %%   n e período finais aguardam triagem formal (Gate 2).
 
-Os 25~estudos do corpus abrangem o período 2014--2025
+Os 24~estudos do corpus abrangem o período 2014--2025
 (Tabela~\ref{tab:estudos}).
 
 \begin{longtable}{p{0.65cm} p{2.4cm} p{1.55cm} p{0.55cm} p{2.2cm} p{2.35cm} p{1.4cm}}
@@ -476,28 +476,26 @@ S06 & Wang et al., 2018      & Rev.\ lit.   & A & cTAKES, MedLEE, ML         & 2
 S07 & Krishna et al., 2021   & Preprint\textsuperscript{‡} & B & CLUSTER2SENT    & Notas SOAP geradas de consultas        & EUA           \\
 S08 & Klusty et al., 2025    & Empírico     & B & Whisper + PyAnnote         & Transcrição on-premise; privacidade    & EUA           \\
 S09 & Abbasian et al., 2024  & Framework    & B & IA generativa, RAG         & Groundedness, segurança, empatia       & EUA           \\
-S10 & Aleksić et al., 2017\textsuperscript{†}  & Empírico & B & Resumo de EHR & Dashboard para doença crônica & Sérvia  \\
+S10 & Aleksić et al., 2017  & Empírico & B & Resumo de EHR & Dashboard para doença crônica & Sérvia  \\
 S11 & Tran et al., 2023      & Empírico     & B & ASR geral vs.\ especializado & WER; erros em pronomes curtos        & EUA           \\
 S12 & Schloss \& Konam, 2020 & Preprint\textsuperscript{‡} & B & Bi-LSTM hierárquico & Classificação utterances → SOAP  & EUA           \\
 S13 & van Buchem et al., 2021 & Scoping rev. & B & Escribas digitais (revisão) & Lacunas de usabilidade clínica real  & Países Baixos \\
 S14 & Falcetta et al., 2023  & Rev.\ sist.  & B & Escribas (revisão)         & Mapeamento de 22 escribas; sem validação prospectiva & Brasil \\
 S15 & Ng et al., 2025        & Rev.\ sist.  & B & ASR clínico (revisão)      & WER variou de 8,7\% a $>$50\% conforme contexto & Singapura \\
-S16 & Radford et al., 2023   & Empírico     & B & Whisper (ASR)              & ASR robusto (680k h); sem ajuste fino  & EUA           \\
 %% ---- Eixo C: Comunicação médico-paciente ----
-S17 & Shao et al., 2025      & Empírico     & C & Escala DPCQ (14 itens)     & Qualidade da comunicação médico-paciente & China       \\
-S18 & Muscat et al., 2020    & Framework    & C & Tomada de decisão compartilhada & Literacia em saúde; engajamento & Austrália  \\
-S19 & Kelley et al., 2014\textsuperscript{†}  & Meta-análise & C & --  & Relação clínica → desfechos objetivos & EUA      \\
-S20 & Rucinski et al., 2022  & Rev.\ sist.  & C & Métricas de adesão         & Adesão bilateral em ortopedia          & EUA           \\
-S21 & McCabe \& Healey, 2018 & Empírico     & C & Análise de conversa        & Autorreparo como preditor de adesão    & RU            \\
-S22 & Alkhamees \& Alasqah, 2023 & Rev.\ integr. & C & --               & Barreiras interculturais na comunicação & Arábia S.   \\
+S16 & Shao et al., 2025      & Empírico     & C & Escala DPCQ (14 itens)     & Qualidade da comunicação médico-paciente & China       \\
+S17 & Muscat et al., 2020    & Framework    & C & Tomada de decisão compartilhada & Literacia em saúde; engajamento & Austrália  \\
+S18 & Kelley et al., 2014    & Meta-análise & C & --                         & Relação clínica → desfechos objetivos  & EUA           \\
+S19 & Rucinski et al., 2022  & Rev.\ sist.  & C & Métricas de adesão         & Adesão bilateral em ortopedia          & EUA           \\
+S20 & McCabe \& Healey, 2018 & Empírico     & C & Análise de conversa        & Autorreparo como preditor de adesão    & RU            \\
+S21 & Alkhamees \& Alasqah, 2023 & Rev.\ integr. & C & --               & Barreiras interculturais na comunicação & Arábia S.   \\
 %% ---- Eixo D: Biomarcadores vocais e análise multimodal ----
-S23 & Fagherazzi et al., 2021 & Framework   & D & Pipeline vocal (acústica+NLP) & Biomarcadores vocais de saúde e emoção & Luxemburgo  \\
-S24 & Albert et al., 2024    & Scoping rev.\textsuperscript{‡} & D & IA, Speech, NLP & Comunicação clínico-paciente via IA & França  \\
-S25 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & Valência emocional; concordância humana & EUA          \\
+S22 & Fagherazzi et al., 2021 & Framework   & D & Pipeline vocal (acústica+NLP) & Biomarcadores vocais de saúde e emoção & Luxemburgo  \\
+S23 & Albert et al., 2024    & Scoping rev.\textsuperscript{‡} & D & IA, Speech, NLP & Comunicação clínico-paciente via IA & França  \\
+S24 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & Valência emocional; concordância humana & EUA          \\
 \midrule
 \multicolumn{7}{l}{\footnotesize
-  \textsuperscript{†}Fora do período IC ($\geq$2018) — confirmar elegibilidade.
-  \quad\textsuperscript{‡}Preprint, não peer-reviewed — confirmar IC2.} \\
+  \textsuperscript{‡}Preprint/não peer-reviewed (medRxiv) — IC2 a confirmar com política editorial do IJMI.} \\
 \end{longtable}
 
 % ---------------------------------------------------------------
