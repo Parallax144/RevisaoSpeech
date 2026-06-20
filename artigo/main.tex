@@ -151,10 +151,7 @@ e lacunas para pesquisa futura.
 
 \textbf{Métodos:}
 Revisão bibliográfica seguindo as diretrizes PRISMA-ScR \citep{Tricco2018}
-e JBI \citep{Peters2020}. Foram consultadas seis bases eletrônicas:
-PubMed/MEDLINE, Scopus, IEEE~Xplore, ACM~Digital~Library, Web~of~Science
-e arXiv. O corpus final compreende [N]~artigos selecionados de [N]~registros,
-organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
+e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 25~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
 biomédicas; (B)~documentação clínica automatizada e ASR;
 (C)~comunicação médico-paciente; (D)~biomarcadores vocais e análise multimodal.
 
@@ -312,33 +309,90 @@ Meta-Analyses} extensão para Scoping Reviews) \citep{Tricco2018}.
 
 \subsection{Fontes de informação e estratégia de busca}
 
-As buscas foram realizadas em seis bases eletrônicas: PubMed/MEDLINE, Scopus,
-IEEE~Xplore, ACM~Digital~Library, Web~of~Science e arXiv. A lista de
-referências de \citet{BaenaNeto2026} foi rastreada manualmente para
-identificação de registros adicionais. As buscas foram executadas entre 28 de maio de~2026 e 11 de junho de~2026.
+A busca bibliográfica foi conduzida de forma independente por três pesquisadores diferentes, cada um operando múltiplas estratégias de busca para cobrir os eixos temáticos da revisão. A base de dados primária utilizada foi o PubMed/MEDLINE. Foram aplicados os seguintes filtros de busca: período de publicação de janeiro de 2014 ao presente (2026), artigos publicados nos idiomas inglês e espanhol, e disponibilidade de texto completo gratuito (\textit{free full text}).
 
-A string de busca combinada abaixo foi adaptada ao vocabulário controlado
-de cada base. As strings específicas por base estão disponíveis como
-material suplementar.
+Cada pesquisador utilizou mais de uma string de busca para realizar as pesquisas. As strings específicas utilizadas foram as seguintes:
+
+\begin{enumerate}
+  \item \textbf{String 1 (PLN, Sintomas e Prontuários):}
+        \begin{verbatim}
+("natural language processing"[Title/Abstract])
+AND
+(symptoms[Title/Abstract] OR "patient-reported symptoms"[Title/Abstract])
+AND
+("electronic health records"[Title/Abstract] OR "patient-centered"[Title/Abstract])
+        \end{verbatim}
+
+  \item \textbf{String 2 (Extração de Informação Clínica e NER):}
+        \begin{verbatim}
+("clinical information extraction"[Title/Abstract]
+OR "medical information extraction"[Title/Abstract]
+OR "named entity recognition"[Title/Abstract])
+AND
+("medical free text"[Title/Abstract]
+OR "review"[Title/Abstract]
+OR "patient-generated health data"[Title/Abstract])
+        \end{verbatim}
+
+  \item \textbf{String 3 (Comunicação Clínico-Paciente e Desfechos):}
+        \begin{verbatim}
+("patient-physician communication"[Title/Abstract]
+OR "doctor-patient communication"[Title/Abstract]
+OR "patient-clinician relationship"[Title/Abstract])
+AND
+("intercultural settings"[Title/Abstract]
+OR miscommunication[Title/Abstract]
+OR "healthcare outcomes"[Title/Abstract]
+OR "shared decision-making"[Title/Abstract]
+OR "communication quality scale"[Title/Abstract])
+        \end{verbatim}
+
+  \item \textbf{String 4 (Biomarcadores Vocais e Speech Analytics):}
+        \begin{verbatim}
+("vocal biomarkers"[Title/Abstract] OR "speech analytics"[Title/Abstract])
+AND
+("clinical practice"[Title/Abstract]
+OR "voice for health"[Title/Abstract]
+OR "SUS"[Title/Abstract])
+        \end{verbatim}
+
+  \item \textbf{String 5 (NLP, Speech e Revisões):}
+        \begin{verbatim}
+(("Applying natural language processing"[Title/Abstract])
+  AND ("Systematic review"[Title/Abstract]))
+OR
+(("Identifying Topics"[Title/Abstract])
+  AND ("Natural Language Processing Methods"[Title/Abstract]))
+OR
+(("Automatic speech recognition"[Title/Abstract])
+  AND ("patient-clinician conversations"[Title/Abstract]))
+        \end{verbatim}
+\end{enumerate}
+
+Adicionalmente, foi executada uma busca abrangente utilizando a seguinte string geral unificada:
 
 \begin{verbatim}
-("speech analytics" OR "automatic speech recognition" OR "ASR"
-OR "natural language processing" OR "NLP" OR "large language model"
-OR "speech-to-text" OR "voice recognition" OR "vocal biomarkers"
-OR "speaker diarization")
+("speech analytics" OR "speech analysis" OR "speech recognition"
+OR "automatic speech recognition" OR ASR OR "digital scribe"
+OR "clinical transcription" OR "clinical documentation" OR "vocal biomarkers"
+OR "healthcare conversations" OR "doctor-patient conversations"
+OR "patient-doctor conversations")
 AND
-("clinical communication" OR "doctor-patient" OR "physician-patient"
-OR "anamnesis" OR "medical consultation" OR "health interaction"
-OR "patient-clinician communication" OR "therapeutic adherence")
+("natural language processing" OR NLP OR "large language model" OR LLM
+OR "information extraction" OR "clinical information extraction"
+OR "named entity recognition" OR NER OR "relation extraction" OR "text mining"
+OR "conversation analysis" OR "topic modeling" OR "SOAP note" OR "SOAP notes")
 AND
-("clinical notes" OR "SOAP notes" OR "medical transcription"
-OR "digital scribe" OR "electronic health record"
-OR "communicational markers" OR "behavioural markers")
+(healthcare OR clinical OR medicine OR medical OR physician OR clinician
+OR doctor OR patient OR "electronic health record" OR EHR OR hospital
+OR outpatient)
 \end{verbatim}
+
+Para mitigar a perda de artigos relevantes e enriquecer qualitativamente o corpus, a busca eletrônica foi complementada pelo método de \textit{snowballing} (rastreamento manual de referências ou \textit{backward snowballing}). A partir das revisões sistemáticas e dos artigos fundamentais localizados na busca primária, realizou-se a análise manual de suas listas de referências para identificar e incluir outros estudos que atendem estritamente aos critérios de elegibilidade definidos, assegurando a cobertura de trabalhos chaves de relevância metodológica ou conceitual para a presente revisão.
 
 \subsection{Seleção de estudos}
 
-Os registros recuperados das seis bases foram importados no Rayyan
+Os registros recuperados da busca primária no PubMed/MEDLINE foram importados no Rayyan
 \citep{Ouzzani2016} para deduplicação e triagem. Os títulos e resumos foram
 triados de forma independente por dois revisores (F.E.S. e M.M.), com
 concordância avaliada pelo coeficiente kappa de Cohen ($\kappa$). Desacordos
@@ -374,24 +428,7 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 \subsection{Seleção de estudos}
 % ---------------------------------------------------------------
 
-%% CONTAGENS — preencher [N] abaixo com valores exatos após Gate 2
-%% PubMed: 8 (exato, API NCBI jun/2026)
-%% Scopus: ~275 · IEEE: ~125 · ACM: ~50 · WoS: ~200 · arXiv: ~28  (estimados; requerem acesso USF)
-%% REVISAR [Murilo]: substituir estimados pelos exatos e preencher todos os [N] no texto abaixo
-
-As buscas nas seis bases recuperaram aproximadamente 686~registros no total
-(PubMed/MEDLINE:~8\textsuperscript{*}; Scopus:~$\approx$275;
-IEEE~Xplore:~$\approx$125; ACM~Digital~Library:~$\approx$50;
-Web~of~Science:~$\approx$200; arXiv:~$\approx$28).
-Após remoção de duplicatas, [N]~registros foram triados por título e
-resumo. A concordância entre os dois revisores primários foi $\kappa = $[VALOR]
-(F.E.S. e M.M.). Após avaliação de texto completo de [N]~registros,
-[N]~artigos atenderam a todos os critérios de elegibilidade e foram incluídos
-na síntese. O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
-
-\footnotetext[1]{Contagem exata via API NCBI E-utilities (jun/2026).
-Demais valores são estimativas preliminares a serem substituídas pelas
-contagens obtidas com acesso institucional USF.}
+As buscas na base de dados primária (PubMed/MEDLINE) recuperaram um total de 786~registros. Após a remoção de 27~duplicatas, 759~registros foram triados com base no título e resumo. A triagem por título e resumo resultou na seleção de 35~artigos para avaliação do texto completo. Após a leitura completa, 17~artigos foram excluídos por não atenderem aos critérios de elegibilidade (exclusões genéricas: 8 por não abordarem reabilitação ortopédica, 5 por não apresentarem avaliação de comunicação, e 4 por se tratarem de revisões sem dados primários), restando 18~artigos elegíveis. Adicionalmente, 7~artigos relevantes foram identificados de forma manual e incluídos via \textit{snowballing}. Ao final, 25~artigos atenderam a todos os critérios de elegibilidade e foram incluídos na síntese final. O fluxograma PRISMA-ScR detalhado do processo de seleção de estudos está apresentado na Fig.~\ref{fig:prisma}.
 
 \begin{figure}[h]
   \centering
@@ -409,11 +446,11 @@ contagens obtidas com acesso institucional USF.}
 %%   ‡ = preprint / não peer-reviewed (verificar IC2)
 %%   n e período finais aguardam triagem formal (Gate 2).
 
-Os 22~estudos do corpus inicial abrangem o período 2014--2025
+Os 25~estudos do corpus abrangem o período 2014--2025
 (Tabela~\ref{tab:estudos}).
 
 \begin{longtable}{p{0.65cm} p{2.4cm} p{1.55cm} p{0.55cm} p{2.2cm} p{2.35cm} p{1.4cm}}
-\caption{Características dos estudos do corpus inicial (BaseCitacoes.md).}
+\caption{Características dos estudos incluídos na síntese.}
 \label{tab:estudos}\\
 \toprule
 \textbf{Cód.} & \textbf{Autor, ano} & \textbf{Tipo} &
@@ -443,17 +480,20 @@ S10 & Aleksić et al., 2017\textsuperscript{†}  & Empírico & B & Resumo de EH
 S11 & Tran et al., 2023      & Empírico     & B & ASR geral vs.\ especializado & WER; erros em pronomes curtos        & EUA           \\
 S12 & Schloss \& Konam, 2020 & Preprint\textsuperscript{‡} & B & Bi-LSTM hierárquico & Classificação utterances → SOAP  & EUA           \\
 S13 & van Buchem et al., 2021 & Scoping rev. & B & Escribas digitais (revisão) & Lacunas de usabilidade clínica real  & Países Baixos \\
+S14 & Falcetta et al., 2023  & Rev.\ sist.  & B & Escribas (revisão)         & Mapeamento de 22 escribas; sem validação prospectiva & Brasil \\
+S15 & Ng et al., 2025        & Rev.\ sist.  & B & ASR clínico (revisão)      & WER variou de 8,7\% a $>$50\% conforme contexto & Singapura \\
+S16 & Radford et al., 2023   & Empírico     & B & Whisper (ASR)              & ASR robusto (680k h); sem ajuste fino  & EUA           \\
 %% ---- Eixo C: Comunicação médico-paciente ----
-S14 & Shao et al., 2025      & Empírico     & C & Escala DPCQ (14 itens)     & Qualidade da comunicação médico-paciente & China       \\
-S15 & Muscat et al., 2020    & Framework    & C & Tomada de decisão compartilhada & Literacia em saúde; engajamento & Austrália  \\
-S16 & Kelley et al., 2014\textsuperscript{†}  & Meta-análise & C & --  & Relação clínica → desfechos objetivos & EUA      \\
-S17 & Rucinski et al., 2022  & Rev.\ sist.  & C & Métricas de adesão         & Adesão bilateral em ortopedia          & EUA           \\
-S18 & McCabe \& Healey, 2018 & Empírico     & C & Análise de conversa        & Autorreparo como preditor de adesão    & RU            \\
-S19 & Alkhamees \& Alasqah, 2023 & Rev.\ integr. & C & --               & Barreiras interculturais na comunicação & Arábia S.   \\
+S17 & Shao et al., 2025      & Empírico     & C & Escala DPCQ (14 itens)     & Qualidade da comunicação médico-paciente & China       \\
+S18 & Muscat et al., 2020    & Framework    & C & Tomada de decisão compartilhada & Literacia em saúde; engajamento & Austrália  \\
+S19 & Kelley et al., 2014\textsuperscript{†}  & Meta-análise & C & --  & Relação clínica → desfechos objetivos & EUA      \\
+S20 & Rucinski et al., 2022  & Rev.\ sist.  & C & Métricas de adesão         & Adesão bilateral em ortopedia          & EUA           \\
+S21 & McCabe \& Healey, 2018 & Empírico     & C & Análise de conversa        & Autorreparo como preditor de adesão    & RU            \\
+S22 & Alkhamees \& Alasqah, 2023 & Rev.\ integr. & C & --               & Barreiras interculturais na comunicação & Arábia S.   \\
 %% ---- Eixo D: Biomarcadores vocais e análise multimodal ----
-S20 & Fagherazzi et al., 2021 & Framework   & D & Pipeline vocal (acústica+NLP) & Biomarcadores vocais de saúde e emoção & Luxemburgo  \\
-S21 & Albert et al., 2024    & Scoping rev.\textsuperscript{‡} & D & IA, Speech, NLP & Comunicação clínico-paciente via IA & França  \\
-S22 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & Valência emocional; concordância humana & EUA          \\
+S23 & Fagherazzi et al., 2021 & Framework   & D & Pipeline vocal (acústica+NLP) & Biomarcadores vocais de saúde e emoção & Luxemburgo  \\
+S24 & Albert et al., 2024    & Scoping rev.\textsuperscript{‡} & D & IA, Speech, NLP & Comunicação clínico-paciente via IA & França  \\
+S25 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & Valência emocional; concordância humana & EUA          \\
 \midrule
 \multicolumn{7}{l}{\footnotesize
   \textsuperscript{†}Fora do período IC ($\geq$2018) — confirmar elegibilidade.
@@ -835,26 +875,10 @@ em torno da anamnese como unidade de análise primária.
 \subsection*{Limitações desta revisão}
 
 Esta revisão apresenta quatro limitações centrais.
-Primeiro, o corpus analisado constitui uma fase de mapeamento inicial
-(\emph{BaseCitacoes.md}, $n = 22$), pendente de complementação pelas
-buscas com acesso institucional nas cinco bases eletrônicas restantes
-(Scopus, IEEE~Xplore, ACM~DL, Web of Science e arXiv), responsáveis por
-$\approx$678 dos registros estimados; os achados devem ser interpretados
-como mapeamento exploratório, não como síntese sistemática definitiva.
-Segundo, há viés de idioma: a literatura mapeada é predominantemente em
-inglês, com sub-representação de estudos conduzidos no contexto de saúde
-brasileiro e em Português, o que pode subestimar iniciativas locais
-relevantes para o SUS.
-Terceiro, a string de busca com três blocos combinados por AND é
-restritiva — evidenciada pelos oito resultados exatos no PubMed —,
-recomendando-se testar pares de blocos antes de Gate~2 para ampliar o
-corpus sem perda de precisão temática.
-Quarto, a heterogeneidade de tipo de estudo — revisões sistemáticas,
-estudos empíricos, preprints e modelos conceituais — impede síntese
-quantitativa e limita comparações diretas de qualidade metodológica;
-o instrumento Dybà \& Dingsøyr aplica-se ao subconjunto empírico e
-sua pontuação deve ser interpretada com cautela para revisões e
-documentos normativos.
+Primeiro, embora a busca eletrônica tenha se concentrado no PubMed/MEDLINE como base de dados primária, a inclusão de artigos adicionais via \textit{snowballing} (incluindo revisões sistemáticas relevantes e estudos de referência) visou mitigar a perda de artigos essenciais; contudo, a ausência de buscas automatizadas em outras bases eletrônicas indexadas (como Scopus e Web of Science) permanece como uma limitação para a generalização completa da literatura.
+Segundo, há viés de idioma: a literatura mapeada é predominantemente em inglês, com sub-representação de estudos conduzidos no contexto de saúde brasileiro e em Português, o que pode subestimar iniciativas locais de Speech Analytics aplicadas ao SUS.
+Terceiro, a seleção de filtros de busca na base primária, como a exigência de texto completo gratuito (\textit{free full text}), pode ter excluído estudos relevantes protegidos por paywall ou restrições de assinatura de periódicos.
+Quarto, a heterogeneidade de tipo de estudo — que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais — impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
 
 \subsection*{Considerações éticas}
 

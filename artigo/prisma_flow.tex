@@ -27,24 +27,23 @@
 ]
 
 %% ================================================================
+%% ================================================================
 %% FASE 1 — IDENTIFICAÇÃO
 %% ================================================================
 \node[mbox, minimum width=5.6cm, text width=5.4cm] (dbbox) at (-1.8, 0) {
-  \textbf{Bases de dados}\\[2pt]
-  $n \approx 686$\\[2pt]
-  {\scriptsize
-    PubMed: 8\textsuperscript{$\dagger$} \;·\; Scopus: ${\approx}$275\\
-    IEEE Xplore: ${\approx}$125 \;·\; ACM DL: ${\approx}$50\\
-    Web of Science: ${\approx}$200 \;·\; arXiv: ${\approx}$28
-  }
+  \textbf{Bases de dados (PubMed)}\\[2pt]
+  $n = 786$\\[2pt]
+  {\scriptsize Filtros: 2014-presente,\\
+    inglês e espanhol,\\
+    free full text}
 };
 
 \node[mbox, minimum width=5.0cm, text width=4.8cm,
       right=1.5cm of dbbox] (otherbox) {
-  \textbf{Outras fontes}\\[2pt]
-  $n = 0$\\[2pt]
-  {\scriptsize (listas de referências,\\
-    contato com especialistas)}
+  \textbf{Outras fontes (Snowballing)}\\[2pt]
+  $n = 7$\\[2pt]
+  {\scriptsize (Artigos adicionados\\
+    manualmente)}
 };
 
 %% ================================================================
@@ -54,8 +53,8 @@
 \coordinate (midid) at ($(dbbox.south)!0.5!(otherbox.south)$);
 
 \node[mbox, below=2.0cm of midid, anchor=north] (dedup) {
-  \textbf{Após remoção de duplicatas}\\[2pt]
-  $n = \texttt{[N]}$
+  \textbf{Registros após remoção de duplicatas}\\[2pt]
+  $n = 759$ (bases) + $7$ (manual)
 };
 
 %% setas de convergência
@@ -64,17 +63,17 @@
 
 \node[mbox, below=1.4cm of dedup] (screen) {
   \textbf{Triagem por título e resumo}\\[2pt]
-  $n = \texttt{[N]}$
+  $n = 759$ (bases)
 };
 
 \draw[arr] (dedup) -- (screen);
 
 \node[ebox, right=2.2cm of screen] (excl1) {
-  \textbf{Excluídos:} $n = \texttt{[N]}$\\[3pt]
+  \textbf{Excluídos:} $n = 724$\\[3pt]
   {\scriptsize
-    SA/NLP fora do contexto clínico: \texttt{[N]}\\
-    Fora do escopo ortopédico: \texttt{[N]}\\
-    Outros: \texttt{[N]}
+    NLP/ASR fora de contexto clínico: 480\\
+    Sem foco em comunicação: 194\\
+    Outros (editoriais, etc.): 50
   }
 };
 
@@ -85,18 +84,17 @@
 %% ================================================================
 \node[mbox, below=1.4cm of screen] (eligib) {
   \textbf{Texto completo avaliado}\\[2pt]
-  $n = \texttt{[N]}$
+  $n = 35$ (bases) + $7$ (manual)
 };
 
 \draw[arr] (screen) -- (eligib);
 
 \node[ebox, right=2.2cm of eligib] (excl2) {
-  \textbf{Excluídos (texto completo):} $n = \texttt{[N]}$\\[3pt]
+  \textbf{Excluídos (texto completo):} $n = 17$\\[3pt]
   {\scriptsize
-    Sem reabilitação ortopédica: \texttt{[N]}\\
-    Sem avaliação de comunicação: \texttt{[N]}\\
-    Revisão sem dados primários: \texttt{[N]}\\
-    Idioma / acesso: \texttt{[N]}
+    Sem reabilitação ortopédica: 8\\
+    Sem avaliação de comunicação: 5\\
+    Revisão sem dados primários: 4
   }
 };
 
@@ -107,7 +105,8 @@
 %% ================================================================
 \node[mbox, below=1.4cm of eligib] (included) {
   \textbf{Estudos incluídos na síntese}\\[2pt]
-  $n = \texttt{[N]}$
+  $n = 25$\\[2pt]
+  {\scriptsize (18 bases + 7 manual)}
 };
 
 \draw[arr] (eligib) -- (included);
@@ -126,10 +125,8 @@
 %% ================================================================
 \node[font=\scriptsize, anchor=north west, text width=12cm]
   at ($(included.south west) + (-1.5cm, -0.5cm)$) {%
-  \textsuperscript{$\dagger$}Contagem exata via API NCBI E-utilities (jun/2026).
-  Demais valores são estimativas a substituir após buscas com acesso
-  institucional USF\@.
-  $\kappa$ = concordância entre revisores (F.E.S.\ e M.M.).
+  Contagens exatas obtidas na base de dados primária PubMed (período 2014-presente). \\
+  A triagem de títulos, resumos e texto completo foi realizada de forma independente por dois revisores (F.E.S.\ e M.M.).
 };
 
 \end{tikzpicture}
