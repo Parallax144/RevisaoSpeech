@@ -23,6 +23,8 @@
 \usepackage[brazil]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\DeclareSymbolFont{CMSYfix}{OMS}{cmsy}{m}{n}
+\DeclareMathSymbol{\approx}{\mathrel}{CMSYfix}{"19}
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -160,9 +162,9 @@ Os estudos evidenciam avanços consolidados em NLP clínico (modelos baseados
 em \textit{transformers}, BERT lidera o Reconhecimento de Entidades Nomeadas)
 e em transcrição automatizada (WER $\approx$9\% alcançável com
 Whisper/PyAnnote). A comunicação centrada no paciente demonstra impacto
-mensurável em desfechos objetivos de saúde. Marcadores comunicacionais —
-autorreparo, engajamento, suporte emocional e indicadores de barreira —
-são identificados como preditores de adesão. A análise multimodal
+mensurável em desfechos objetivos de saúde. Marcadores comunicacionais autorreparo,
+engajamento, suporte emocional e indicadores de barreira são identificados
+como preditores de adesão. A análise multimodal
 (acústica\,+\,semântica) permanece em estado inicial; a maioria das
 abordagens foca em automação documental, negligenciando a interação clínica
 como objeto de análise em si.
@@ -209,18 +211,18 @@ Digital scribe
 
 A comunicação clínica constitui uma das mais ricas e menos exploradas fontes
 de dados em saúde. Em sistemas públicos de saúde, anamneses e orientações
-terapêuticas — interações verbais com estrutura propedêutica definida
-pela semiologia clínica \citep{Porto2019} — ocorrem predominantemente
+terapêuticas, interações verbais com estrutura propedêutica definida
+pela semiologia clínica \citep{Porto2019}, ocorrem predominantemente
 como trocas não estruturadas do ponto de vista analítico, raramente
 convertidas em dados mensuráveis \citep{Wang2018,Koleck2019}.
 
 A qualidade da interação profissional-paciente demonstra impacto mensurável
 sobre a adesão e os desfechos clínicos objetivos \citep{Kelley2014}. Barreiras
-comunicacionais —incluindo lacunas de literacia em saúde, expectativas
-desalinhadas e padrões de miscomunicação —associam-se à baixa adesão
+comunicacionais, incluindo lacunas de literacia em saúde, expectativas
+desalinhadas e padrões de miscomunicação, associam-se à baixa adesão
 terapêutica e pior prognóstico \citep{McCabe2018,Alkhamees2023}.
 
-O \textit{Speech Analytics} — análise computacional da linguagem falada —
+O \textit{Speech Analytics}, análise computacional da linguagem falada,
 oferece um caminho para extrair indicadores estruturados e mensuráveis
 dessas interações. Avanços recentes em ASR, especialmente modelos baseados
 em \textit{transformers} como o Whisper \citep{Radford2023}, combinados a
@@ -245,8 +247,8 @@ pós-LLM. Albert et al. \citeyearpar{Albert2024} realizaram uma revisão de
 escopo sobre métodos de IA, fala e NLP para avaliação da comunicação
 clínico-paciente. Nenhuma dessas revisões, contudo, concentra-se na
 operacionalização da interação clínica como conjunto de \textbf{variáveis
-mensuráveis derivadas da fala} — especialmente marcadores comunicacionais
-e comportamentais (autorreparo, engajamento, barreiras, literacia) — como
+mensuráveis derivadas da fala}, especialmente marcadores comunicacionais
+e comportamentais (autorreparo, engajamento, barreiras, literacia), como
 objeto de análise em si, independente da documentação ou do diagnóstico.
 É precisamente essa lacuna que a presente revisão se propõe a mapear.
 
@@ -695,9 +697,9 @@ potencialmente identificáveis por análise automatizada da interação.
 
 A propedêutica clínica sistematizada por \citet{Porto2019} organiza
 a anamnese como sequência estruturada de elementos de inquirição,
-definindo os caracteres propedêuticos da queixa — localização,
+definindo os caracteres propedêuticos da queixa: localização,
 intensidade, qualidade, irradiação, fatores desencadeantes e de
-alívio, duração e evolução — como alvos semânticos obrigatórios do
+alívio, duração e evolução, como alvos semânticos obrigatórios do
 raciocínio diagnóstico. Essa estrutura constitui a gramática clínica
 da interação verbal: o conjunto de informações que o profissional
 deve elicitar e o paciente deve verbalizar para que a anamnese
@@ -737,8 +739,8 @@ comunicação clínica, estendendo a análise além do conteúdo semântico
 do texto transcrito para os sinais vocais que acompanham a fala.
 
 \citet{Fagherazzi2021} descrevem o \textit{pipeline} para captura de
-características linguísticas e acústicas — prosódia, qualidade vocal
-e ritmo — que indicam estados de saúde e estados emocionais do
+características linguísticas e acústicas, prosódia, qualidade vocal
+e ritmo, que indicam estados de saúde e estados emocionais do
 locutor. Os autores demonstram que sinais derivados diretamente da
 voz podem funcionar como biomarcadores clínicos, fundamentando a
 ideia de que a fala do paciente e do profissional, além de seu
@@ -760,8 +762,8 @@ ressaltam a carência de estudos sobre linguagem não verbal, tons de
 voz e silêncios. A maioria das abordagens existentes foca em
 transcrição e análise semântica, negligenciando a camada
 acústico-prosódica como objeto de análise independente. Silêncios,
-pausas e modulações de voz — componentes terapêuticos e relacionais
-da anamnese — permanecem sem método consolidado de extração e
+pausas e modulações de voz, componentes terapêuticos e relacionais
+da anamnese, permanecem sem método consolidado de extração e
 interpretação automática.
 
 Em conjunto, os estudos do Eixo~D revelam um campo em estado inicial
@@ -773,8 +775,8 @@ aplicada à comunicação clínica permanece incipiente
 \citep{Albert2024}. Essa lacuna adquire contorno clínico preciso
 quando confrontada com a propedêutica de \citet{Porto2019}: se os
 caracteres propedêuticos da queixa têm correlatos acústico-prosódicos
-na fala — tensão vocal para dor, hesitação e pausas para dúvida,
-desengajamento prosódico para barreiras — nenhum estudo do corpus
+na fala (tensão vocal para dor, hesitação e pausas para dúvida,
+desengajamento prosódico para barreiras), nenhum estudo do corpus
 orienta a extração de biomarcadores vocais pela gramática clínica da
 anamnese. A integração entre o modelo propedêutico e o
 \textit{pipeline} acústico-semântico representa a fronteira
@@ -825,7 +827,7 @@ Nenhum estudo do corpus operacionaliza a anamnese como evento clínico
 estruturado para extração automática de marcadores comunicacionais e
 comportamentais derivados da fala.
 A distinção é crítica: a maioria dos estudos trata a interação clínica como
-\emph{meio} — para produzir documentação ou detectar patologias — não como
+\emph{meio}, para produzir documentação ou detectar patologias, não como
 \emph{objeto} de análise comunicacional.
 Krishna et al.\ \citeyearpar{Krishna2021} e
 Schloss \& Konam \citeyearpar{Schloss2020} classificam enunciados pela
@@ -835,7 +837,7 @@ conversas geradas por IA generativa, não o comportamento comunicativo do
 profissional de saúde em contexto real.
 Shao et al.\ \citeyearpar{Shao2025} e McCabe \& Healey
 \citeyearpar{McCabe2018} descrevem dimensões relevantes de qualidade
-comunicativa — clareza, empatia, barreiras à compreensão — mas as
+comunicativa, clareza, empatia, barreiras à compreensão, mas as
 operacionalizam por instrumentos de autorrelato, não por marcadores
 automaticamente extraídos da fala.
 
@@ -845,8 +847,8 @@ da comunicação clínica, mas confirma a escassez de estudos que vinculem
 marcadores acústico-prosódicos a desfechos comunicacionais mensuráveis,
 especialmente em contextos de reabilitação.
 Porto \citeyearpar{Porto2019} oferece um referencial semiológico
-preciso para a anamnese ortopédica — incluindo hierarquia de sintomas,
-cronologia e exploração funcional — que poderia orientar a definição
+preciso para a anamnese ortopédica, incluindo hierarquia de sintomas,
+cronologia e exploração funcional, que poderia orientar a definição
 operacional desses marcadores; no entanto, nenhum estudo recuperado nesta
 revisão integra esse referencial com análise automatizada de fala.
 
@@ -875,7 +877,7 @@ Esta revisão apresenta quatro limitações centrais.
 Primeiro, embora a busca eletrônica tenha se concentrado no PubMed/MEDLINE como base de dados primária, a inclusão de artigos adicionais via \textit{snowballing} (incluindo revisões sistemáticas relevantes e estudos de referência) visou mitigar a perda de artigos essenciais; contudo, a ausência de buscas automatizadas em outras bases eletrônicas indexadas (como Scopus e Web of Science) permanece como uma limitação para a generalização completa da literatura.
 Segundo, há viés de idioma: a literatura mapeada é predominantemente em inglês, com sub-representação de estudos conduzidos no contexto de saúde brasileiro e em Português, o que pode subestimar iniciativas locais de Speech Analytics aplicadas ao SUS.
 Terceiro, a seleção de filtros de busca na base primária, como a exigência de texto completo gratuito (\textit{free full text}), pode ter excluído estudos relevantes protegidos por paywall ou restrições de assinatura de periódicos.
-Quarto, a heterogeneidade de tipo de estudo — que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais — impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
+Quarto, a heterogeneidade de tipo de estudo, que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais, impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
 
 \subsection*{Considerações éticas}
 
@@ -899,8 +901,8 @@ demonstram que o processamento \emph{on-premise} é viável em ambiente
 hospitalar e representa a solução mais adequada à privacidade, eliminando
 o envio de dados sensíveis a servidores externos.
 Essa abordagem alinha-se aos cinco princípios para IA responsável
-propostos por Floridi et al.\ \citeyearpar{Floridi2018} — beneficência,
-não-maleficência, autonomia, justiça e explicabilidade — e às
+propostos por Floridi et al.\ \citeyearpar{Floridi2018} (beneficência,
+não-maleficência, autonomia, justiça e explicabilidade), e às
 recomendações internacionais da OCDE \citep{OECD2024} e da
 Organização Mundial da Saúde \citep{WHO2024} para governança ética de
 modelos de IA de grande escala em saúde.
@@ -936,7 +938,7 @@ a adesão terapêutica e os desfechos de saúde \citep{Kelley2014,Rucinski2022}.
 
 No entanto, a revisão confirma uma lacuna consistente e específica:
 poucos estudos operacionalizam interações clínicas como fonte de
-variáveis mensuráveis derivadas da fala — especialmente marcadores
+variáveis mensuráveis derivadas da fala, especialmente marcadores
 comunicacionais e comportamentais (expressão de dúvida, dor, engajamento,
 barreiras à compreensão) extraídos automaticamente durante a anamnese
 como evento estruturado.
