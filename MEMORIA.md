@@ -72,17 +72,17 @@ A revisão sistemática deve estabelecer o estado da arte e confirmar a lacuna q
 
 | Etapa | n | Status |
 |-------|---|--------|
-| Registros identificados (bases eletrônicas) | ≈686 (PubMed=8 exato; demais estimados) | Parcial — ver `contexto/busca.md` |
-| Registros de fontes adicionais (BaseCitacoes.md) | 22 | Corpus inicial disponível |
-| Após remoção de duplicatas | [N] | Aguarda buscas institucionais (Murilo) |
-| Triagem por título/resumo | [N] | Aguarda Gate 2 |
-| Excluídos na triagem | [N] | — |
-| Leitura completa | [N] | — |
-| Excluídos após leitura completa | [N] | — |
-| Incluídos na síntese qualitativa | [N] | — |
-| Incluídos na síntese quantitativa | [N] | — |
+| Registros identificados (bases eletrônicas) | 786 | Final — PubMed/MEDLINE |
+| Registros de fontes adicionais (Snowballing) | 6 | Final — Rastreamento manual |
+| Após remoção de duplicatas | 759 | Final |
+| Triagem por título/resumo | 759 | Final |
+| Excluídos na triagem | 724 | Final |
+| Leitura completa (Texto completo avaliado) | 41 | Final (35 bases + 6 snowballing) |
+| Excluídos após leitura completa | 17 | Final (bases) |
+| Incluídos na síntese qualitativa | 24 | Final (18 bases + 6 snowballing) |
+| Incluídos na síntese quantitativa | 0 | Não aplicável (síntese narrativa) |
 
-**Fonte de verdade para contagens:** `contexto/busca.md` — atualizar lá primeiro, depois aqui.
+**Fonte de verdade para contagens:** `contexto/busca.md` — atualizado.
 
 ---
 

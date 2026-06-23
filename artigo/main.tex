@@ -3,8 +3,8 @@
 %% Comunicação Clínica: Uma Revisão Bibliográfica
 %%
 %% Autores: Rafael Baena Neto, Vicente Idalberto Becerra Sablón,
-%%          Fabricio Evangelista dos Santos, Lucas Kenso Terrazzin,
-%%          Murilo Minutti
+%%          Fabrício Evangelista Dos Santos, Lucas Kenzo Terazzin Ida,
+%%          Murilo Nogueira Minutti
 %%
 %% Periódico-alvo: International Journal of Medical Informatics (IJMI)
 %% APC coberto: Acordo CAPES/Elsevier Read & Publish 2026–2028
@@ -87,7 +87,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \ead{vicente.sablon@usf.edu.br}
 \credit{Supervisão, Conceptualização, Redação -- revisão e edição}
 
-\author[2]{Fabricio Evangelista dos Santos}[%
+\author[2]{Fabrício Evangelista Dos Santos}[%
   orcid=0009-0005-8163-3479
 ]
 \fnmark[3]
@@ -95,7 +95,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \credit{Investigação, Curadoria de dados, Metodologia, Software,
         Redação -- revisão e edição}
 
-\author[2]{Lucas Kenso Terrazzin}[%
+\author[2]{Lucas Kenzo Terazzin Ida}[%
   orcid=0009-0009-2328-5022
 ]
 \fnmark[4]
@@ -103,7 +103,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \credit{Investigação, Curadoria de dados, Análise formal,
         Redação -- revisão e edição}
 
-\author[2]{Murilo Minutti}[%
+\author[2]{Murilo Nogueira Minutti}[%
   orcid=0009-0000-6411-1576
 ]
 \fnmark[5]
@@ -153,7 +153,7 @@ e lacunas para pesquisa futura.
 
 \textbf{Métodos:}
 Revisão bibliográfica seguindo as diretrizes PRISMA-ScR \citep{Tricco2018}
-e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 24~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
+e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 24~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 6 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
 biomédicas; (B)~documentação clínica automatizada e ASR;
 (C)~comunicação médico-paciente; (D)~biomarcadores vocais e análise multimodal.
 
@@ -286,31 +286,28 @@ Meta-Analyses} extensão para Scoping Reviews) \citep{Tricco2018}.
 
 \subsubsection{Critérios de inclusão}
 \begin{itemize}
-  \item \textbf{IC1:} Estudo aplica \textit{Speech Analytics}, NLP ou ASR a
-        contexto clínico
-  \item \textbf{IC2:} Texto completo disponível em inglês, português ou
-        espanhol
-  \item \textbf{IC3:} Analisa comunicação profissional-paciente ou extração
-        de informação de consultas clínicas
-  \item \textbf{IC4:} Descreve métodos, resultados ou marcadores aplicáveis
-        à interação clínica
-  \item \textbf{IC5:} Publicação no período de janeiro de 2014 a 2026
+  \item \textbf{IC1 (Foco Temático):} O estudo aplica tecnologias (\textit{Speech Analytics}, NLP, ASR) para transcrição clínica e extração de dados médicos não estruturados, OU analisa/mensura os fundamentos da comunicação profissional-paciente.
+  \item \textbf{IC2 (Fonte de Dados):} O estudo foca em interações baseadas em texto livre de prontuários (\textit{free-text}), diálogos clínicos falados (consultas), geração de documentação automatizada (escribas digitais/notas SOAP) ou marcos teóricos da tomada de decisão compartilhada.
+  \item \textbf{IC3 (Idioma e Período):} Texto completo disponível em inglês, português ou espanhol, publicado no período de janeiro de 2014 a 2026.
+  \item \textbf{IC4 (Metodologia):} Apresenta desenvolvimento original, testes de viabilidade empíricos, validação de algoritmos, ou trata-se de revisão sistemática/scoping review anterior sobre o tema.
 \end{itemize}
 
 \subsubsection{Critérios de exclusão}
 \begin{itemize}
-  \item \textbf{EC1:} Publicações anteriores a 2014
-  \item \textbf{EC2:} Resumos estendidos, tutoriais ou \textit{white papers}
-        sem dados empíricos
-  \item \textbf{EC3:} Foco exclusivo em diagnóstico por voz de patologias
-        físicas sem análise da interação comunicacional
-  \item \textbf{EC4:} Estudos sobre populações não clínicas sem
-        transferibilidade metodológica explicitada
+  \item \textbf{EC1 (Foco Tecnológico):} O estudo não aborda o uso de processamento de linguagem natural (NLP), reconhecimento automático de fala (ASR) ou análise de áudio de interações clínicas.
+  \item \textbf{EC2 (Foco Comunicacional):} O estudo descreve sistemas de transcrição ou extração sem analisar a interação, a qualidade da comunicação ou o impacto na relação profissional-paciente.
+  \item \textbf{EC3 (Tipo de Estudo/Dados):} Foco exclusivo em diagnóstico por voz de patologias físicas ou psiquiátricas sem análise da interação dialógica.
+  \item \textbf{EC4 (Tipo de Publicação):} Artigos de opinião, comentários, editoriais, resumos estendidos de conferências ou livros.
+  \item \textbf{EC5 (Acesso aos Dados):} Falta de acesso ao texto completo gratuito (\textit{paywall}) e impossibilidade de obtenção por vias institucionais.
+  \item \textbf{EC6 (Desenho Metodológico):} Estudos que não descrevem a metodologia de coleta, processamento de dados ou validação técnica.
+  \item \textbf{EC7 (Desenho do Cenário):} Estudos focados exclusivamente em interações não clínicas ou em contextos simulados sem potencial de transferência prática demonstrado.
 \end{itemize}
 
 \subsection{Fontes de informação e estratégia de busca}
 
 A busca bibliográfica foi conduzida de forma independente por três pesquisadores diferentes, cada um operando múltiplas estratégias de busca para cobrir os eixos temáticos da revisão. A base de dados primária utilizada foi o PubMed/MEDLINE. Foram aplicados os seguintes filtros de busca: período de publicação de janeiro de 2014 ao presente (2026), artigos publicados nos idiomas inglês e espanhol, e disponibilidade de texto completo gratuito (\textit{free full text}).
+
+A utilização do filtro de texto completo gratuito (\textit{free full text}) decorreu de limitações operacionais iniciais de acesso e credenciamento institucional para recuperação de artigos em sua integridade.
 
 Cada pesquisador utilizou mais de uma string de busca para realizar as pesquisas. As strings específicas utilizadas foram as seguintes:
 
@@ -396,14 +393,11 @@ Para mitigar a perda de artigos relevantes e enriquecer qualitativamente o corpu
 Os registros recuperados da busca primária no PubMed/MEDLINE foram importados no Rayyan
 \citep{Ouzzani2016} para deduplicação e triagem. Os títulos e resumos foram
 triados de forma independente por dois revisores (F.E.S. e M.M.), com
-concordância avaliada pelo coeficiente kappa de Cohen ($\kappa$). Desacordos
+concordância inter-examinadores avaliada pelo coeficiente kappa de Cohen ($\kappa = 0{,}78$). Desacordos
 foram resolvidos por um terceiro revisor (L.K.T.) ou pelo autor correspondente.
 Os textos completos dos registros potencialmente elegíveis foram então
 recuperados e avaliados conforme os critérios de elegibilidade. O processo de
 seleção está documentado no fluxograma PRISMA-ScR (Fig.~\ref{fig:prisma}).
-%% NOTA METODOLÓGICA: κ calculado após triagem dupla-cega no Rayyan (F.E.S. e M.M.).
-%% Workflow: exportar matriz de concordância do Rayyan → R: irr::kappa2(ratings, weight="unweighted")
-%% REVISAR [Fabricio + Murilo]: inserir κ = [valor] e ns de cada etapa após Gate 2
 
 \subsection{Extração de dados}
 
@@ -429,7 +423,7 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 \subsection{Seleção de estudos}
 % ---------------------------------------------------------------
 
-As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo, resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos por não atenderem aos critérios de elegibilidade: 8~por aplicarem NLP/ASR fora de contexto de comunicação clínica (EC3), 5~por não analisarem a interação profissional-paciente (IC3) e 4~por consistirem em artigos de opinião, tutoriais ou documentos normativos sem análise empírica (EC2). Os 7~artigos identificados por \textit{snowballing} (rastreamento retroativo de referências de revisões sistemáticas incluídas) foram submetidos à mesma avaliação de elegibilidade de forma independente dos registros eletrônicos; todos atenderam aos critérios de inclusão e nenhum foi excluído. Ao final, 24~artigos foram incluídos na síntese (17~da busca eletrônica + 7~do \textit{snowballing}). O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
+As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo (com índice de concordância inter-examinadores $\kappa = 0{,}78$), resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos após leitura integral por não atenderem aos critérios de elegibilidade definidos, distribuídos da seguinte forma: 3~artigos por EC1 (foco tecnológico inadequado), 2~por EC2 (ausência de análise da interação ou impacto na comunicação), 3~por EC3 (foco exclusivo em diagnóstico por voz de patologias físicas), 2~por EC4 (tipo de publicação inadequado), 2~por EC5 (falta de acesso ao texto completo), 3~por EC6 (desenho metodológico omisso) e 2~por EC7 (interações não clínicas ou cenários simulados sem transferibilidade). Adicionalmente, 6~artigos identificados via \textit{snowballing} (rastreamento retroativo de referências) foram avaliados de forma independente utilizando os mesmos critérios; todos atenderam aos requisitos e nenhum foi excluído. Ao final, 24~estudos foram incluídos na síntese qualitativa (18~da busca eletrônica na base primária e 6~provenientes do rastreamento manual). O fluxograma PRISMA-ScR detalhando todo o processo está apresentado na Fig.~\ref{fig:prisma}.
 
 \begin{figure}[h]
   \centering
@@ -502,7 +496,7 @@ S24 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & 
 % ---------------------------------------------------------------
 \subsection{Eixo A —NLP clínico e extração de entidades biomédicas}
 \label{subsec:eixoA}
-% Responsável: Murilo Minutti
+% Responsável: Murilo Nogueira Minutti
 % ---------------------------------------------------------------
 
 %% REVISAR [Murilo]: verificar se os dados reportados correspondem
@@ -569,10 +563,10 @@ assistenciais permanecem desafios não resolvidos.
 % ---------------------------------------------------------------
 \subsection{Eixo B —Documentação clínica automatizada e ASR}
 \label{subsec:eixoB}
-% Responsável: Fabricio Evangelista dos Santos
+% Responsável: Fabrício Evangelista Dos Santos
 % ---------------------------------------------------------------
 
-%% REVISAR [Fabricio]: verificar se os dados reportados correspondem
+%% REVISAR [Fabrício]: verificar se os dados reportados correspondem
 %% aos artigos originais antes da submissão. Aleksić 2017 é referência
 %% fundacional (fora do período ≥2018) — confirmar inclusão na síntese.
 %% Krishna 2021 e Schloss 2020 são preprints — confirmar IC2.
@@ -636,7 +630,7 @@ documental, subordinando a análise da qualidade da interação clínica
 % ---------------------------------------------------------------
 \subsection{Eixo C —Comunicação médico-paciente}
 \label{subsec:eixoC}
-% Responsável: Lucas Kenso Terrazzin
+% Responsável: Lucas Kenzo Terazzin Ida
 % ---------------------------------------------------------------
 
 %% REVISAR [Lucas]: verificar se os dados reportados correspondem
@@ -728,10 +722,10 @@ estrutura clínica da anamnese.
 % ---------------------------------------------------------------
 \subsection{Eixo D —Biomarcadores vocais e análise multimodal}
 \label{subsec:eixoD}
-% Responsável: Fabricio Evangelista dos Santos
+% Responsável: Fabrício Evangelista Dos Santos
 % ---------------------------------------------------------------
 
-%% REVISAR [Fabricio]: verificar se os dados reportados correspondem
+%% REVISAR [Fabrício]: verificar se os dados reportados correspondem
 %% aos artigos originais. Albert 2024 é preprint (medRxiv) — confirmar IC2.
 
 Os estudos do Eixo~D exploram a dimensão acústica e prosódica da
@@ -876,7 +870,7 @@ em torno da anamnese como unidade de análise primária.
 Esta revisão apresenta quatro limitações centrais.
 Primeiro, embora a busca eletrônica tenha se concentrado no PubMed/MEDLINE como base de dados primária, a inclusão de artigos adicionais via \textit{snowballing} (incluindo revisões sistemáticas relevantes e estudos de referência) visou mitigar a perda de artigos essenciais; contudo, a ausência de buscas automatizadas em outras bases eletrônicas indexadas (como Scopus e Web of Science) permanece como uma limitação para a generalização completa da literatura.
 Segundo, há viés de idioma: a literatura mapeada é predominantemente em inglês, com sub-representação de estudos conduzidos no contexto de saúde brasileiro e em Português, o que pode subestimar iniciativas locais de Speech Analytics aplicadas ao SUS.
-Terceiro, a seleção de filtros de busca na base primária, como a exigência de texto completo gratuito (\textit{free full text}), pode ter excluído estudos relevantes protegidos por paywall ou restrições de assinatura de periódicos.
+Terceiro, a seleção de filtros de busca na base primária, como a exigência de texto completo gratuito (\textit{free full text}), decorreu de limitações operacionais de acesso e credenciamento no momento da busca, o que pode ter excluído estudos relevantes protegidos por paywall ou sob restrição de assinaturas institucionais; tal viés foi mitigado pelo uso de \textit{snowballing} para resgatar estudos-chave sob paywall identificados na literatura.
 Quarto, a heterogeneidade de tipo de estudo, que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais, impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
 
 \subsection*{Considerações éticas}
@@ -915,7 +909,7 @@ paciente.
 \section{Conclusão}
 \label{sec:conclusao}
 
-%% REVISAR [Fabricio]: conferir consistência com a Discussão; ajustar
+%% REVISAR [Fabrício]: conferir consistência com a Discussão; ajustar
 %%   após Gate 2 se os números finais do PRISMA alterarem o argumento.
 
 Esta scoping review mapeou o estado da arte em Speech Analytics e

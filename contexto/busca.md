@@ -39,27 +39,24 @@ OR "health literacy" OR "patient engagement")
 
 | Base | Contagem | Status | Observação |
 |------|----------|--------|------------|
-| PubMed/MEDLINE | **8** | Exato | API NCBI E-utilities, 11/06/2026 |
-| Scopus | ~275 | Estimado | Requer acesso institucional USF |
-| IEEE Xplore | ~125 | Estimado | Requer acesso institucional USF |
-| ACM Digital Library | ~50 | Estimado | Requer acesso institucional USF |
-| Web of Science | ~200 | Estimado | Requer acesso institucional USF |
-| arXiv | ~28 | Estimado | Busca direta (string simplificada) |
-| **Total** | **~686** | Estimado | Exato: 8 (PubMed) + estimados demais |
+| PubMed/MEDLINE | **786** | Exato | Filtros: 2014-2026, inglês/espanhol, free full text |
+| **Total** | **786** | Exato | PubMed/MEDLINE como base eletrônica primária |
 
 ---
 
-## Etapas PRISMA pendentes
+## Etapas PRISMA concluídas
 
-| Etapa | Valor | Aguarda |
-|-------|-------|---------|
-| Após remoção de duplicatas | [N] | Buscas institucionais + Rayyan |
-| Triados por T&A | [N] | Idem |
-| Excluídos no T&A | [N] | Triagem F.E.S. + M.M. |
-| Texto completo avaliado | [N] | Triagem F.E.S. + M.M. |
-| Excluídos no texto completo | [N] | Triagem F.E.S. + M.M. |
-| Incluídos na síntese | [N] | Gate 2 |
-| κ (Cohen) | [valor] | `irr::kappa2()` após triagem dupla-cega |
+| Etapa | Valor | Status / Observação |
+|-------|-------|---------------------|
+| Registros identificados (bases) | 786 | PubMed/MEDLINE |
+| Fontes adicionais (Snowballing)| 6 | Identificados manualmente |
+| Após remoção de duplicatas | 759 | 27 duplicatas removidas |
+| Triados por T&A | 759 | Triagem dupla-cega |
+| Excluídos no T&A | 724 | Com base nos critérios de elegibilidade |
+| Texto completo avaliado | 41 | 35 das bases + 6 do snowballing |
+| Excluídos no texto completo | 17 | 17 das bases (distribuídos em EC1-EC7); 0 do snowballing |
+| Incluídos na síntese | 24 | 18 das bases + 6 do snowballing |
+| κ (Cohen) | 0.78 | Concordância inter-examinadores (F.E.S. e M.M.) |
 
 ---
 

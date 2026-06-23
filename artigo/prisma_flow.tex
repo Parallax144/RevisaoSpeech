@@ -2,8 +2,8 @@
 %% Incluído via \input{prisma_flow} no figure environment de main.tex
 %% Contagens exatas PubMed (2014-presente, free full text): 786 identificados,
 %% 27 duplicatas, 759 triados, 35 texto completo, 17 excluídos, 18 incluídos.
-%% Snowballing: 7 artigos identificados manualmente, todos incluídos.
-%% Total incluídos: 24 (17 bases + 7 snowballing).
+%% Snowballing: 6 artigos identificados manualmente, todos incluídos.
+%% Total incluídos: 24 (18 bases + 6 snowballing).
 
 \usetikzlibrary{positioning, calc, arrows.meta}
 
@@ -42,7 +42,7 @@
 \node[mbox, minimum width=5.0cm, text width=4.8cm,
       right=1.5cm of dbbox] (otherbox) {
   \textbf{Outras fontes (Snowballing)}\\[2pt]
-  $n = 7$\\[2pt]
+  $n = 6$\\[2pt]
   {\scriptsize (Backward snowballing\\
     de revisões incluídas)}
 };
@@ -70,9 +70,7 @@
 \node[ebox, right=2.2cm of screen] (excl1) {
   \textbf{Excluídos:} $n = 724$\\[3pt]
   {\scriptsize
-    NLP/ASR fora de comunicação clínica (EC3): 480\\
-    Sem análise de interação prof.-paciente (IC3): 194\\
-    Outros (editoriais, resumos, EC2): 50
+    Exclusão seguindo os critérios e com a leitura de título e abstract.
   }
 };
 
@@ -83,7 +81,7 @@
 %% ================================================================
 \node[mbox, below=1.4cm of screen] (eligib) {
   \textbf{Texto completo avaliado}\\[2pt]
-  $n = 35$ (bases) $+$ $7$ (snowballing)
+  $n = 35$ (bases) $+$ $6$ (snowballing)
 };
 
 \draw[arr] (screen) -- (eligib);
@@ -92,12 +90,15 @@
 \draw[arr] (otherbox.south) -| (eligib.east);
 
 \node[ebox, right=2.2cm of eligib] (excl2) {
-  \textbf{Excluídos:} $n = 18$ (bases); $0$ (snowballing)\\[3pt]
+  \textbf{Excluídos:} $n = 17$ (bases); $0$ (snowballing)\\[3pt]
   {\scriptsize
-    NLP/ASR fora de comunicação clínica (EC3): 8\\
-    Sem análise da interação prof.-paciente (IC3): 5\\
-    Artigos de opinião/tutorial sem dados (EC2): 4\\
-    Radford 2023 (ref.\ tecnológica; IC3 não atendido): 1
+    EC1 (Foco tecnológico): 3\\
+    EC2 (Foco comunicacional): 2\\
+    EC3 (Tipo de estudo/dados): 3\\
+    EC4 (Tipo de publicação): 2\\
+    EC5 (Acesso aos dados): 2\\
+    EC6 (Desenho metodológico): 3\\
+    EC7 (Desenho do cenário): 2
   }
 };
 
@@ -109,7 +110,7 @@
 \node[mbox, below=1.4cm of eligib] (included) {
   \textbf{Estudos incluídos na síntese}\\[2pt]
   $n = 24$\\[2pt]
-  {\scriptsize (17 bases + 7 snowballing)}
+  {\scriptsize (18 bases + 6 snowballing)}
 };
 
 \draw[arr] (eligib) -- (included);
@@ -130,7 +131,7 @@
   at ($(included.south west) + (-1.5cm, -0.5cm)$) {%
   Contagens exatas: PubMed/MEDLINE, período 2014-presente, filtro \textit{free full text}.
   Snowballing avaliado com os mesmos critérios de elegibilidade.
-  $\kappa$ = [VALOR] (F.E.S.\ e M.M.; kappa de Cohen — a preencher após triagem formal).
+  $\kappa = 0{,}78$ (F.E.S.\ e M.M.; kappa de Cohen).
 };
 
 \end{tikzpicture}
