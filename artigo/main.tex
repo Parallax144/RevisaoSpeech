@@ -130,7 +130,6 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 
 %% ----------------------------------------------------------------
 %% Resumo — máximo 250 palavras (IJMI)
-%% REVISAR [Rafael + Murilo]: substituir [N] pelos números finais após Gate 2
 %% ----------------------------------------------------------------
 \begin{abstract}
 \textbf{Contexto:}
@@ -413,9 +412,7 @@ foram resolvidos por um terceiro revisor (L.K.T.) ou pelo autor correspondente.
 Os textos completos dos registros potencialmente elegíveis foram então
 recuperados e avaliados conforme os critérios de elegibilidade. O processo de
 seleção está documentado no fluxograma PRISMA-ScR (Fig.~\ref{fig:prisma}).
-%% NOTA METODOLÓGICA: κ calculado após triagem dupla-cega no Rayyan (F.E.S. e M.M.).
-%% Workflow: exportar matriz de concordância do Rayyan → R: irr::kappa2(ratings, weight="unweighted")
-%% κ = 0,78 (F.E.S. e M.M.; kappa de Cohen — triagem dupla-cega no Rayyan)
+%% κ = 0,78 (F.E.S. e M.M.; triagem dupla-cega Rayyan → irr::kappa2, weight="unweighted")
 
 \subsection{Extração de dados}
 
@@ -454,10 +451,8 @@ As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros.
 \subsection{Características dos estudos incluídos}
 % ---------------------------------------------------------------
 
-%% REVISAR [Murilo]: checar IC/EC para cada linha antes da submissão.
-%%   † = fora do período ≥2018 (discutir inclusão como referência fundacional)
-%%   ‡ = preprint / não peer-reviewed (verificar IC2)
-%%   n e período finais aguardam triagem formal (Gate 2).
+%% REVISAR [Murilo]: checar IC/EC de cada linha antes da submissão.
+%%   ‡ = preprint / não peer-reviewed — confirmar IC4 e política IJMI para preprints.
 
 Os 24~estudos do corpus abrangem o período 2014--2025
 (Tabela~\ref{tab:estudos}).
@@ -514,7 +509,7 @@ S24 & Imel et al., 2022      & Relatório    & D & Redes neurais sequenciais  & 
 % ---------------------------------------------------------------
 \subsection{Eixo A —NLP clínico e extração de entidades biomédicas}
 \label{subsec:eixoA}
-% Responsável: Murilo Minutti
+% Responsável: Murilo Nogueira Minutti
 % ---------------------------------------------------------------
 
 %% REVISAR [Murilo]: verificar se os dados reportados correspondem
@@ -581,13 +576,12 @@ assistenciais permanecem desafios não resolvidos.
 % ---------------------------------------------------------------
 \subsection{Eixo B —Documentação clínica automatizada e ASR}
 \label{subsec:eixoB}
-% Responsável: Fabricio Evangelista dos Santos
+% Responsável: Fabrício Evangelista dos Santos
 % ---------------------------------------------------------------
 
-%% REVISAR [Fabricio]: verificar se os dados reportados correspondem
-%% aos artigos originais antes da submissão. Aleksić 2017 é referência
-%% fundacional (fora do período ≥2018) — confirmar inclusão na síntese.
-%% Krishna 2021 e Schloss 2020 são preprints — confirmar IC2.
+%% REVISAR [Fabrício]: verificar se os dados reportados correspondem
+%% aos artigos originais antes da submissão. Krishna 2021 e Schloss 2020
+%% são preprints — confirmar IC4 e política IJMI para preprints.
 
 Os estudos do Eixo~B cobrem o ciclo completo da documentação clínica
 automatizada: do reconhecimento da fala à geração de registros
@@ -648,12 +642,11 @@ documental, subordinando a análise da qualidade da interação clínica
 % ---------------------------------------------------------------
 \subsection{Eixo C —Comunicação médico-paciente}
 \label{subsec:eixoC}
-% Responsável: Lucas Kenzo Terazzin
+% Responsável: Lucas Kenzo Terazzin Ida
 % ---------------------------------------------------------------
 
 %% REVISAR [Lucas]: verificar se os dados reportados correspondem
-%% aos artigos originais antes da submissão. Kelley 2014 é referência
-%% fundacional fora do período ≥2018 — confirmar elegibilidade.
+%% aos artigos originais antes da submissão.
 
 Os estudos do Eixo~C estabelecem a base empírica para a qualidade
 da comunicação profissional-paciente como determinante de desfechos
@@ -740,11 +733,11 @@ estrutura clínica da anamnese.
 % ---------------------------------------------------------------
 \subsection{Eixo D —Biomarcadores vocais e análise multimodal}
 \label{subsec:eixoD}
-% Responsável: Fabricio Evangelista dos Santos
+% Responsável: Fabrício Evangelista dos Santos
 % ---------------------------------------------------------------
 
-%% REVISAR [Fabricio]: verificar se os dados reportados correspondem
-%% aos artigos originais. Albert 2024 é preprint (medRxiv) — confirmar IC2.
+%% REVISAR [Fabrício]: verificar se os dados reportados correspondem
+%% aos artigos originais. Albert 2024 é preprint (medRxiv) — confirmar IC4.
 
 Os estudos do Eixo~D exploram a dimensão acústica e prosódica da
 comunicação clínica, estendendo a análise além do conteúdo semântico
@@ -798,8 +791,6 @@ metodológica mais inexplorada desta revisão.
 \section{Discussão}
 \label{sec:discussao}
 
-%% REVISAR [Murilo + Lucas]: conferir argumentação e adicionar perspectiva de
-%%   cada coautor; atualizar após Gate 2 (contagens finais do PRISMA).
 
 \subsection*{Dois eixos paralelos sem convergência sistemática}
 
@@ -927,9 +918,6 @@ paciente.
 \section{Conclusão}
 \label{sec:conclusao}
 
-%% REVISAR [Fabricio]: conferir consistência com a Discussão; ajustar
-%%   após Gate 2 se os números finais do PRISMA alterarem o argumento.
-
 Esta scoping review mapeou o estado da arte em Speech Analytics e
 comunicação clínica com o objetivo de estabelecer a fundamentação
 científica para estudos prospectivos que integrem análise automatizada
@@ -1027,8 +1015,8 @@ não se aplicam a este estudo, que se baseia exclusivamente em literatura
 publicada.
 
 \subsection*{Uso de inteligência artificial}
-%% COMPLETAR: adicionar qualquer outra ferramenta de IA usada (ex.: DeepL,
-%%   ChatGPT, Gemini) conforme exigência da Política GenAI da Elsevier.
+%% REVISAR [todos]: confirmar se outras ferramentas de IA foram usadas (DeepL,
+%%   ChatGPT etc.) e acrescentar aqui conforme Política GenAI da Elsevier.
 Em conformidade com a Política de IA Generativa da Elsevier, os autores
 declaram que os seguintes modelos de inteligência artificial foram
 utilizados na preparação deste trabalho:
