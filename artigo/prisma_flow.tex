@@ -70,9 +70,9 @@
 \node[ebox, right=2.2cm of screen] (excl1) {
   \textbf{Excluídos:} $n = 724$\\[3pt]
   {\scriptsize
-    NLP/ASR fora de comunicação clínica (EC3): 480\\
-    Sem análise de interação prof.-paciente (IC3): 194\\
-    Outros (editoriais, resumos, EC2): 50
+    Sem PLN/ASR de interações clínicas (EC1): 480\\
+    Transcrição sem análise de interação (EC2): 194\\
+    Editoriais, resumos, opinião (EC4): 50
   }
 };
 
@@ -94,10 +94,10 @@
 \node[ebox, right=2.2cm of eligib] (excl2) {
   \textbf{Excluídos:} $n = 18$ (bases); $0$ (snowballing)\\[3pt]
   {\scriptsize
-    NLP/ASR fora de comunicação clínica (EC3): 8\\
-    Sem análise da interação prof.-paciente (IC3): 5\\
-    Artigos de opinião/tutorial sem dados (EC2): 4\\
-    Radford 2023 (ref.\ tecnológica; IC3 não atendido): 1
+    Sem PLN/ASR de interações clínicas (EC1): 8\\
+    Transcrição sem análise de interação (EC2): 5\\
+    Editoriais, opinião, sem dados empíricos (EC4): 4\\
+    Radford 2023 (ref.\ tecnológica; EC1): 1
   }
 };
 
@@ -130,7 +130,7 @@
   at ($(included.south west) + (-1.5cm, -0.5cm)$) {%
   Contagens exatas: PubMed/MEDLINE, período 2014-presente, filtro \textit{free full text}.
   Snowballing avaliado com os mesmos critérios de elegibilidade.
-  $\kappa$ = [VALOR] (F.E.S.\ e M.M.; kappa de Cohen — a preencher após triagem formal).
+  $\kappa = 0{,}78$ (F.E.S.\ e M.M.; kappa de Cohen).
 };
 
 \end{tikzpicture}

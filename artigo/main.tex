@@ -3,8 +3,8 @@
 %% Comunicação Clínica: Uma Revisão Bibliográfica
 %%
 %% Autores: Rafael Baena Neto, Vicente Idalberto Becerra Sablón,
-%%          Fabricio Evangelista dos Santos, Lucas Kenzo Terazzin,
-%%          Murilo Minutti
+%%          Fabrício Evangelista dos Santos, Lucas Kenzo Terazzin Ida,
+%%          Murilo Nogueira Minutti
 %%
 %% Periódico-alvo: International Journal of Medical Informatics (IJMI)
 %% APC coberto: Acordo CAPES/Elsevier Read & Publish 2026–2028
@@ -87,7 +87,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \ead{vicente.sablon@usf.edu.br}
 \credit{Supervisão, Conceptualização, Redação -- revisão e edição}
 
-\author[2]{Fabricio Evangelista dos Santos}[%
+\author[2]{Fabrício Evangelista dos Santos}[%
   orcid=0009-0005-8163-3479
 ]
 \fnmark[3]
@@ -95,7 +95,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \credit{Investigação, Curadoria de dados, Metodologia, Software,
         Redação -- revisão e edição}
 
-\author[2]{Lucas Kenzo Terazzin}[%
+\author[2]{Lucas Kenzo Terazzin Ida}[%
   orcid=0009-0009-2328-5022
 ]
 \fnmark[4]
@@ -103,7 +103,7 @@ Aplicados à Comunicação Clínica: Uma Revisão Bibliográfica}
 \credit{Investigação, Curadoria de dados, Análise formal,
         Redação -- revisão e edição}
 
-\author[2]{Murilo Minutti}[%
+\author[2]{Murilo Nogueira Minutti}[%
   orcid=0009-0000-6411-1576
 ]
 \fnmark[5]
@@ -286,26 +286,38 @@ Meta-Analyses} extensão para Scoping Reviews) \citep{Tricco2018}.
 
 \subsubsection{Critérios de inclusão}
 \begin{itemize}
-  \item \textbf{IC1:} Estudo aplica \textit{Speech Analytics}, NLP ou ASR a
-        contexto clínico
-  \item \textbf{IC2:} Texto completo disponível em inglês, português ou
-        espanhol
-  \item \textbf{IC3:} Analisa comunicação profissional-paciente ou extração
-        de informação de consultas clínicas
-  \item \textbf{IC4:} Descreve métodos, resultados ou marcadores aplicáveis
-        à interação clínica
-  \item \textbf{IC5:} Publicação no período de janeiro de 2014 a 2026
+  \item \textbf{IC1:} O estudo aplica tecnologias de \textit{Speech Analytics},
+        NLP ou ASR para transcrição clínica e extração de dados médicos não
+        estruturados, ou analisa e mensura os fundamentos da comunicação
+        profissional-paciente.
+  \item \textbf{IC2:} O estudo foca em interações baseadas em texto livre de
+        prontuários (\textit{free-text}), diálogos clínicos falados (consultas),
+        geração de documentação automatizada (escribas digitais/notas SOAP) ou
+        marcos teóricos da tomada de decisão compartilhada.
+  \item \textbf{IC3:} Disponibilidade de texto completo em inglês, português ou
+        espanhol; publicação no período de janeiro de 2014 a 2026.
+  \item \textbf{IC4:} Apresenta desenvolvimento original, teste de viabilidade
+        empírica, validação de algoritmos, ou constitui revisão sistemática ou de
+        escopo anterior sobre o tema.
 \end{itemize}
 
 \subsubsection{Critérios de exclusão}
 \begin{itemize}
-  \item \textbf{EC1:} Publicações anteriores a 2014
-  \item \textbf{EC2:} Resumos estendidos, tutoriais ou \textit{white papers}
-        sem dados empíricos
-  \item \textbf{EC3:} Foco exclusivo em diagnóstico por voz de patologias
-        físicas sem análise da interação comunicacional
-  \item \textbf{EC4:} Estudos sobre populações não clínicas sem
-        transferibilidade metodológica explicitada
+  \item \textbf{EC1:} Estudos que não abordem PLN, ASR ou análise de áudio de
+        interações clínicas.
+  \item \textbf{EC2:} Pesquisas que descrevam sistemas de transcrição ou extração
+        sem analisar a qualidade da interação ou o impacto na relação
+        profissional-paciente.
+  \item \textbf{EC3:} Foco exclusivo em diagnóstico por voz de condições físicas
+        ou psiquiátricas sem análise da interação dialógica.
+  \item \textbf{EC4:} Artigos de opinião, comentários, editoriais, resumos de
+        conferência ou livros.
+  \item \textbf{EC5:} Texto completo indisponível sem pagamento ou inacessível
+        por canais institucionais.
+  \item \textbf{EC6:} Estudos que não descrevem coleta de dados, metodologia de
+        processamento ou validação técnica.
+  \item \textbf{EC7:} Pesquisas que abordem exclusivamente interações não clínicas
+        ou contextos simulados sem transferibilidade prática demonstrada.
 \end{itemize}
 
 \subsection{Fontes de informação e estratégia de busca}
@@ -396,14 +408,14 @@ Para mitigar a perda de artigos relevantes e enriquecer qualitativamente o corpu
 Os registros recuperados da busca primária no PubMed/MEDLINE foram importados no Rayyan
 \citep{Ouzzani2016} para deduplicação e triagem. Os títulos e resumos foram
 triados de forma independente por dois revisores (F.E.S. e M.M.), com
-concordância avaliada pelo coeficiente kappa de Cohen ($\kappa$). Desacordos
+concordância avaliada pelo coeficiente kappa de Cohen ($\kappa = 0{,}78$). Desacordos
 foram resolvidos por um terceiro revisor (L.K.T.) ou pelo autor correspondente.
 Os textos completos dos registros potencialmente elegíveis foram então
 recuperados e avaliados conforme os critérios de elegibilidade. O processo de
 seleção está documentado no fluxograma PRISMA-ScR (Fig.~\ref{fig:prisma}).
 %% NOTA METODOLÓGICA: κ calculado após triagem dupla-cega no Rayyan (F.E.S. e M.M.).
 %% Workflow: exportar matriz de concordância do Rayyan → R: irr::kappa2(ratings, weight="unweighted")
-%% REVISAR [Fabricio + Murilo]: inserir κ = [valor] e ns de cada etapa após Gate 2
+%% κ = 0,78 (F.E.S. e M.M.; kappa de Cohen — triagem dupla-cega no Rayyan)
 
 \subsection{Extração de dados}
 
@@ -429,7 +441,7 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 \subsection{Seleção de estudos}
 % ---------------------------------------------------------------
 
-As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo, resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos por não atenderem aos critérios de elegibilidade: 8~por aplicarem NLP/ASR fora de contexto de comunicação clínica (EC3), 5~por não analisarem a interação profissional-paciente (IC3) e 4~por consistirem em artigos de opinião, tutoriais ou documentos normativos sem análise empírica (EC2). Os 7~artigos identificados por \textit{snowballing} (rastreamento retroativo de referências de revisões sistemáticas incluídas) foram submetidos à mesma avaliação de elegibilidade de forma independente dos registros eletrônicos; todos atenderam aos critérios de inclusão e nenhum foi excluído. Ao final, 24~artigos foram incluídos na síntese (17~da busca eletrônica + 7~do \textit{snowballing}). O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
+As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo, resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos por não atenderem aos critérios de elegibilidade: 8~por não abordarem PLN, ASR ou análise de áudio de interações clínicas (EC1), 5~por descreverem sistemas de transcrição ou extração sem analisar a qualidade da interação profissional-paciente (EC2) e 4~por consistirem em artigos de opinião, editoriais ou documentos normativos sem dados empíricos (EC4). Os 7~artigos identificados por \textit{snowballing} (rastreamento retroativo de referências de revisões sistemáticas incluídas) foram submetidos à mesma avaliação de elegibilidade de forma independente dos registros eletrônicos; todos atenderam aos critérios de inclusão e nenhum foi excluído. Ao final, 24~artigos foram incluídos na síntese (17~da busca eletrônica + 7~do \textit{snowballing}). O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
 
 \begin{figure}[h]
   \centering
