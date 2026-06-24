@@ -736,12 +736,16 @@ conteúdo semântico, carrega informação analítica utilizável
 independentemente da transcrição textual.
 
 No domínio da análise de consultas clínicas reais, \citet{Imel2022}
-mapearam valências emocionais em áudios de interações médico-paciente
-por meio de redes neurais sequenciais, alcançando concordância com
-juízes humanos treinados. O estudo demonstra que marcadores emocionais
-da interação verbal podem ser identificados automaticamente com
-confiabilidade comparável à avaliação humana, abrindo caminho para a
-mensuração de empatia e qualidade do atendimento em larga escala.
+mapearam valências emocionais a partir de transcrições textuais de
+diálogos médico-paciente por meio de redes neurais sequenciais,
+alcançando concordância com juízes humanos treinados. Embora o estudo
+demonstre que marcadores de valência emocional da interação verbal
+possam ser identificados automaticamente em nível de enunciado com
+confiabilidade comparável à avaliação humana (correlação de 0{,}60),
+os autores ressaltam que o modelo foi treinado e avaliado
+exclusivamente com base no conteúdo textual dos diálogos (diários de
+transcrição), sem processar diretamente o sinal de áudio ou a camada
+acústica.
 
 A fronteira não resolvida do Eixo~D é identificada por
 \citet{Albert2024}, em revisão de escopo sobre métodos de IA, fala e
@@ -755,12 +759,12 @@ da anamnese, permanecem sem método consolidado de extração e
 interpretação automática.
 
 Em conjunto, os estudos do Eixo~D revelam um campo em estado inicial
-de desenvolvimento: os fundamentos técnicos existem
-\citep{Fagherazzi2021} e há evidência de que marcadores emocionais
-podem ser identificados com confiabilidade automática
-\citep{Imel2022}, mas a integração multimodal acústico-semântica
-aplicada à comunicação clínica permanece incipiente
-\citep{Albert2024}. Essa lacuna adquire contorno clínico preciso
+de desenvolvimento: os fundamentos técnicos de processamento de voz
+existem \citep{Fagherazzi2021} e há viabilidade no mapeamento de
+marcadores emocionais baseado em transcritos textuais de interações
+reais \citep{Imel2022}, mas a integração multimodal que de fato una
+os aspectos acústicos da voz aos semânticos do texto na comunicação
+clínica permanece incipiente \citep{Albert2024}. Essa lacuna adquire contorno clínico preciso
 quando confrontada com a propedêutica de \citet{Porto2019}: se os
 caracteres propedêuticos da queixa têm correlatos acústico-prosódicos
 na fala (tensão vocal para dor, hesitação e pausas para dúvida,
