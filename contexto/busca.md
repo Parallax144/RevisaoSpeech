@@ -39,8 +39,13 @@ OR "health literacy" OR "patient engagement")
 
 | Base | Contagem | Status | Observação |
 |------|----------|--------|------------|
-| PubMed/MEDLINE | **786** | Exato | Filtros: 2014-2026, inglês/espanhol, free full text |
-| **Total** | **786** | Exato | PubMed/MEDLINE como base eletrônica primária |
+| Web of Science | **1.719** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| Scopus | **1.580** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| PubMed/MEDLINE | **1.059** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| CINAHL/EBSCO | **586** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| Cochrane Library | **399** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| Google Scholar | **278** | Exato | Filtros: 2014-2026, inglês, espanhol, português |
+| **Total** | **5.621** | Exato | Total de registros identificados nas bases |
 
 ---
 
@@ -48,14 +53,16 @@ OR "health literacy" OR "patient engagement")
 
 | Etapa | Valor | Status / Observação |
 |-------|-------|---------------------|
-| Registros identificados (bases) | 786 | PubMed/MEDLINE |
-| Fontes adicionais (Snowballing)| 6 | Identificados manualmente |
-| Após remoção de duplicatas | 759 | 27 duplicatas removidas |
-| Triados por T&A | 759 | Triagem dupla-cega |
-| Excluídos no T&A | 724 | Com base nos critérios de elegibilidade |
-| Texto completo avaliado | 41 | 35 das bases + 6 do snowballing |
-| Excluídos no texto completo | 17 | 17 das bases (distribuídos em EC1-EC7); 0 do snowballing |
-| Incluídos na síntese | 24 | 18 das bases + 6 do snowballing |
+| Registros identificados (bases) | 5.621 | Total bruto de buscas eletrônicas |
+| Fontes adicionais (Snowballing)| 7 | Identificados manualmente (estudo piloto) |
+| Após remoção de duplicatas | 3.189 | 2.432 duplicatas removidas via Zotero |
+| Triagem por título | 3.189 | Triagem por dois revisores independentes |
+| Excluídos na triagem por título | 2.680 | Com base nos critérios de elegibilidade |
+| Triagem por resumo | 509 | Triagem por dois revisores independentes |
+| Excluídos na triagem por resumo | 474 | Com base nos critérios de elegibilidade |
+| Texto completo avaliado | 42 | 35 das bases + 7 do snowballing |
+| Excluídos no texto completo | 18 | 18 das bases (justificativas em EC1-EC6); 0 do snowballing |
+| Incluídos na síntese | 24 | 17 das bases + 7 do snowballing |
 | κ (Cohen) | 0.78 | Concordância inter-examinadores (F.E.S. e M.M.) |
 
 ---

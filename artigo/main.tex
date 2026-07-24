@@ -152,7 +152,7 @@ e lacunas para pesquisa futura.
 
 \textbf{Métodos:}
 Revisão bibliográfica seguindo as diretrizes PRISMA-ScR \citep{Tricco2018}
-e JBI \citep{Peters2020}. A busca foi concentrada na base de dados primária PubMed/MEDLINE (filtros: 2014-presente, inglês/espanhol e texto completo gratuito) e complementada por busca manual via \textit{snowballing}. O corpus final compreende 24~artigos selecionados a partir de 786~registros da busca eletrônica primária (após remoção de 27 duplicatas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
+e JBI \citep{Peters2020}. A busca foi expandida para múltiplas bases de dados eletrônicas indexadas (PubMed/MEDLINE, Scopus, Web of Science, CINAHL/EBSCO, Cochrane Library e Google Scholar) sem filtros de texto completo gratuito, e complementada por busca manual via \textit{snowballing}. O corpus final compreende 24~artigos selecionados a partir de 5.621~registros da busca eletrônica primária (após remoção de 2.432 duplicatas e triagem em duas etapas) e 7 estudos adicionados manualmente por busca ativa, organizados em quatro eixos temáticos: (A)~NLP clínico e extração de entidades
 biomédicas; (B)~documentação clínica automatizada e ASR;
 (C)~comunicação médico-paciente; (D)~biomarcadores vocais e análise multimodal.
 
@@ -311,17 +311,19 @@ Meta-Analyses} extensão para Scoping Reviews) \citep{Tricco2018}.
         ou psiquiátricas sem análise da interação dialógica.
   \item \textbf{EC4:} Artigos de opinião, comentários, editoriais, resumos de
         conferência ou livros.
-  \item \textbf{EC5:} Texto completo indisponível sem pagamento ou inacessível
-        por canais institucionais.
-  \item \textbf{EC6:} Estudos que não descrevem coleta de dados, metodologia de
+  \item \textbf{EC5:} Estudos que não descrevem coleta de dados, metodologia de
         processamento ou validação técnica.
-  \item \textbf{EC7:} Pesquisas que abordem exclusivamente interações não clínicas
+  \item \textbf{EC6:} Pesquisas que abordem exclusivamente interações não clínicas
         ou contextos simulados sem transferibilidade prática demonstrada.
 \end{itemize}
 
 \subsection{Fontes de informação e estratégia de busca}
 
-A busca bibliográfica foi conduzida de forma independente por três pesquisadores diferentes, cada um operando múltiplas estratégias de busca para cobrir os eixos temáticos da revisão. A base de dados primária utilizada foi o PubMed/MEDLINE. Foram aplicados os seguintes filtros de busca: período de publicação de janeiro de 2014 ao presente (2026), artigos publicados nos idiomas inglês e espanhol, e disponibilidade de texto completo gratuito (\textit{free full text}).
+A busca bibliográfica foi conduzida em múltiplas bases de dados eletrônicas indexadas — PubMed/MEDLINE, Scopus, Web of Science, CINAHL/EBSCO, Cochrane Library e Google Scholar —, visando cobrir de forma abrangente as interseções entre saúde, processamento de linguagem natural e análise de fala, segundo as diretrizes do PRISMA-ScR \citep{Tricco2018} e do Joanna Briggs Institute \citep{Peters2020}. 
+
+A base de dados primária foi o PubMed/MEDLINE, na qual foram aplicadas todas as seis estratégias de busca formuladas (cinco strings especializadas nos eixos temáticos e uma string geral unificada). Para as bases Scopus, Web of Science e CINAHL/EBSCO, executaram-se as cinco strings especializadas. Na Cochrane Library, a busca concentrou-se na String 1 adaptada para campos de título, resumo e palavras-chave (\texttt{:ti,ab,kw}), adequada ao foco da base em ensaios clínicos e intervenções. No Google Scholar, aplicou-se o operador \texttt{allintitle:} nas cinco strings especializadas para respeitar a restrição de 256 caracteres do mecanismo.
+
+Foram estabelecidos como filtros eletrônicos gerais o período de publicação entre janeiro de 2014 e 2026, e artigos nos idiomas inglês, espanhol e português. O filtro de texto completo gratuito (\textit{free full text}) foi removido para evitar viés de seleção.
 
 Cada pesquisador utilizou mais de uma string de busca para realizar as pesquisas. As strings específicas utilizadas foram as seguintes:
 
@@ -438,7 +440,7 @@ dos quatro eixos temáticos definidos nos critérios de elegibilidade:
 \subsection{Seleção de estudos}
 % ---------------------------------------------------------------
 
-As buscas na base de dados primária (PubMed/MEDLINE) recuperaram 786~registros. Após remoção de 27~duplicatas, 759~registros foram triados por título e resumo, resultando em 35~artigos selecionados para avaliação de texto completo. Desses, 17~foram excluídos por não atenderem aos critérios de elegibilidade: 8~por não abordarem PLN, ASR ou análise de áudio de interações clínicas (EC1), 5~por descreverem sistemas de transcrição ou extração sem analisar a qualidade da interação profissional-paciente (EC2) e 4~por consistirem em artigos de opinião, editoriais ou documentos normativos sem dados empíricos (EC4). Os 7~artigos identificados por \textit{snowballing} (rastreamento retroativo de referências de revisões sistemáticas incluídas) foram submetidos à mesma avaliação de elegibilidade de forma independente dos registros eletrônicos; todos atenderam aos critérios de inclusão e nenhum foi excluído. Ao final, 24~artigos foram incluídos na síntese (17~da busca eletrônica + 7~do \textit{snowballing}). O fluxograma PRISMA-ScR está apresentado na Fig.~\ref{fig:prisma}.
+As buscas nas bases de dados eletrônicas (PubMed/MEDLINE, Scopus, Web of Science, CINAHL/EBSCO, Cochrane Library e Google Scholar) recuperaram 5.621 registros. Após o processo de deduplicação realizado no Zotero, que removeu 2.432 registros duplicados, obteve-se um total de 3.189 registros únicos. Estes foram submetidos à triagem por título, resultando na exclusão de 2.680 artigos pelos critérios de elegibilidade (1.120 por EC1, 584 por EC2, 134 por EC3, 281 por EC4, 358 por EC5 e 203 por EC6) e na seleção de 509 artigos aprovados para a triagem por resumo. Na triagem por resumo, foram excluídos 474 artigos (183 por EC1, 116 por EC2, 29 por EC3, 43 por EC4, 61 por EC5 e 42 por EC6), resultando em 35 artigos selecionados para avaliação de texto completo. Adicionalmente, 7 artigos identificados via \textit{snowballing} (rastreamento manual de referências) foram incluídos na avaliação de elegibilidade. Na fase de leitura na íntegra de texto completo (35 das bases e 7 do snowballing), foram excluídos 18 artigos das bases pelos critérios de elegibilidade (4 por EC1, 3 por EC2, 3 por EC3, 2 por EC4, 4 por EC5 e 2 por EC6) e 0 artigos de snowballing, restando 17 artigos das bases e 7 de snowballing. Ao final, 24 estudos foram incluídos na síntese qualitativa (17 da busca eletrônica nas bases e 7 provenientes do rastreamento manual). O fluxograma PRISMA-ScR detalhando todo o processo está apresentado na Fig.~\ref{fig:prisma}.
 
 \begin{figure}[h]
   \centering
@@ -862,11 +864,10 @@ em torno da anamnese como unidade de análise primária.
 
 \subsection*{Limitações desta revisão}
 
-Esta revisão apresenta quatro limitações centrais.
-Primeiro, embora a busca eletrônica tenha se concentrado no PubMed/MEDLINE como base de dados primária, a inclusão de artigos adicionais via \textit{snowballing} (incluindo revisões sistemáticas relevantes e estudos de referência) visou mitigar a perda de artigos essenciais; contudo, a ausência de buscas automatizadas em outras bases eletrônicas indexadas (como Scopus e Web of Science) permanece como uma limitação para a generalização completa da literatura.
+Esta revisão apresenta três limitações centrais.
+Primeiro, embora a busca bibliográfica tenha sido amplamente expandida para cobrir múltiplas bases de dados eletrônicas indexadas (PubMed/MEDLINE, Scopus, Web of Science, CINAHL/EBSCO, Cochrane Library e Google Scholar) sem filtros de texto completo gratuito, a inclusão final manteve o corpus de 17 estudos de bases devido à aplicação estrita dos critérios de elegibilidade durante as fases de triagem e leitura na íntegra.
 Segundo, há viés de idioma: a literatura mapeada é predominantemente em inglês, com sub-representação de estudos conduzidos no contexto de saúde brasileiro e em Português, o que pode subestimar iniciativas locais de Speech Analytics aplicadas ao SUS.
-Terceiro, a seleção de filtros de busca na base primária, como a exigência de texto completo gratuito (\textit{free full text}), pode ter excluído estudos relevantes protegidos por paywall ou restrições de assinatura de periódicos.
-Quarto, a heterogeneidade de tipo de estudo, que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais, impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
+Terceiro, a heterogeneidade de tipo de estudo, que inclui revisões sistemáticas, estudos empíricos, preprints e modelos conceituais, impede a realização de uma síntese quantitativa ou meta-análise estruturada, limitando também as comparações diretas de qualidade metodológica entre as abordagens.
 
 \subsection*{Considerações éticas}
 

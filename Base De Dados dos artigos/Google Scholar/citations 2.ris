@@ -1,0 +1,979 @@
+TY  - JOUR
+T1  - Named entity recognition in electronic health records: a methodological review
+A1  - Durango, María C
+A1  - Torres-Silva, Ever A
+A1  - Orozco-Duque, Andrés
+JO  - Healthcare informatics research
+VL  - 29
+IS  - 4
+SP  - 286
+EP  - 300
+Y1  - 2023
+PB  - Korean Society of Medical Informatics
+ER  - 
+
+
+TY  - JOUR
+T1  - Clinical named entity recognition and relation extraction using natural language processing of medical free text: A systematic review
+A1  - Navarro, David Fraile
+A1  - Ijaz, Kiran
+A1  - Rezazadegan, Dana
+A1  - Rahimi-Ardabili, Hania
+A1  - Dras, Mark
+A1  - Coiera, Enrico
+A1  - Berkovsky, Shlomo
+JO  - International Journal of Medical Informatics
+VL  - 177
+SP  - 105122
+SN  - 1386-5056
+Y1  - 2023
+PB  - Elsevier
+ER  - 
+
+
+TY  - JOUR
+T1  - Artificial intelligence in healthcare text processing: a review applied to named entity recognition
+A1  - de Almeida, Samuel Santana
+A1  - Silva Fontes, Raphael
+A1  - Pareja Credidio Freire Alves, Luca
+A1  - Júnior, Methanias Colaço
+A1  - José Pinheiro Caldeira Silva, Gleyson
+A1  - Ramalho Cortez, Lyane
+A1  - de Morais, Antonio Higor Freire
+A1  - Medeiros Machado, Guilherme
+A1  - Gonçalo Oliveira, Hugo
+A1  - Cunha-Oliveira, Aliete
+JO  - Frontiers in Artificial Intelligence
+VL  - 8
+SP  - 1584203
+SN  - 2624-8212
+Y1  - 2025
+PB  - Frontiers Media SA
+ER  - 
+
+
+TY  - JOUR
+T1  - Harnessing Large Language Models for Clinical Information Extraction: A Systematic Literature Review
+A1  - Rodrigues, Tiago
+A1  - Teixeira Lopes, Carla
+JO  - ACM Transactions on Computing for Healthcare
+VL  - 6
+IS  - 4
+SP  - 1
+EP  - 35
+SN  - 2691-1957
+Y1  - 2025
+PB  - ACM New York, NY
+ER  - 
+
+
+TY  - JOUR
+T1  - A systematic review of named entity recognition in biomedical texts
+A1  - Goulart, Rodrigo Rafael Villarreal
+A1  - Strube de Lima, Vera Lúcia
+A1  - Xavier, Clarissa Castellã
+JO  - Journal of the Brazilian Computer Society
+VL  - 17
+IS  - 2
+SP  - 103
+EP  - 116
+SN  - 0104-6500
+Y1  - 2011
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Named Entity Recognition in Medical Domain: A systematic Literature Review
+A1  - Kusuma, Selvia Ferdiana
+A1  - Wibowo, Prasetyo
+A1  - Abdillah, Abid Famasya
+A1  - Basuki, Setio
+JO  - JOIV: International Journal on Informatics Visualization
+VL  - 8
+IS  - 4
+SP  - 2253
+EP  - 2260
+SN  - 2549-9904
+Y1  - 2024
+ER  - 
+
+
+TY  - JOUR
+T1  - Biomedical named entity recognition: a review
+A1  - Alshaikhdeeb, Basel
+A1  - Ahmad, Kamsuriah
+JO  - International Journal on Advanced Science, Engineering and Information Technology
+VL  - 6
+IS  - 6
+SP  - 889
+EP  - 895
+SN  - 2088-5334
+Y1  - 2016
+ER  - 
+
+
+TY  - CONF
+T1  - Named entity recognition using deep learning: A review
+A1  - Ali, Sajid
+A1  - Masood, Khalid
+A1  - Riaz, Anas
+A1  - Saud, Amna
+JO  - 2022 international conference on business analytics for technology and security (ICBATS)
+SP  - 1
+EP  - 7
+SN  - 1665409207
+Y1  - 2022
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - LITERATURE REVIEW INFORMATION EXTRACTION PADA TEKS BIOMEDICAL DENGAN PENDEKATAN MACHINE LEARNING DAN NAMED ENTITY RECOGNITION
+A1  - Ariani, Y
+JO  - vol
+VL  - 10
+SP  - 1
+EP  - 12
+ER  - 
+
+
+TY  - CONF
+T1  - A Scoping Review of Clinical Unstructured Text Information Extraction
+A1  - Jin, Meng
+A1  - Fan, Shuangrong
+A1  - Zhang, Kai
+A1  - Bao, Xiaoyuan
+JO  - 2020 International Conference on Computational Science and Computational Intelligence (CSCI)
+SP  - 853
+EP  - 857
+SN  - 1728176247
+Y1  - 2020
+PB  - IEEE
+ER  - 
+
+
+TY  - CONF
+T1  - Named entity recognition in natural language processing: A systematic review
+A1  - Sharma, Abhishek
+A1  - Chakraborty, Sudeshna
+A1  - Kumar, Shivam
+JO  - Proceedings of Second Doctoral Symposium on Computational Intelligence
+SP  - 817
+EP  - 828
+SN  - 9811633460
+Y1  - 2022
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Recent named entity recognition and classification techniques: a systematic review
+A1  - Goyal, Archana
+A1  - Gupta, Vishal
+A1  - Kumar, Manish
+JO  - Computer science review
+VL  - 29
+SP  - 21
+EP  - 43
+SN  - 1574-0137
+Y1  - 2018
+PB  - Elsevier
+ER  - 
+
+
+TY  - JOUR
+T1  - A review of named entity recognition: from learning methods to modelling paradigms and tasks
+A1  - Seow, Wei Liang
+A1  - Chaturvedi, Iti
+A1  - Hogarth, Amber
+A1  - Mao, Rui
+A1  - Cambria, Erik
+JO  - Artificial Intelligence Review
+VL  - 58
+IS  - 10
+SP  - 315
+SN  - 1573-7462
+Y1  - 2025
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Application of named entity recognition method for Indonesian datasets: a review
+A1  - Budi, Indra
+A1  - Suryono, Ryan Randy
+JO  - Bulletin of Electrical Engineering and Informatics
+VL  - 12
+IS  - 2
+SP  - 969
+EP  - 978
+SN  - 2302-9285
+Y1  - 2023
+ER  - 
+
+
+TY  - JOUR
+T1  - Named entity recognition in user-generated text: A systematic literature review
+A1  - Esmaail, Naji
+A1  - Omar, Nazlia
+A1  - Mohd, Masnizah
+A1  - Fauzi, Fariza
+A1  - Mansur, Zainab
+JO  - IEEE Access
+VL  - 12
+SP  - 136330
+EP  - 136353
+SN  - 2169-3536
+Y1  - 2024
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - Advancements in Arabic named entity recognition: A comprehensive review
+A1  - El Moussaoui, Taoufiq
+A1  - Loqman, Chakir
+JO  - IEEE Access
+VL  - 12
+SP  - 180238
+EP  - 180266
+SN  - 2169-3536
+Y1  - 2024
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - A review: development of named entity recognition (NER) technology for aeronautical information intelligence
+A1  - Baigang, Mi
+A1  - Yi, Fan
+JO  - Artificial Intelligence Review
+VL  - 56
+IS  - 2
+SP  - 1515
+EP  - 1542
+SN  - 0269-2821
+Y1  - 2023
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Automated construction specification review with named entity recognition using natural language processing
+A1  - Moon, Seonghyeon
+A1  - Lee, Gitaek
+A1  - Chi, Seokho
+A1  - Oh, Hyunchul
+JO  - Journal of Construction Engineering and Management
+VL  - 147
+IS  - 1
+SP  - 04020147
+SN  - 0733-9364
+Y1  - 2021
+PB  - American Society of Civil Engineers
+ER  - 
+
+
+TY  - JOUR
+T1  - A review on cyber security named entity recognition
+A1  - Gao, Chen
+A1  - Zhang, Xuan
+A1  - Han, Mengting
+A1  - Liu, Hui
+JO  - Frontiers of Information Technology & Electronic Engineering
+VL  - 22
+IS  - 9
+SP  - 1153
+EP  - 1168
+SN  - 2095-9230
+Y1  - 2021
+PB  - ZUP
+ER  - 
+
+
+TY  - JOUR
+T1  - Named-entity recognition for early modern textual documents: a review of capabilities and challenges with strategies for the future
+A1  - Humbel, Marco
+A1  - Nyhan, Julianne
+A1  - Vlachidis, Andreas
+A1  - Sloan, Kim
+A1  - Ortolja-Baird, Alexandra
+JO  - Journal of Documentation
+VL  - 77
+IS  - 6
+SP  - 1223
+EP  - 1247
+SN  - 0022-0418
+Y1  - 2021
+PB  - Emerald Publishing Limited
+ER  - 
+
+
+TY  - JOUR
+T1  - Clinical information extraction applications: a literature review
+A1  - Wang, Yanshan
+A1  - Wang, Liwei
+A1  - Rastegar-Mojarad, Majid
+A1  - Moon, Sungrim
+A1  - Shen, Feichen
+A1  - Afzal, Naveed
+A1  - Liu, Sijia
+A1  - Zeng, Yuqun
+A1  - Mehrabi, Saeed
+A1  - Sohn, Sunghwan
+JO  - Journal of biomedical informatics
+VL  - 77
+SP  - 34
+EP  - 49
+SN  - 1532-0464
+Y1  - 2018
+PB  - Elsevier
+ER  - 
+
+
+TY  - CONF
+T1  - Review of research on named entity recognition
+A1  - Li, Xiaole
+A1  - Wang, Tianyu
+A1  - Pang, Yadan
+A1  - Han, Jin
+A1  - Shi, Jin
+JO  - International Conference on artificial intelligence and security
+SP  - 256
+EP  - 267
+Y1  - 2022
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Review of research on named entity recognition in Traditional Chinese Medicine (TCM) texts
+A1  - Shi, Qianru
+A1  - Li, He
+A1  - Yu, Wenqian
+A1  - Shen, Wang
+A1  - Zhang, Chengkun
+JO  - Journal of Modern Information
+VL  - 45
+IS  - 2
+SP  - 4
+EP  - 16
+SN  - 1008-0821
+Y1  - 2025
+PB  - Beijing Zhongke Journal Publising Co. Ltd.
+ER  - 
+
+
+TY  - CONF
+T1  - Learn and review: Enhancing continual named entity recognition via reviewing synthetic samples
+A1  - Xia, Yu
+A1  - Wang, Quan
+A1  - Lyu, Yajuan
+A1  - Zhu, Yong
+A1  - Wu, Wenhao
+A1  - Li, Sujian
+A1  - Dai, Dai
+JO  - Findings of the association for computational linguistics: ACL 2022
+SP  - 2291
+EP  - 2300
+Y1  - 2022
+ER  - 
+
+
+TY  - JOUR
+T1  - Review of Transfer Learning for Named Entity Recognition.
+A1  - Meng, LI
+A1  - Yanling, LI
+A1  - Min, LIN
+JO  - Journal of Frontiers of Computer Science & Technology
+VL  - 15
+IS  - 2
+SN  - 1673-9418
+Y1  - 2021
+ER  - 
+
+
+TY  - JOUR
+T1  - Automatically finding actors in texts: A performance review of multilingual named entity recognition tools
+A1  - Balluff, Paul
+A1  - Boomgaarden, Hajo G
+A1  - Waldherr, Annie
+JO  - Communication Methods and Measures
+VL  - 18
+IS  - 4
+SP  - 371
+EP  - 389
+SN  - 1931-2458
+Y1  - 2024
+PB  - Taylor & Francis
+ER  - 
+
+
+TY  - JOUR
+T1  - A comparative review of machine learning for Arabic named entity recognition
+A1  - Salah, Ramzi
+JO  - International Journal on Advanced Science, Engineering and Information Technology
+Y1  - 2017
+ER  - 
+
+
+TY  - JOUR
+T1  - Systematic literature review on named entity recognition: approach, method, and application
+A1  - Rustad, Supriadi
+A1  - Shidik, Guruh Fajar
+A1  - Noersasongko, Edi
+A1  - Setiadi, De Rosal Ignatius Moses
+JO  - Statistics, Optimization & Information Computing
+VL  - 12
+IS  - 4
+SP  - 907
+EP  - 942
+SN  - 2310-5070
+Y1  - 2024
+ER  - 
+
+
+TY  - CONF
+T1  - Named entity recognition in Spanish biomedical literature: Short review and BERT model
+A1  - Akhtyamova, Liliya
+JO  - 2020 26th Conference of Open Innovations Association (FRUCT)
+SP  - 1
+EP  - 7
+SN  - 9526924428
+Y1  - 2020
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - Microbial named entity recognition and normalisation for AI-assisted literature review and meta-analysis
+A1  - Patel, Dhylan
+A1  - Lain, Antoine D
+A1  - Vijayaraghavan, Avish
+A1  - Faghih-Mirzaei, Nazanin
+A1  - Mweetwa, Monica N
+A1  - Wang, Meiqi
+A1  - Beck, Tim
+A1  - Posma, Joram M
+JO  - Bioinformatics
+SP  - btag418
+SN  - 1367-4811
+Y1  - 2026
+PB  - Oxford University Press
+ER  - 
+
+
+TY  - JOUR
+T1  - A review of biomedical named entity recognition
+A1  - Chang, Lu
+A1  - Zhang, Ruihuan
+A1  - Lv, Jia
+A1  - Zhou, Weiguang
+A1  - Bai, Yunli
+JO  - Journal of Computational Methods in Science and Engineering
+VL  - 22
+IS  - 3
+SP  - 893
+EP  - 900
+SN  - 1472-7978
+Y1  - 2022
+PB  - SAGE Publications Sage UK: London, England
+ER  - 
+
+
+TY  - CONF
+T1  - A literature review of question answering system using named entity recognition
+A1  - Wongso, Rini
+A1  - Suhartono, Derwin
+JO  - 2016 3rd international conference on information technology, computer, and electrical engineering (ICITACEE)
+SP  - 274
+EP  - 277
+SN  - 150900890X
+Y1  - 2016
+PB  - IEEE
+ER  - 
+
+
+TY  - CONF
+T1  - Systematic review of effect of data augmentation using paraphrasing on named entity recognition
+A1  - Sharma, Saket
+A1  - Joshi, Aviral
+A1  - Mukhija, Namrata
+A1  - Zhao, Yiyun
+A1  - Bhathena, Hanoz
+A1  - Singh, Prateek
+A1  - Santhanam, Sashank
+A1  - Biswas, Pritam
+JO  - NeurIPS 2022 Workshop on Synthetic Data for Empowering ML Research
+Y1  - 2022
+ER  - 
+
+
+TY  - JOUR
+T1  - Recent Developments in Named Entity Recognition Techniques for Indian Languages: A Comprehensive Review
+A1  - Sarmah, Punam
+A1  - Lahkar, Manash Pratim
+A1  - Kalita, Shobhanjana
+A1  - Sharma, Utpal
+JO  - Natural Language Processing Journal
+SP  - 100199
+SN  - 2949-7191
+Y1  - 2026
+PB  - Elsevier
+ER  - 
+
+
+TY  - CONF
+T1  - A concise review of named entity recognition system: Methods and features
+A1  - Ikhwan Syafiq, M
+A1  - Shukor Talib, M
+A1  - Salim, Naomie
+A1  - Haron, Habibollah
+A1  - Alwee, Razana
+JO  - IOP Conference Series: Materials Science and Engineering
+VL  - 551
+IS  - 1
+SP  - 012052
+SN  - 1757-8981
+Y1  - 2019
+PB  - IOP Publishing
+ER  - 
+
+
+TY  - JOUR
+T1  - A Systematic Review of Specialized NLP Pipelines for Domain-Specific Named Entity Recognition: Architectures, Efficacy, and Research Gaps
+A1  - Seril, Jason Sigfred S
+ER  - 
+
+
+TY  - JOUR
+T1  - A Hybrid Systematic Literature Review and Automated Content Analysis for Named Entity Recognition in Disaster Information Management
+A1  - Shidik, Guruh Fajar
+A1  - Winarsih, Nurul Anisa Sri
+A1  - Saraswati, Galuh Wilujeng
+A1  - Saputra, Filmada Ocky
+A1  - Kusuma, Edi Jaya
+A1  - Noersasongko, Edi
+A1  - Goh, Gerald Guan Gan
+JO  - Natural Language Processing Journal
+SP  - 100207
+SN  - 2949-7191
+Y1  - 2026
+PB  - Elsevier
+ER  - 
+
+
+TY  - CONF
+T1  - A systematic review on biomedical named entity recognition
+A1  - Kanimozhi, U
+A1  - Manjula, D
+JO  - International Conference on Data Science Analytics and Applications
+SP  - 19
+EP  - 37
+Y1  - 2017
+PB  - Springer
+ER  - 
+
+
+TY  - CONF
+T1  - A Review of Biomedical Named Entity Recognition: Methods, Challenges, and Applications
+A1  - Gannoune, Nassima
+A1  - Madani, Abdellah
+A1  - Kissi, Mohammed
+JO  - International Conference on Big Data and Artificial Intelligence Applications
+SP  - 61
+EP  - 69
+Y1  - 2025
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Malay named entity recognition: a review
+A1  - Morsidi, Farid
+A1  - Sarkawi, Sulaiman
+A1  - Sulaiman, Suliana
+A1  - Mohammad, Siti Asma
+A1  - Wahid, Rohaizah Abdul
+JO  - Journal of ICT in Education
+VL  - 2
+SP  - 1
+EP  - 14
+SN  - 0127-9750
+Y1  - 2015
+ER  - 
+
+
+TY  - CONF
+T1  - A Review on Clinical Named Entity Recognition
+A1  - Kashtriya, Poonam
+A1  - Singh, Pardeep
+A1  - Bansal, Parul
+JO  - 2022 OPJU International Technology Conference on Emerging Technologies for Sustainable Development (OTCON)
+SP  - 1
+EP  - 6
+SN  - 1665492945
+Y1  - 2023
+PB  - IEEE
+ER  - 
+
+
+TY  - CONF
+T1  - A Review of Chinese Named Entity Recognition
+A1  - Wang, Sai
+A1  - Tan, Huan
+A1  - Li, Hongliang
+JO  - Proceedings of the 4th International Conference on Artificial Intelligence and Intelligent Information Processing
+SP  - 290
+EP  - 300
+Y1  - 2025
+ER  - 
+
+
+TY  - JOUR
+T1  - Chemical named entity recognition using deep learning techniques: A review
+A1  - Hema, R
+A1  - Devi, Ajantha
+JO  - Deep Natural Language Processing and AI Applications for Industry 5.0
+SP  - 59
+EP  - 73
+Y1  - 2021
+PB  - IGI Global
+ER  - 
+
+
+TY  - JOUR
+T1  - Named Entity Recognition on Islamic Texts: A Systematic Review
+A1  - Tarmizi, Shasha Arzila
+A1  - Saad, Saidah
+JO  - International Journal of Advanced Science Computing and Engineering
+VL  - 7
+IS  - 3
+SP  - 98
+EP  - 111
+SN  - 2714-7533
+Y1  - 2025
+ER  - 
+
+
+TY  - JOUR
+T1  - Named Entity Recognition for Code Review Comments
+A1  - Kachanov, Vladimir V
+A1  - Khitrova, Ariana S
+A1  - Markov, Sergey I
+JO  - Programming and Computer Software
+VL  - 50
+IS  - 7
+SP  - 511
+EP  - 523
+SN  - 0361-7688
+Y1  - 2024
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - A review of named entity recognition (NER) using automatic summarization of resumes
+A1  - Gupta, Mohan
+Y1  - 2018
+PB  - Recuperado el
+ER  - 
+
+
+TY  - CONF
+T1  - Sentiment analysis on Tripadvisor hotel review using named entity recognition
+A1  - Nalawati, Rizki Elisa
+A1  - Liliana, Dewi Yanti
+A1  - Nugrahani, Fitria
+A1  - Abiyanka, Faldan Hendra
+A1  - Karrel, Rhenald
+JO  - 2022 5th International Conference on Information and Communications Technology (ICOIACT)
+SP  - 311
+EP  - 316
+SN  - 1665451408
+Y1  - 2022
+PB  - IEEE
+ER  - 
+
+
+TY  - CONF
+T1  - Named Entity Recognition for peer-review disambiguation in academic publishing
+A1  - Cuculovic, Milos
+A1  - Fondement, Frederic
+A1  - Devanne, Maxime
+A1  - Weber, Jonathan
+A1  - Hassenforder, Michel
+JO  - 2023 6th International Conference on Information and Computer Technologies (ICICT)
+SP  - 105
+EP  - 114
+SN  - 9798350300956
+Y1  - 2023
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - Flat and Nested Named Entity Recognition: A Review.
+A1  - Vanipriya, CH
+A1  - Subhashree, M
+A1  - Abhishek, SG
+A1  - Rakshitha, J
+A1  - Gupta, Gaurav
+JO  - Turkish Online Journal of Qualitative Inquiry
+VL  - 12
+IS  - 6
+SN  - 1309-6591
+Y1  - 2021
+ER  - 
+
+
+TY  - CONF
+T1  - A review on named entity recognition in Chinese medical text
+A1  - Zhou, Lu
+A1  - Qu, Weiguang
+A1  - Wei, Tingxin
+A1  - Zhou, Junsheng
+A1  - Gu, Yanhui
+A1  - Li, Bin
+JO  - International Conference on Artificial Intelligence and Security
+SP  - 39
+EP  - 51
+Y1  - 2021
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - A review of named entity recognition research.
+A1  - Jian-ping, DING
+A1  - Wei-jun, LI
+A1  - Xue-yang, LIU
+A1  - Xu, CHEN
+JO  - Computer Engineering & Science/Jisuanji Gongcheng yu Kexue
+VL  - 46
+IS  - 7
+SN  - 1007-130X
+Y1  - 2024
+ER  - 
+
+
+TY  - JOUR
+T1  - Review Named Entity Recognition dengan Menggunakan Machine Learning
+A1  - Rachmad, Dwi Swasono
+JO  - Jurnal Sains dan Informatika
+VL  - 6
+IS  - 1
+SP  - 28
+EP  - 33
+SN  - 2598-5841
+Y1  - 2020
+ER  - 
+
+
+TY  - CONF
+T1  - Critical Literature Review of Named Entity Recognition in Symbol Spotting
+A1  - KaiBin, Ong
+A1  - Hooi, Yew Kwang
+JO  - 2021 International Conference on Computer & Information Sciences (ICCOINS)
+SP  - 220
+EP  - 225
+SN  - 1728171539
+Y1  - 2021
+PB  - IEEE
+ER  - 
+
+
+TY  - JOUR
+T1  - Advancements and Challenges in Named Entity Recognition: A Review of Techniques and Domain Specific Applications
+A1  - Shedage, Vedanti Deepak
+A1  - Pawar, Devyani Sahebrao
+A1  - Shinde, Roshani Bhanudas
+A1  - Mane, Apurva
+A1  - Ghorpade, Pradip
+JO  - ITEGAM-JETIA
+VL  - 11
+IS  - 54
+SP  - 248
+EP  - 254
+SN  - 2447-0228
+Y1  - 2025
+ER  - 
+
+
+TY  - CONF
+T1  - Deep Learning Methods for Biomedical Named Entity Recognition: A Comprehensive Review
+A1  - Sabitha, S
+A1  - Pillai, Anitha S
+JO  - International Conference on Innovations in Bio-Inspired Computing and Applications
+SP  - 109
+EP  - 120
+Y1  - 2023
+PB  - Springer
+ER  - 
+
+
+TY  - CONF
+T1  - Review Based on Named Entity Recognition for Hindi Language Using Machine Learning Approach
+A1  - Shelke, Rita
+A1  - Vanjale, Sandeep
+JO  - Proceedings of Second International Conference in Mechanical and Energy Technology: ICMET 2021, India
+SP  - 333
+EP  - 340
+Y1  - 2022
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - A REVIEW: APPROACHES AND CHALLENGESFOR NAMED ENTITY RECOGNITION FOR INDIAN LANGUAGE TEXT
+A1  - Fadnavis, Mrs Rupa A
+Y1  - 2020
+ER  - 
+
+
+TY  - JOUR
+T1  - LITERATURE REVIEW ON NAMED ENTITY RECOGNITION
+A1  - Kulkarni, Mrs Shraddha C
+A1  - Zinjore, Ranjana S
+ER  - 
+
+
+TY  - CONF
+T1  - Named Entity Recognition: A Review for Key Information Extraction
+A1  - Nandini, P
+A1  - Jairam, Bhat Geetalaxmi
+JO  - Congress on Intelligent Systems
+SP  - 427
+EP  - 437
+Y1  - 2022
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - A REVIEW OF ENHANCED IGBO LANGUAGE NAMED ENTITY RECOGNITION USING MULTILINGUAL MODELS
+A1  - Chika-Ugada, Precious Kelechukwu
+A1  - Odirichukwu, Jacinta Chioma
+A1  - Nnamdi, Reginald Nnadozie
+A1  - Odirichukwu, Simon Peter Chimaobi
+A1  - Ndigwe, Chinwe
+A1  - Njoku, Obilor Athanasius
+A1  - Atolagbe, Oluwatobi Wisdom
+A1  - Dimoji, Chigozie
+A1  - Ahubele, Betty Osamegbe
+A1  - Nwibo, Ezekiel Gabriel
+JO  - International Journal of Computing, Intelligence and Security Research
+VL  - 4
+IS  - 1
+SP  - 95
+EP  - 104
+SN  - 2736-0032
+Y1  - 2025
+ER  - 
+
+
+TY  - CONF
+T1  - Nsrl: Named entity recognition with noisy labels via selective review learning
+A1  - Huang, Xiusheng
+A1  - Chen, Yubo
+A1  - Liu, Kang
+A1  - Xie, Yuantao
+A1  - Sun, Weijian
+A1  - Zhao, Jun
+JO  - China Conference on Knowledge Graph and Semantic Computing
+SP  - 157
+EP  - 170
+Y1  - 2021
+PB  - Springer
+ER  - 
+
+
+TY  - JOUR
+T1  - Feature Detection & Classification Methods in Biomedical Named Entity Recognition Systems: A Review.
+A1  - Dubey, Nishant
+A1  - Singh, Iqbal
+JO  - International Journal of Advanced Research in Computer Science
+VL  - 6
+IS  - 6
+SN  - 0976-5697
+Y1  - 2015
+ER  - 
+
+
+TY  - JOUR
+T1  - NAMED ENTITY RECOGNITION IN GOVERNMENT DOMAIN: A SYSTEMATIC LITERATURE REVIEW
+A1  - RAMDHANI, TW
+A1  - BUDI, I
+A1  - PURWANDARI, B
+JO  - JOURNAL OF INFRASTRUCTURE, POLICY AND DEVELOPMENT
+VL  - 8
+IS  - 15
+SP  - 9789
+SN  - 2572-7923
+Y1  - 2024
+PB  - EnPress Publisher, LLC
+ER  - 
+
+
+TY  - JOUR
+T1  - Named entity recognition for code review comments
+A1  - Kachanov, Vladimir Vladimirovich
+A1  - Khitrova, Ariana Sergeevna
+A1  - Markov, Sergei Igorevich
+JO  - Proceedings of the Institute for System Programming of the RAS
+VL  - 35
+IS  - 5
+SP  - 193
+EP  - 214
+SN  - 2079-8156
+Y1  - 2023
+PB  - Institute for System Programming of the Russian Academy of Sciences
+ER  - 
+
+
+TY  - JOUR
+T1  - Artificial Intelligence Applications for Automated Data Extraction and Secondary Use of Clinical Information in Uro-oncology: A Systematic Review
+A1  - Greß, Julian
+A1  - Otto, Gordon
+A1  - Sommer, Sebastian
+A1  - Schuler, Markus K
+A1  - Khan, Shahbaz
+A1  - Schröder, Florian
+A1  - Seidel, Christoph
+JO  - European Urology Open Science
+VL  - 86
+SP  - 68
+EP  - 78
+SN  - 2666-1683
+Y1  - 2026
+PB  - Elsevier
+ER  - 
+
+
+TY  - JOUR
+T1  - Generative-AI-based approaches for information extraction from clinical notes: a scoping review
+A1  - Abdellaoui, Chaima
+A1  - Redjdal, Akram
+A1  - Seroussi, Brigitte
+JO  - Global Healthcare Transformation in the Era of Artificial Intelligence and Informatics
+SP  - 193
+EP  - 197
+Y1  - 2025
+PB  - SAGE Publications Pvt. Ltd 1 Oliver's Yard, 55 City Road, London, EC1Y 1SP
+ER  - 
+
+
+TY  - JOUR
+T1  - A review for navigating the trade-offs: evaluating open-source and proprietary large language models for clinical and biomedical information extraction
+A1  - Sugihara, Yutaka
+A1  - Milosavljevic, Aleksandar
+A1  - Jankovskaja, Skaidre
+A1  - Falk, Magnus
+JO  - Frontiers in Digital Health
+VL  - 8
+SP  - 1778786
+SN  - 2673-253X
+Y1  - 2026
+PB  - Frontiers Media SA
+ER  - 

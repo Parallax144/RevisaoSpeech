@@ -1,0 +1,260 @@
+﻿TY  - DATA
+AU  - Fagherazzi, G
+AU  - Fischer, A
+AU  - Ismael, M
+AU  - Despotovic, V
+TI  - Supplementary Material for: Voice for Health: The Use of Vocal Biomarkers from Research to Clinical Practice
+T2  - Figshare
+M3  - Data set
+AB  - Diseases can affect organs such as the heart, lungs, brain, muscles, or vocal folds, which can then alter an individuals voice. Therefore, voice analysis using artificial intelligence opens new opportunities for healthcare. From using vocal biomarkers for diagnosis, risk prediction, and remote monitoring of various clinical outcomes and symptoms, we offer in this review an overview of the various applications of voice for health-related purposes. We discuss the potential of this rapidly evolving environment from a research, patient, and clinical perspective. We also discuss the key challenges to overcome in the near future for a substantial and efficient use of voice in healthcare. Copyright: CC BY 4.0
+DA  - 2021 
+PY  - 2021
+DO  - 10.6084/m9.figshare.14430725.v1
+AN  - DRCI:DATA2021090021600520
+Y2  - 2024-11-21
+ER  -
+
+TY  - JOUR
+AU  - Fagherazzi, Guy
+AU  - Fischer, Aurelie
+AU  - Ismael, Muhannad
+AU  - Despotovic, Vladimir
+TI  - Voice for Health: The Use of Vocal Biomarkers from Research to Clinical Practice.
+T2  - Digital biomarkers
+M3  - Journal Article
+M3  - Review
+AB  - Diseases can affect organs such as the heart, lungs, brain, muscles, or vocal folds, which can then alter an individual's voice. Therefore, voice analysis using artificial intelligence opens new opportunities for healthcare. From using vocal biomarkers for diagnosis, risk prediction, and remote monitoring of various clinical outcomes and symptoms, we offer in this review an overview of the various applications of voice for health-related purposes. We discuss the potential of this rapidly evolving environment from a research, patient, and clinical perspective. We also discuss the key challenges to overcome in the near future for a substantial and efficient use of voice in healthcare.
+SN  - 2504-110X
+DA  - 2021 
+PY  - 2021
+VL  - 5
+IS  - 1
+SP  - 78
+EP  - 88
+DO  - 10.1159/000515346
+AN  - MEDLINE:34056518
+AD  - Deep Digital Phenotyping Research Unit, Department of Population Health, Luxembourg Institute of Health, Strassen, Luxembourg.
+AD  - IT for Innovation in Services Department (ITIS), Luxembourg Institute of Science and Technology (LIST), Esch-sur-Alzette, Luxembourg.
+AD  - Department of Computer Science, Faculty of Science, Technology and Medicine, University of Luxembourg, Esch-sur-Alzette, Luxembourg.
+Y2  - 2021-06-04
+ER  -
+
+TY  - JOUR
+AU  - Fischer, Aurelie
+AU  - Elbeji, Abir
+AU  - Aguayo, Gloria
+AU  - Fagherazzi, Guy
+TI  - Recommendations for Successful Implementation of the Use of Vocal Biomarkers for Remote Monitoring of COVID-19 and Long COVID in Clinical Practice and Research
+T2  - INTERACTIVE JOURNAL OF MEDICAL RESEARCH
+M3  - Article
+AB  - The COVID-19 pandemic accelerated the use of remote patient monitoring in clinical practice or research for safety and emergency reasons, justifying the need for innovative digital health solutions to monitor key parameters or symptoms related to COVID-19 or Long COVID. The use of voice-based technologies, and in particular vocal biomarkers, is a promising approach, voice being a rich, easy-to-collect medium with numerous potential applications for health care, from diagnosis to monitoring. In this viewpoint, we provide an overview of the potential benefits and limitations of using voice to monitor COVID-19, Long COVID, and related symptoms. We then describe an optimal pipeline to bring a vocal biomarker candidate from research to clinical practice and discuss recommendations to achieve such a clinical implementation successfully.
+PU  - JMIR PUBLICATIONS, INC
+PI  - TORONTO
+PA  - 130 QUEENS QUAY East, Unit 1100, TORONTO, ON M5A 0P6, CANADA
+SN  - 1929-073X
+DA  - 2022 JUL-DEC
+PY  - 2022
+VL  - 11
+IS  - 2
+DO  - 10.2196/40655
+AN  - WOS:000995875400021
+AD  - Luxembourg Inst Hlth, Dept Precis Hlth, Deep Digital Phenotyping Res Unit, Strassen, Luxembourg
+AD  - Luxembourg Inst Hlth, Deep Digital Phenotyping Res Unit, Dept Precis Hlth, 1A-B Rue Thomas Edison, L-1445 Strassen, Luxembourg
+Y2  - 2023-06-13
+ER  -
+
+TY  - JOUR
+AU  - Neto, Rafael Baena
+AU  - Sablon, Vicente Idalberto Becerra
+TI  - A Speech Analytics-Based Methodological Protocol for Monitoring Orthopedic Rehabilitation in the Brazilian Unified Health System.
+T2  - International journal of environmental research and public health
+M3  - Journal Article
+AB  - The digital transformation of health systems and the increasing adoption of data-driven public health strategies have intensified the need for methods capable of capturing, structuring, and analyzing information derived from clinical interactions. In the Brazilian Unified Health System (SUS), orthopedic rehabilitation and therapeutic exercise prescription rely heavily on communication between healthcare professionals and patients, particularly with regard to understanding instructions, reporting symptoms, and identifying barriers to treatment continuity. However, much of this information remains embedded in unstructured spoken interactions, limiting its use for monitoring and evaluation purposes. This study presents a prospective methodological protocol for the future development and validation of a speech analytics architecture designed to analyze verbal interactions in orthopedic rehabilitation within the SUS. The proposed framework integrates automatic speech recognition, speaker diarization, semantic processing with large language models (LLMs), biomedical entity extraction, and retrieval-grounded analytical components to generate structured indicators from clinical speech. In addition, the manuscript includes an illustrative simulation based on administrative proxy data converted into synthetic narratives in order to exemplify the expected structure of downstream analytical outputs. This simulation does not constitute validation of the full audio-based pipeline, but rather serves to clarify the proposed analytical workflow. Overall, the protocol establishes a structured methodological basis for future empirical studies aimed at evaluating the technical performance, semantic validity, and potential public health utility of speech analytics in rehabilitation monitoring, under appropriate ethical, regulatory, and data protection safeguards.
+SN  - 1660-4601
+DA  - 2026 May 08
+PY  - 2026
+VL  - 23
+IS  - 5
+DO  - 10.3390/ijerph23050626
+AN  - MEDLINE:42196719
+AD  - Health Data Science Postgraduate Program, Sao Francisco University (USF), Braganca Paulista 12916-900, SP, Brazil.
+Y2  - 2026-05-29
+ER  -
+
+TY  - JOUR
+AU  - Chen, Zhao
+AU  - Liang, Ning
+AU  - Li, Haoyuan
+AU  - Zhang, Haili
+AU  - Li, Huizhen
+AU  - Yan, Lijiao
+AU  - Hu, Ziteng
+AU  - Chen, Yaxin
+AU  - Zhang, Yujing
+AU  - Wang, Yanping
+AU  - Ke, Dandan
+AU  - Shi, Nannan
+TI  - Exploring explainable AI features in the vocal biomarkers of lung disease.
+T2  - Computers in biology and medicine
+M3  - Journal Article
+M3  - Review
+M3  - Research Support, Non-U.S. Gov't
+AB  - This review delves into the burgeoning field of explainable artificial intelligence (XAI) in the detection and analysis of lung diseases through vocal biomarkers. Lung diseases, often elusive in their early stages, pose a significant public health challenge. Recent advancements in AI have ushered in innovative methods for early detection, yet the black-box nature of many AI models limits their clinical applicability. XAI emerges as a pivotal tool, enhancing transparency and interpretability in AI-driven diagnostics. This review synthesizes current research on the application of XAI in analyzing vocal biomarkers for lung diseases, highlighting how these techniques elucidate the connections between specific vocal features and lung pathology. We critically examine the methodologies employed, the types of lung diseases studied, and the performance of various XAI models. The potential for XAI to aid in early detection, monitor disease progression, and personalize treatment strategies in pulmonary medicine is emphasized. Furthermore, this review identifies current challenges, including data heterogeneity and model generalizability, and proposes future directions for research. By offering a comprehensive analysis of explainable AI features in the context of lung disease detection, this review aims to bridge the gap between advanced computational approaches and clinical practice, paving the way for more transparent, reliable, and effective diagnostic tools.
+SN  - 1879-0534
+DA  - 2024 09 (Epub 2024 Jul 08)
+PY  - 2024
+VL  - 179
+SP  - 108844
+EP  - 108844
+DO  - 10.1016/j.compbiomed.2024.108844
+AN  - MEDLINE:38981214
+AD  - Institute of Basic Research in Clinical Medicine, China Academy of Chinese Medical Sciences, Beijing, China.
+AD  - Special Disease Clinic, Huaishuling Branch of Beijing Fengtai Hospital of Integrated Traditional Chinese and Western Medicine, Beijing, China. Electronic address: kedandan1987@163.com.
+AD  - State Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, Beijing, China; Institute of Basic Research in Clinical Medicine, China Academy of Chinese Medical Sciences, Beijing, China. Electronic address: 13811839164@vip.126.com.
+Y2  - 2024-07-12
+ER  -
+
+TY  - CPAPER
+AU  - Martin, Vincent R.
+AU  - Rouas, Jean-Luc
+ED  - Calzolari, N
+ED  - Kan, MY
+ED  - Hoste, V
+ED  - Lenci, A
+ED  - Sakti, S
+ED  - Xue, N
+TI  - Why Voice Biomarkers of Psychiatric Disorders are not used in Clinical Practice? Deconstructing the Myth of the Need for Objective Diagnoses
+T2  - PROCEEDINGS OF THE 2024 JOINT INTERNATIONAL CONFERENCE ON COMPUTATIONAL LINGUISTICS, LANGUAGE RESOURCES AND EVALUATION (LREC-COLING 2024)
+M3  - Proceedings Paper
+CP  - 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation-LREC-COLING
+CL  - Torino, ITALY
+AB  - Voice biomarkers hold the promise of improving access to care and therapeutic follow-up for people with psychiatric disorders, tackling the issues raised by their high prevalence and the significant diagnostic delays and difficulties in patients follow-up. Yet, despite many years of successful research in the field, none of these voice biomarkers are implemented in clinical practice. Beyond the reductive explanation of the lack of explainability of the involved machine learning systems, we look for arguments in the epistemology and sociology of psychiatry. We show that the estimation of diagnoses, the major task in the literature, is of little interest to both clinicians and patients. After tackling the common misbeliefs about diagnosis in psychiatry in a didactic way, we propose a paradigm shift towards the estimation of clinical symptoms and signs, which not only address the limitations raised against diagnosis estimation but also enable the formulation of new machine learning tasks. We hope that this paradigm shift will empower the use of vocal biomarkers in clinical practice. It is however conditional on a change in database labeling practices, but also on a profound change in the speech processing community's practices towards psychiatry.
+PU  - ASSOC COMPUTATIONAL LINGUISTICS-ACL
+PI  - STROUDSBURG
+PA  - 209 N EIGHTH STREET, STROUDSBURG, PA 18360 USA
+SN  - 2951-2093
+SN  - 978-2-493814-10-4
+DA  - 2024 
+PY  - 2024
+SP  - 17603
+EP  - 17613
+AN  - WOS:001612977900754
+AD  - LIH, DDP Res Unit, Dept Precis Hlth, Luxembourg, Luxembourg
+AD  - Univ Bordeaux, LaBRI, Bordeaux INP, CNRS,UMR 5800, F-33400 Talence, France
+AD  - Univ Bordeaux, CHU Pellegrin, SANPSY, CNRS,UMR 6033, F-33076 Bordeaux, France
+Y2  - 2024-01-01
+ER  -
+
+TY  - CPAPER
+AU  - Cala, Federico
+ED  - Frassineti, L
+ED  - Lanata, A
+ED  - Manfredi, C
+TI  - VOCAL BIOMARKERS OF DYSPHONIA AND THEIR INTERPRETABILITY: CHALLENGES FOR AN UNDERSTANDABLE AI
+T2  - MODELS AND ANALYSIS OF VOCAL EMISSIONS FOR BIOMEDICAL APPLICATIONS
+M3  - Proceedings Paper
+CP  - 14th International Workshop on MODELS AND ANALYSIS OF VOCAL EMISSIONS FOR BIOMEDICAL APPLICATIONS-MAVEBA
+CL  - Firenze, ITALY
+AB  - Acoustic recordings of vocal emissions are multidimensional signals that can describe human health with a cost-effective and contactless approach. Their analysis relies on the extraction of diverse features across time, frequency, cepstral, and nonlinear dynamic domains, each capturing complementary aspects of voice production. These descriptors, ranging from perturbation measures to cepstral parameters, were used as inputs for artificial intelligence (AI) models to distinguish healthy from pathological voices or predict clinical severity scores. Despite achieving high accuracies in experimental studies, such systems remain underutilized in clinical practice, largely due to limited interpretability. Black-box predictions do meet clinicians' needs for detailed, not physiologically meaningful information to guide decisions. To address this gap, explainable AI (XAI) strategies have been also applied in acoustic analysis to define pathological voice properties. These methods provide novel and quantitative insights into which acoustic features define models' predictions, supporting the decision-making process and the usage of such systems. These efforts are leading to the affirmation of a new branch, called audiomics, that focuses not only predictive performance but also on interpretability, bridging computational results with clinical expertise to foster future applicability.
+PU  - Firenze Univ Press
+PI  - Firenze
+PA  - via Cittadella 7, Firenze, ITALY
+SN  - 2704-601X
+SN  - 979-12-215-0820-8
+SN  - 979-12-215-0821-5
+DA  - 2025 
+PY  - 2025
+VL  - 139
+SP  - 41
+EP  - 44
+AN  - WOS:001686443700007
+AD  - Univ Firenze, Dept Informat Engn, Florence, Italy
+Y2  - 2026-03-04
+ER  -
+
+TY  - JOUR
+AU  - Simone Waquim Ansarah
+TI  - Kuida PsicAnalytix: Artificial Intelligence Algorithm-Assisted Mental Health Platform for Psychodiagnostic Support and Patient Follow-Up
+M3  - Awarded Grant
+AB  - Kuida is a startup founded with the aim of developing machine learning technologies for mental health. Kuida offers a corporate mental health program for healthcare institutions in group format, focusing on anxiety, depression, and burnout, and utilizes technology to assist in patient screening and clinical follow-up.Around 10% of the Brazilian population suffers from Generalized Anxiety Disorder (GAD) or Major Depressive Disorder (MDD), and about 76% of Brazilians rely on the Sistema Único de Saúde (SUS), a public health system. In 2023, over 288 thousand disability benefits were granted due to mental and behavioral disorders in Brazil, representing a high cost to the social security system. While there is a lack of access to care and excessive spending on absences, surveys suggest that the time spent by a professional in patient follow-up, namely the time used for notes and updating progress in medical records about patient monitoring and progress, is equivalent to almost 10 appointments that he could make in a period of 1 month.New solutions have emerged with the aim of addressing challenges related to mental health. Among them, the use of Artificial Intelligence (AI) in speech attribute analysis has already enabled the launch of new solutions in the market to support professionals' daily work. In the United States, approximately $70 million has been invested recently in startups developing vocal biomarkers for anxiety and depression detection, mainly in Series A rounds. Despite this growing market worldwide, the linguistic particularities of each country hinder the internationalization of these solutions.The development of a technical-scientific proof of concept of a digital telehealth platform integrated with audio transcription tools and automatic content categorization to assist in psychodiagnosis and patient follow-up is the main expected result in PIPE Phase 1. (AU)
+DA  - 2024 
+PY  - 2024
+AN  - GRANTS:17877237
+G1  - 24/06491-0
+Y2  - 2025-02-18
+ER  -
+
+TY  - JOUR
+AU  - Higa, Eduardo
+AU  - Elbeji, Abir
+AU  - Zhang, Lu
+AU  - Fischer, Aurelie
+AU  - Aguayo, Gloria A.
+AU  - Nazarov, Petr, V
+AU  - Fagherazzi, Guy
+TI  - Discovery and Analytical Validation of a Vocal Biomarker to Monitor Anosmia and Ageusia in Patients With COVID-19: Cross-sectional Study
+T2  - JMIR MEDICAL INFORMATICS
+M3  - Article
+AB  - Background: The COVID-19 disease has multiple symptoms, with anosmia and ageusia being the most prevalent, varying from 75% to 95% and from 50% to 80% of infected patients, respectively. An automatic assessment tool for these symptoms will help monitor the disease in a fast and noninvasive manner.Objective: We hypothesized that people with COVID-19 experiencing anosmia and ageusia had different voice features than those without such symptoms. Our objective was to develop an artificial intelligence pipeline to identify and internally validate a vocal biomarker of these symptoms for remotely monitoring them. Methods: This study used population-based data. Participants were assessed daily through a web-based questionnaire and asked to register 2 different types of voice recordings. They were adults (aged >18 years) who were confirmed by a polymerase chain reaction test to be positive for COVID-19 in Luxembourg and met the inclusion criteria. Statistical methods such as recursive feature elimination for dimensionality reduction, multiple statistical learning methods, and hypothesis tests were used throughout this study. The TRIPOD (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis) Prediction Model Development checklist was used to structure the research.Results: This study included 259 participants. Younger (aged <35 years) and female participants showed higher rates of ageusia and anosmia. Participants were aged 41 (SD 13) years on average, and the data set was balanced for sex (female: 134/259, 51.7%; male: 125/259, 48.3%). The analyzed symptom was present in 94 (36.3%) out of 259 participants and in 450 (27.5%) out of 1636 audio recordings. In all, 2 machine learning models were built, one for Android and one for iOS devices, and both had high accuracy-88% for Android and 85% for iOS. The final biomarker was then calculated using these models and internally validated.Conclusions: This study demonstrates that people with COVID-19 who have anosmia and ageusia have different voice features from those without these symptoms. Upon further validation, these vocal biomarkers could be nested in digital devices to improve symptom assessment in clinical practice and enhance the telemonitoring of COVID-19-related symptoms.Trial Registration: Clinicaltrials.gov NCT04380987; https://clinicaltrials.gov/ct2/show/NCT04380987 (JMIR Med Inform 2022;10(11):e35622) doi: 10.2196/35622
+PU  - JMIR PUBLICATIONS, INC
+PI  - TORONTO
+PA  - 130 QUEENS QUAY East, Unit 1100, TORONTO, ON M5A 0P6, CANADA
+SN  - 2291-9694
+DA  - 2022 NOV
+PY  - 2022
+VL  - 10
+IS  - 11
+C7  - e35622
+DO  - 10.2196/35622
+AN  - WOS:000892552700013
+AD  - Luxembourg Inst Hlth, Dept Populat Hlth, Deep Digital Phenotyping Res Unit, 1A-B Rue Thomas Edison, L-1445 Strassen, Luxembourg
+AD  - Luxembourg Inst Hlth, Quantitat Biol Unit, Bioinformat Platform, Strassen, Luxembourg
+Y2  - 2022-12-31
+ER  -
+
+TY  - JOUR
+AU  - De Silva, Upeka
+AU  - Madanian, Samaneh
+AU  - Olsen, Sharon
+AU  - Templeton, John Michael
+AU  - Poellabauer, Christian
+AU  - Schneider, Sandra L.
+AU  - Narayanan, Ajit
+AU  - Rubaiat, Rahmina
+TI  - Clinical Decision Support Using Speech Signal Analysis: Systematic Scoping Review of Neurological Disorders
+T2  - JOURNAL OF MEDICAL INTERNET RESEARCH
+M3  - Review
+AB  - Background: Digital biomarkers are increasingly used in clinical decision support for various health conditions. Speech features as digital biomarkers can offer insights into underlying physiological processes due to the complexity of speech production. This process involves respiration, phonation, articulation, and resonance, all of which rely on specific motor systems for the preparation and execution of speech. Deficits in any of these systems can cause changes in speech signal patterns. Increasing efforts are being made to develop speech-based clinical decision support systems. Objective: This systematic scoping review investigated the technological revolution and recent digital clinical speech signal analysis trends to understand the key concepts and research processes from clinical and technical perspectives. Methods: A systematic scoping review was undertaken in 6 databases guided by a set of research questions. Articles that focused on speech signal analysis for clinical decision-making were identified, and the included studieswere analyzed quantitatively. A narrower scope of studies investigating neurological diseases were analyzed using qualitative content analysis. Results: A total of 389 articles met the initial eligibility criteria, of which 72 (18.5%) that focused on neurological diseases were included in the qualitative analysis. In the included studies, Parkinson disease, Alzheimer disease, and cognitive disorders were the most frequently investigated conditions. The literature explored the potential of speech feature analysis in diagnosis, differentiating between, assessing the severity and monitoring the treatment of neurological conditions. The common speech tasks used were sustained phonations, diadochokinetic tasks, reading tasks, activity-based tasks, picture descriptions, and prompted speech tasks. From these tasks, conventional speech features (such as fundamental frequency, jitter, and shimmer), advanced digital signal processing-based speech features (such as wavelet transformation-based features), and spectrograms in the form of audio images were analyzed. Traditional machine learning and deep learning approaches were used to build predictive models, whereas statistical analysis assessed variable relationships and reliability of speech features. Model evaluations primarily focused on analytical validations. A significant research gap was identified: the need for a structured research process to guide studies toward potential technological intervention in clinical settings. To address this, a research framework was proposed that adapts a design science research methodology to guide research studies systematically. Conclusions:The findings highlight how data science techniques can enhance speech signal analysis to support clinical decision-making. By combining knowledge from clinical practice, speech science, and data science within a structured research framework, future research may achieve greater clinical relevance.
+PU  - JMIR PUBLICATIONS, INC
+PI  - TORONTO
+PA  - 130 QUEENS QUAY East, Unit 1100, TORONTO, ON M5A 0P6, CANADA
+SN  - 1438-8871
+DA  - 2025 JAN 13
+PY  - 2025
+VL  - 27
+C7  - e63004
+DO  - 10.2196/63004
+AN  - WOS:001411130500002
+AD  - Auckland Univ Technol, Dept Comp Sci & Software Engn, 55 Wellesley St East, Auckland 1010, New Zealand
+AD  - Auckland Univ Technol, Rehabil Innovat Ctr, Auckland, New Zealand
+AD  - Univ S Florida, Sch Comp Sci & Engn, Tampa, FL USA
+AD  - Florida Int Univ, Sch Comp & Informat Sci, Miami, FL USA
+AD  - St Marys Coll, Dept Commun Sci & Disorders, Notre Dame, IN USA
+AD  - Florida Int Univ, Knight Fdn Comp & Informat Sci, Miami, FL USA
+M2  - St Marys Coll
+Y2  - 2025-02-09
+ER  -
+
+TY  - BOOK
+AU  - Hlavnička, Jan
+Z2  -  
+TI  - Automated Analysis of Speech Disorders in Neurodegenerative Diseases
+M3  - Dissertation/Thesis
+SN  - 9798802729885
+DA  - 2018 
+PY  - 2018
+AN  - PQDT:68447287
+AD  - Czech Technical University, Czech Republic
+M2  - Czech Technical University
+ER  -
+

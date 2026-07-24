@@ -1,0 +1,801 @@
+PMID- 39038117
+STAT- Publisher
+PB  - Patient-Centered Outcomes Research Institute (PCORI)
+CTI - PCORI Final Research Reports
+DP  - 2021 Aug
+BTI - Identifying Topics in Patient and Doctor Conversations Using Natural Language 
+      Processing Methods
+AB  - BACKGROUND: Amid electronic health records and laboratory tests, office-based 
+      patient and provider communication is still the heart of primary care. Patients 
+      often present multiple complaints and, consequently, may be expressing intense 
+      emotions, requiring physicians to decide how to balance competing demands. How 
+      physicians navigate conversations has implications for patient satisfaction, 
+      payments, and quality of care. However, traditional observational measures of 
+      emotions and what is discussed during clinical visits are slow and costly and do 
+      not scale for use in clinical practice. We evaluated machine-learning methods for 
+      automated annotation of medical topics and emotional valence in patient-provider 
+      dialogue transcripts. OBJECTIVES: The specific aims of the current study were to 
+      develop and evaluate natural language processing (NLP) models that predict (1) 
+      topics of conversations and (2) emotional valence of patient-provider 
+      interactions. METHODS: Using transcripts from primary care visits, we developed 
+      machine-learning models that predicted talk-turn (eg, speaker statements in a 
+      conversation that are bounded at the beginning and end by statements of the other 
+      speaker) topics and emotion labels of patient-provider interactions. First, we 
+      developed nonsequential NLP models that predicted topic labels on the basis of 
+      single or multiple local talk-turns (eg, logistic classifiers, support vector 
+      machines, word-level gated recurrent units), as well as fully sequential models 
+      that integrated information across talk-turn sequences (eg, conditional random 
+      fields, hidden Markov models, hierarchical gated recurrent units). Second, we 
+      compared 2 machine-learning models, a recurrent neural network with a 
+      hierarchical structure and a logistic regression classifier, to recognize the 
+      emotional valence of each utterance in the transcripts. RESULTS: For medical 
+      topics, sequential models had greater topic classification accuracy at the 
+      talk-turn level and greater precision at the visit level. Nonsequential models 
+      had higher topic recall scores at the visit level compared with sequential 
+      models. The agreement of emotion ratings from the recurrent neural-network model 
+      with human ratings was comparable to that of human-human interrater agreement. 
+      The weighted average of the correlation coefficients for the recurrent 
+      neural-network model with human raters was 0.60, as was the human rater 
+      agreement. CONCLUSIONS: Incorporating sequential information across talk-turns 
+      improved the accuracy of topic prediction in patient-provider dialogue by 
+      smoothing out noisy information from talk-turns. The recurrent neural-network 
+      model predicted the emotional valence of patients and physicians during primary 
+      care visits with similar reliability as human raters. As an initial machine 
+      learning-based evaluation of topic and emotion recognition in primary care visit 
+      conversations, our work provides valuable baselines for applications that might 
+      be helpful in monitoring physician navigation of patient concerns, supporting 
+      physicians in empathic communication, or examining the role of emotion in 
+      patient-centered care. LIMITATIONS: Although our results are promising, more 
+      advanced prediction techniques and larger labeled data sets will likely be 
+      required to improve prediction performance.
+CI  - Copyright © 2022. University of Utah. All Rights Reserved.
+FAU - Imel, Zac
+AU  - Imel Z
+AD  - University of Utah, Salt Lake City
+FAU - Tai-Seale, Ming
+AU  - Tai-Seale M
+AD  - University of California, San Diego
+FAU - Smyth, Padhraic
+AU  - Smyth P
+AD  - University of California, Irvine
+FAU - Atkins, David
+AU  - Atkins D
+AD  - University of Washington, Seattle
+LA  - eng
+PT  - Review
+PT  - Book
+PL  - Washington (DC)
+EDAT- 2021/08/01 00:00
+CRDT- 2021/08/01 00:00
+AID - NBK605032 [bookaccession]
+AID - 10.25302/08.2021.ME.160234167 [doi]
+
+PMID- 33653690
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20211109
+LR  - 20240807
+IS  - 2632-1009 (Electronic)
+IS  - 2632-1009 (Linking)
+VI  - 28
+IP  - 1
+DP  - 2021 Mar
+TI  - Applying natural language processing and machine learning techniques to patient 
+      experience feedback: a systematic review.
+LID - 10.1136/bmjhci-2020-100262 [doi]
+LID - e100262
+AB  - OBJECTIVES: Unstructured free-text patient feedback contains rich information, 
+      and analysing these data manually would require a lot of personnel resources 
+      which are not available in most healthcare organisations.To undertake a 
+      systematic review of the literature on the use of natural language processing 
+      (NLP) and machine learning (ML) to process and analyse free-text patient 
+      experience data. METHODS: Databases were systematically searched to identify 
+      articles published between January 2000 and December 2019 examining NLP to 
+      analyse free-text patient feedback. Due to the heterogeneous nature of the 
+      studies, a narrative synthesis was deemed most appropriate. Data related to the 
+      study purpose, corpus, methodology, performance metrics and indicators of quality 
+      were recorded. RESULTS: Nineteen articles were included. The majority (80%) of 
+      studies applied language analysis techniques on patient feedback from social 
+      media sites (unsolicited) followed by structured surveys (solicited). Supervised 
+      learning was frequently used (n=9), followed by unsupervised (n=6) and 
+      semisupervised (n=3). Comments extracted from social media were analysed using an 
+      unsupervised approach, and free-text comments held within structured surveys were 
+      analysed using a supervised approach. Reported performance metrics included the 
+      precision, recall and F-measure, with support vector machine and Naïve Bayes 
+      being the best performing ML classifiers. CONCLUSION: NLP and ML have emerged as 
+      an important tool for processing unstructured free text. Both supervised and 
+      unsupervised approaches have their role depending on the data source. With the 
+      advancement of data analysis tools, these techniques may be useful to healthcare 
+      organisations to generate insight from the volumes of unstructured free-text 
+      data.
+CI  - © Author(s) (or their employer(s)) 2021. Re-use permitted under CC BY-NC. No 
+      commercial re-use. See rights and permissions. Published by BMJ.
+FAU - Khanbhai, Mustafa
+AU  - Khanbhai M
+AUID- ORCID: 0000-0002-4434-1785
+AD  - Patient Safety Translational Research Centre, Imperial College of Science 
+      Technology and Medicine, London, UK m.khanbhai@imperial.ac.uk.
+FAU - Anyadi, Patrick
+AU  - Anyadi P
+AD  - Patient Safety Translational Research Centre, Imperial College of Science 
+      Technology and Medicine, London, UK.
+FAU - Symons, Joshua
+AU  - Symons J
+AD  - Big Data and Analytical Unit, Imperial College of Science Technology and 
+      Medicine, London, UK.
+FAU - Flott, Kelsey
+AU  - Flott K
+AD  - Patient Safety Translational Research Centre, Imperial College of Science 
+      Technology and Medicine, London, UK.
+FAU - Darzi, Ara
+AU  - Darzi A
+AD  - Institute of Global Health Innovation, Imperial College of Science Technology and 
+      Medicine, London, UK.
+FAU - Mayer, Erik
+AU  - Mayer E
+AD  - Patient Safety Translational Research Centre, Imperial College of Science 
+      Technology and Medicine, London, UK.
+LA  - eng
+PT  - Journal Article
+PT  - Systematic Review
+PL  - England
+TA  - BMJ Health Care Inform
+JT  - BMJ health & care informatics
+JID - 101745500
+SB  - IM
+MH  - Bayes Theorem
+MH  - Electronic Health Records
+MH  - *Feedback
+MH  - Humans
+MH  - *Machine Learning
+MH  - *Natural Language Processing
+MH  - Patient Outcome Assessment
+MH  - *Patient Satisfaction/statistics & numerical data
+MH  - Social Media
+PMC - PMC7929894
+OTO - NOTNLM
+OT  - BMJ health informatics
+OT  - computer methodologies
+OT  - information management
+OT  - patient care
+COIS- Competing interests: None declared.
+EDAT- 2021/03/04 06:00
+MHDA- 2021/11/10 06:00
+PMCR- 2021/03/02
+CRDT- 2021/03/03 05:38
+PHST- 2020/10/19 00:00 [received]
+PHST- 2021/01/03 00:00 [revised]
+PHST- 2021/01/12 00:00 [accepted]
+PHST- 2021/03/03 05:38 [entrez]
+PHST- 2021/03/04 06:00 [pubmed]
+PHST- 2021/11/10 06:00 [medline]
+PHST- 2021/03/02 00:00 [pmc-release]
+AID - bmjhci-2020-100262 [pii]
+AID - 10.1136/bmjhci-2020-100262 [doi]
+PST - ppublish
+SO  - BMJ Health Care Inform. 2021 Mar;28(1):e100262. doi: 10.1136/bmjhci-2020-100262.
+
+PMID- 41047156
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20251005
+LR  - 20251118
+IS  - 1751-7893 (Electronic)
+IS  - 1751-7885 (Print)
+IS  - 1751-7885 (Linking)
+VI  - 19
+IP  - 10
+DP  - 2025 Oct
+TI  - Speech and Language Markers as Longitudinal Predictors of Youth Mental Health: A 
+      Systematic Review.
+PG  - e70102
+LID - 10.1111/eip.70102 [doi]
+LID - e70102
+AB  - INTRODUCTION: Severe mental disorders in young people (< 25 years) are often 
+      preceded by subtle changes in communication and thinking, detectable in speech. 
+      Speech and language markers are promising for early detection; however, no 
+      systematic review has evaluated their prospective utility in predicting mental 
+      disorders in youth. We comprehensively reviewed longitudinal studies assessing 
+      speech/language markers as predictors of major mental disorder onset or symptom 
+      progression in youth. METHODS: We searched for longitudinal studies using 
+      recorded speech samples from youth or family members to predict diagnostic 
+      changes or symptom severity in major depressive disorder (MDD), psychosis, ADHD, 
+      substance use disorder, bipolar disorder, OCD and eating disorders. Risk of bias 
+      was assessed using the Newcastle-Ottawa Scale. Our protocol was pre-registered 
+      (CRD42024579798). RESULTS: Of 2260 articles, 11 studies met inclusion criteria, 
+      covering MDD (n = 3), psychosis (n = 5) and ADHD (n = 3). No eligible studies 
+      were found for OCD, substance use, bipolar or eating disorders. Both manual and 
+      computational speech analyses were used, with speech samples from parents and 
+      youth. Predictive speech/language markers included parental expressed emotion 
+      (MDD, ADHD), formal thought disorder (psychosis) and acoustic/linguistic features 
+      (psychosis, ADHD). Study quality was moderate to good (mean score: 5.45/8). 
+      CONCLUSIONS: Externally validated longitudinal studies on the predictive value of 
+      speech/language markers of youth-onset mental disorders are scarce, restricted to 
+      a few target disorders and do not allow for variations due to the developmental 
+      stage of the samples. Nonetheless, existing studies highlight the potential of 
+      applying Natural Language Processing methods to speech samples from both youth 
+      and parents for early identification.
+CI  - © 2025 The Author(s). Early Intervention in Psychiatry published by John Wiley & 
+      Sons Australia, Ltd.
+FAU - Sellier Silva, Martin
+AU  - Sellier Silva M
+AUID- ORCID: 0009-0000-4435-6963
+AD  - Douglas Mental Health University Institute, Department of Psychiatry, McGill 
+      University, Montreal, Quebec, Canada.
+FAU - Ahrens, Jessica
+AU  - Ahrens J
+AD  - Douglas Mental Health University Institute, Department of Psychiatry, McGill 
+      University, Montreal, Quebec, Canada.
+AD  - Integrated Program in Neuroscience, McGill University, Montreal, Quebec, Canada.
+FAU - Meister, Fiona
+AU  - Meister F
+AD  - Douglas Mental Health University Institute, Department of Psychiatry, McGill 
+      University, Montreal, Quebec, Canada.
+FAU - Palaniyappan, Lena
+AU  - Palaniyappan L
+AD  - Douglas Mental Health University Institute, Department of Psychiatry, McGill 
+      University, Montreal, Quebec, Canada.
+AD  - Integrated Program in Neuroscience, McGill University, Montreal, Quebec, Canada.
+AD  - Department of Psychiatry, Schulich School of Medicine and Dentistry, Western 
+      University, London, Ontario, Canada.
+LA  - eng
+GR  - Early Psychosis Intervention Canada/
+GR  - Schizophrenia Society of Canada Foundation/
+GR  - CAPMC/CIHR/Canada
+GR  - Quebec Bio-Imaging Network (QBIN)/
+GR  - Canada First Research Excellence Fund/
+GR  - Graham Boeckh Foundation/
+GR  - FRQS #366934/Fonds de Recherche du Québec - Santé/
+GR  - Molson Foundation/
+PT  - Journal Article
+PT  - Systematic Review
+PL  - Australia
+TA  - Early Interv Psychiatry
+JT  - Early intervention in psychiatry
+JID - 101320027
+SB  - IM
+MH  - Adolescent
+MH  - Humans
+MH  - *Language
+MH  - Longitudinal Studies
+MH  - *Mental Disorders/diagnosis
+MH  - *Speech
+PMC - PMC12497510
+OTO - NOTNLM
+OT  - communication
+OT  - prediction
+OT  - psychopathology
+OT  - speech
+OT  - youth mental health
+COIS- Dr. Lena Palaniyappan reports personal fees for serving as chief editor from the 
+      Canadian Medical Association Journals, speaker/consultant fees from Janssen 
+      Canada and Otsuka Canada, SPMM Course Limited, UK, Canadian Psychiatric 
+      Association; book royalties from Oxford University Press; investigator‐initiated 
+      educational grants from Janssen Canada, Sunovion and Otsuka Canada outside the 
+      submitted work. The other authors declare no conflicts of interest.
+EDAT- 2025/10/06 00:27
+MHDA- 2025/10/06 00:28
+PMCR- 2025/10/06
+CRDT- 2025/10/05 20:35
+PHST- 2025/08/04 00:00 [revised]
+PHST- 2025/05/01 00:00 [received]
+PHST- 2025/09/18 00:00 [accepted]
+PHST- 2025/10/06 00:28 [medline]
+PHST- 2025/10/06 00:27 [pubmed]
+PHST- 2025/10/05 20:35 [entrez]
+PHST- 2025/10/06 00:00 [pmc-release]
+AID - EIP70102 [pii]
+AID - 10.1111/eip.70102 [doi]
+PST - ppublish
+SO  - Early Interv Psychiatry. 2025 Oct;19(10):e70102. doi: 10.1111/eip.70102.
+
+PMID- 38100200
+OWN - NLM
+STAT- PubMed-not-MEDLINE
+LR  - 20240101
+IS  - 2291-9694 (Print)
+IS  - 2291-9694 (Electronic)
+IS  - 2291-9694 (Linking)
+VI  - 11
+DP  - 2023 Dec 15
+TI  - Applying Natural Language Processing to Textual Data From Clinical Data 
+      Warehouses: Systematic Review.
+PG  - e42477
+LID - 10.2196/42477 [doi]
+LID - e42477
+AB  - BACKGROUND: In recent years, health data collected during the clinical care 
+      process have been often repurposed for secondary use through clinical data 
+      warehouses (CDWs), which interconnect disparate data from different sources. A 
+      large amount of information of high clinical value is stored in unstructured text 
+      format. Natural language processing (NLP), which implements algorithms that can 
+      operate on massive unstructured textual data, has the potential to structure the 
+      data and make clinical information more accessible. OBJECTIVE: The aim of this 
+      review was to provide an overview of studies applying NLP to textual data from 
+      CDWs. It focuses on identifying the (1) NLP tasks applied to data from CDWs and 
+      (2) NLP methods used to tackle these tasks. METHODS: This review was performed 
+      according to the PRISMA (Preferred Reporting Items for Systematic Reviews and 
+      Meta-Analyses) guidelines. We searched for relevant articles in 3 bibliographic 
+      databases: PubMed, Google Scholar, and ACL Anthology. We reviewed the titles and 
+      abstracts and included articles according to the following inclusion criteria: 
+      (1) focus on NLP applied to textual data from CDWs, (2) articles published 
+      between 1995 and 2021, and (3) written in English. RESULTS: We identified 1353 
+      articles, of which 194 (14.34%) met the inclusion criteria. Among all identified 
+      NLP tasks in the included papers, information extraction from clinical text 
+      (112/194, 57.7%) and the identification of patients (51/194, 26.3%) were the most 
+      frequent tasks. To address the various tasks, symbolic methods were the most 
+      common NLP methods (124/232, 53.4%), showing that some tasks can be partially 
+      achieved with classical NLP techniques, such as regular expressions or pattern 
+      matching that exploit specialized lexica, such as drug lists and terminologies. 
+      Machine learning (70/232, 30.2%) and deep learning (38/232, 16.4%) have been 
+      increasingly used in recent years, including the most recent approaches based on 
+      transformers. NLP methods were mostly applied to English language data (153/194, 
+      78.9%). CONCLUSIONS: CDWs are central to the secondary use of clinical texts for 
+      research purposes. Although the use of NLP on data from CDWs is growing, there 
+      remain challenges in this field, especially with regard to languages other than 
+      English. Clinical NLP is an effective strategy for accessing, extracting, and 
+      transforming data from CDWs. Information retrieved with NLP can assist in 
+      clinical research and have an impact on clinical practice.
+CI  - ©Adrien Bazoge, Emmanuel Morin, Béatrice Daille, Pierre-Antoine Gourraud. 
+      Originally published in JMIR Medical Informatics (https://medinform.jmir.org), 
+      15.12.2023.
+FAU - Bazoge, Adrien
+AU  - Bazoge A
+AUID- ORCID: 0000-0002-9723-9688
+AD  - Nantes Université, École Centrale Nantes, CNRS, LS2N, UMR 6004, F-44000 Nantes, 
+      France.
+AD  - Nantes Université, CHU de Nantes, Pôle Hospitalo-Universitaire 11: Santé 
+      Publique, Clinique des données, INSERM, CIC 1413, F-44000 Nantes, France.
+FAU - Morin, Emmanuel
+AU  - Morin E
+AUID- ORCID: 0000-0001-8208-7039
+AD  - Nantes Université, École Centrale Nantes, CNRS, LS2N, UMR 6004, F-44000 Nantes, 
+      France.
+FAU - Daille, Béatrice
+AU  - Daille B
+AUID- ORCID: 0000-0001-9095-7372
+AD  - Nantes Université, École Centrale Nantes, CNRS, LS2N, UMR 6004, F-44000 Nantes, 
+      France.
+FAU - Gourraud, Pierre-Antoine
+AU  - Gourraud PA
+AUID- ORCID: 0000-0003-1131-9554
+AD  - Nantes Université, CHU de Nantes, Pôle Hospitalo-Universitaire 11: Santé 
+      Publique, Clinique des données, INSERM, CIC 1413, F-44000 Nantes, France.
+AD  - Nantes Université, INSERM, CHU de Nantes, École Centrale Nantes, Centre de 
+      Recherche Translationnelle en Transplantation et Immunologie, CR2TI, F-44000 
+      Nantes, France.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+DEP - 20231215
+PL  - Canada
+TA  - JMIR Med Inform
+JT  - JMIR medical informatics
+JID - 101645109
+PMC - PMC10757232
+OTO - NOTNLM
+OT  - AI
+OT  - artificial intelligence
+OT  - clinical data warehouse
+OT  - data warehousing
+OT  - natural language processing
+COIS- Conflicts of Interest: None declared.
+EDAT- 2023/12/15 12:42
+MHDA- 2023/12/15 12:43
+PMCR- 2023/12/15
+CRDT- 2023/12/15 11:55
+PHST- 2022/09/05 00:00 [received]
+PHST- 2023/09/07 00:00 [accepted]
+PHST- 2023/01/16 00:00 [revised]
+PHST- 2023/12/15 12:43 [medline]
+PHST- 2023/12/15 12:42 [pubmed]
+PHST- 2023/12/15 11:55 [entrez]
+PHST- 2023/12/15 00:00 [pmc-release]
+AID - v11i1e42477 [pii]
+AID - 10.2196/42477 [doi]
+PST - epublish
+SO  - JMIR Med Inform. 2023 Dec 15;11:e42477. doi: 10.2196/42477.
+
+PMID- 36688526
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230320
+LR  - 20260307
+IS  - 1527-974X (Electronic)
+IS  - 1067-5027 (Print)
+IS  - 1067-5027 (Linking)
+VI  - 30
+IP  - 4
+DP  - 2023 Mar 16
+TI  - "Mm-hm," "Uh-uh": are non-lexical conversational sounds deal breakers for the 
+      ambient clinical documentation technology?
+PG  - 703-711
+LID - 10.1093/jamia/ocad001 [doi]
+AB  - OBJECTIVES: Ambient clinical documentation technology uses automatic speech 
+      recognition (ASR) and natural language processing (NLP) to turn patient-clinician 
+      conversations into clinical documentation. It is a promising approach to reducing 
+      clinician burden and improving documentation quality. However, the performance of 
+      current-generation ASR remains inadequately validated. In this study, we 
+      investigated the impact of non-lexical conversational sounds (NLCS) on ASR 
+      performance. NLCS, such as Mm-hm and Uh-uh, are commonly used to convey important 
+      information in clinical conversations, for example, Mm-hm as a "yes" response 
+      from the patient to the clinician question "are you allergic to antibiotics?" 
+      MATERIALS AND METHODS: In this study, we evaluated 2 contemporary ASR engines, 
+      Google Speech-to-Text Clinical Conversation ("Google ASR"), and Amazon Transcribe 
+      Medical ("Amazon ASR"), both of which have their language models specifically 
+      tailored to clinical conversations. The empirical data used were from 36 primary 
+      care encounters. We conducted a series of quantitative and qualitative analyses 
+      to examine the word error rate (WER) and the potential impact of misrecognized 
+      NLCS on the quality of clinical documentation. RESULTS: Out of a total of 135 647 
+      spoken words contained in the evaluation data, 3284 (2.4%) were NLCS. Among these 
+      NLCS, 76 (0.06% of total words, 2.3% of all NLCS) were used to convey clinically 
+      relevant information. The overall WER, of all spoken words, was 11.8% for Google 
+      ASR and 12.8% for Amazon ASR. However, both ASR engines demonstrated poor 
+      performance in recognizing NLCS: the WERs across frequently used NLCS were 40.8% 
+      (Google) and 57.2% (Amazon), respectively; and among the NLCS that conveyed 
+      clinically relevant information, 94.7% and 98.7%, respectively. DISCUSSION AND 
+      CONCLUSION: Current ASR solutions are not capable of properly recognizing NLCS, 
+      particularly those that convey clinically relevant information. Although the 
+      volume of NLCS in our evaluation data was very small (2.4% of the total corpus; 
+      and for NLCS that conveyed clinically relevant information: 0.06%), incorrect 
+      recognition of them could result in inaccuracies in clinical documentation and 
+      introduce new patient safety risks.
+CI  - © The Author(s) 2023. Published by Oxford University Press on behalf of the 
+      American Medical Informatics Association. All rights reserved. For permissions, 
+      please email: journals.permissions@oup.com.
+FAU - Tran, Brian D
+AU  - Tran BD
+AUID- ORCID: 0000-0003-2342-700X
+AD  - Department of Informatics, Donald Bren School of Informatics and Computer 
+      Science, University of California, Irvine, Irvine, California, USA.
+AD  - School of Medicine, University of California, Irvine, Irvine, California, USA.
+FAU - Latif, Kareem
+AU  - Latif K
+AUID- ORCID: 0000-0002-2417-7981
+AD  - School of Medicine, California University of Science and Medicine, Colton, 
+      California, USA.
+FAU - Reynolds, Tera L
+AU  - Reynolds TL
+AD  - Department of Information Systems, University of Maryland, Baltimore County, 
+      Baltimore, Maryland, USA.
+FAU - Park, Jihyun
+AU  - Park J
+AD  - Department of Computer Science, Donald Bren School of Informatics and Computer 
+      Science, University of California, Irvine, Irvine, California, USA.
+FAU - Elston Lafata, Jennifer
+AU  - Elston Lafata J
+AD  - Division of Pharmaceutical Outcomes and Policy, University of North Carolina at 
+      Chapel Hill, Chapel Hill, North Carolina, USA.
+AD  - Center for Health Policy and Health Services Research, Henry Ford Health System, 
+      Detroit, Michigan, USA.
+FAU - Tai-Seale, Ming
+AU  - Tai-Seale M
+AD  - Department of Family Medicine and Public Health, School of Medicine, University 
+      of California, San Diego, La Jolla, California, USA.
+FAU - Zheng, Kai
+AU  - Zheng K
+AD  - Department of Informatics, Donald Bren School of Informatics and Computer 
+      Science, University of California, Irvine, Irvine, California, USA.
+LA  - eng
+GR  - T32 GM008620/GM/NIGMS NIH HHS/United States
+GR  - R01-MH081098/MH/NIMH NIH HHS/United States
+GR  - T32-GM008620/GM/NIGMS NIH HHS/United States
+GR  - UL1TR001414/NH/NIH HHS/United States
+GR  - UL1 TR001414/TR/NCATS NIH HHS/United States
+GR  - R01 CA112379/CA/NCI NIH HHS/United States
+GR  - P30 CA062203/CA/NCI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PL  - England
+TA  - J Am Med Inform Assoc
+JT  - Journal of the American Medical Informatics Association : JAMIA
+JID - 9430800
+SB  - IM
+MH  - Humans
+MH  - *Speech Recognition Software
+MH  - *Language
+MH  - Speech/physiology
+MH  - Technology
+MH  - Documentation
+PMC - PMC10018260
+OTO - NOTNLM
+OT  - digital scribe
+OT  - documentation [L01.453.245]
+OT  - electronic health records [E05.318.308.940.968.625.500]
+OT  - information technology [L01.479]
+OT  - medical scribe
+OT  - speech recognition software [L01.224.900.889]
+OT  - workflow [L01.906.893]
+EDAT- 2023/01/24 06:00
+MHDA- 2023/03/21 06:00
+PMCR- 2024/01/23
+CRDT- 2023/01/23 07:52
+PHST- 2022/08/29 00:00 [received]
+PHST- 2022/12/13 00:00 [revised]
+PHST- 2023/01/12 00:00 [accepted]
+PHST- 2023/01/24 06:00 [pubmed]
+PHST- 2023/03/21 06:00 [medline]
+PHST- 2023/01/23 07:52 [entrez]
+PHST- 2024/01/23 00:00 [pmc-release]
+AID - 6998092 [pii]
+AID - ocad001 [pii]
+AID - 10.1093/jamia/ocad001 [doi]
+PST - ppublish
+SO  - J Am Med Inform Assoc. 2023 Mar 16;30(4):703-711. doi: 10.1093/jamia/ocad001.
+
+PMID- 37128439
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20230503
+LR  - 20230504
+IS  - 1942-597X (Electronic)
+IS  - 1559-4076 (Linking)
+VI  - 2022
+DP  - 2022
+TI  - Automatic speech recognition performance for digital scribes: a performance 
+      comparison between general-purpose and specialized models tuned for 
+      patient-clinician conversations.
+PG  - 1072-1080
+AB  - One promising solution to address physician data entry needs is through the 
+      development of so-called "digital scribes," or tools which aim to automate 
+      clinical documentation via automatic speech recognition (ASR) of 
+      patient-clinician conversations. Evaluation of specialized ASR models in this 
+      domain, useful for understanding feasibility and development opportunities, has 
+      been difficult because most models have been under development. Following the 
+      commercial release of such models, we report an independent evaluation of four 
+      models, two general-purpose, and two for medical conversation with a corpus of 36 
+      primary care conversations. We identify word error rates (WER) of 8.8%-10.5% and 
+      word-level diarization error rates (WDER) ranging from 1.8%-13.9%, which are 
+      generally lower than previous reports. The findings indicate that, while there is 
+      room for improvement, the performance of these specialized models, at least under 
+      ideal recording conditions, may be amenable to the development of downstream 
+      applications which rely on ASR of patient-clinician conversations.
+CI  - ©2022 AMIA - All rights reserved.
+FAU - Tran, Brian D
+AU  - Tran BD
+AD  - University of California Irvine, Irvine, CA, USA.
+FAU - Mangu, Ramya
+AU  - Mangu R
+AD  - University of California Irvine, Irvine, CA, USA.
+FAU - Tai-Seale, Ming
+AU  - Tai-Seale M
+AD  - University of California San Diego, La Jolla, USA.
+FAU - Lafata, Jennifer Elston
+AU  - Lafata JE
+AD  - University of North Carolina at Chapel Hill, Chapel Hill, USA.
+AD  - Henry Ford Health System, Detroit, USA.
+FAU - Zheng, Kai
+AU  - Zheng K
+AD  - University of California Irvine, Irvine, CA, USA.
+LA  - eng
+PT  - Journal Article
+DEP - 20230429
+PL  - United States
+TA  - AMIA Annu Symp Proc
+JT  - AMIA ... Annual Symposium proceedings. AMIA Symposium
+JID - 101209213
+SB  - IM
+MH  - Humans
+MH  - *Speech Recognition Software
+MH  - *Speech Perception
+MH  - Communication
+MH  - Speech
+MH  - Documentation
+PMC - PMC10148344
+EDAT- 2023/05/02 06:41
+MHDA- 2023/05/03 06:42
+PMCR- 2023/04/29
+CRDT- 2023/05/02 01:57
+PHST- 2023/05/03 06:42 [medline]
+PHST- 2023/05/02 06:41 [pubmed]
+PHST- 2023/05/02 01:57 [entrez]
+PHST- 2023/04/29 00:00 [pmc-release]
+AID - 745 [pii]
+PST - epublish
+SO  - AMIA Annu Symp Proc. 2023 Apr 29;2022:1072-1080. eCollection 2022.
+
+PMID- 39932205
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20250509
+LR  - 20260602
+IS  - 1537-4521 (Electronic)
+IS  - 0148-5717 (Print)
+IS  - 0148-5717 (Linking)
+VI  - 52
+IP  - 6
+DP  - 2025 Jun 1
+TI  - Using Natural Language Processing Methods to Predict Topics Included in 2019 Ohio 
+      Syphilis Disease Intervention Specialist Records.
+PG  - 356-363
+LID - 10.1097/OLQ.0000000000002135 [doi]
+AB  - BACKGROUND: Free-text notes in disease intervention specialist (DIS) records may 
+      contain relevant information for sexual transmitted infection control. In their 
+      current form, the notes are not analyzable without manual reading, which is 
+      labor-intensive and prone to error. METHODS: We used natural language processing 
+      methods to analyze 2019 Ohio DIS syphilis records with nonmissing notes (n = 
+      1987). We identified 21 topics relevant for transmission and case investigations. 
+      We manually coded these records to create "gold standard" labels for each topic 
+      (0 = topic not present, 1 = topic present), then trained machine learning models 
+      to identify the topics in the text. For models to analyze text data, the text 
+      must be converted to numbers. We explored 2 approaches to numerically represent 
+      words: (1) term frequency, inverse document frequency, which measures importance 
+      of words based on how many times they appear in a record and in the dataset as a 
+      whole, and (2) GloVe embeddings, which are numerical vectors that were developed 
+      by researchers for each word in the English language to encode its semantic 
+      meaning. We explored 3 types of statistical models (naive Bayes, support vector 
+      machine, and logistic regression) using term frequency, inverse document 
+      frequency, and 1 type of neural network model (long short-term memory [LSTM] 
+      model) using GloVe. All models were used for binary prediction (i.e., topic not 
+      present, topic present). RESULTS: For most topics, the LSTM model performed the 
+      best overall in identifying topics, and the support vector machine model 
+      performed the best among the statistical models. For example, the LSTM model 
+      predicted the topic "substance use" with high accuracy (97%), sensitivity (92%), 
+      and specificity (98%). No model performed well for uncommon topics (e.g., 
+      "alcohol use" or "delays in care"). CONCLUSIONS: Machine learning models 
+      performed well in identifying some topics in 2019 Ohio syphilis records. This 
+      analysis is a first step in applying natural language processing methods to 
+      making DIS notes more accessible for analysis.
+CI  - Copyright © 2025 American Sexually Transmitted Diseases Association. All rights 
+      reserved.
+FAU - Chakraborty, Payal
+AU  - Chakraborty P
+AUID- ORCID: 0000-0003-4939-3637
+FAU - Ning, Xia
+AU  - Ning X
+FAU - McNeill, Mary
+AU  - McNeill M
+AD  - Ohio Department of Health, Columbus, OH.
+FAU - Kline, David M
+AU  - Kline DM
+AD  - Division of Public Health Sciences, Department of Biostatistics and Data Science, 
+      Wake Forest University School of Medicine, Winston-Salem, NC.
+FAU - Shoben, Abigail B
+AU  - Shoben AB
+AD  - Division of Biostatistics, College of Public Health, The Ohio State University, 
+      Columbus, OH.
+FAU - Miller, William C
+AU  - Miller WC
+AD  - Department of Epidemiology, Gillings School of Public Health, University of North 
+      Carolina Chapel Hill, Chapel Hill, NC.
+FAU - Turner, Abigail Norris
+AU  - Turner AN
+LA  - eng
+GR  - T32 HL098048/HL/NHLBI NIH HHS/United States
+PT  - Journal Article
+DEP - 20250211
+PL  - United States
+TA  - Sex Transm Dis
+JT  - Sexually transmitted diseases
+JID - 7705941
+SB  - IM
+MH  - Humans
+MH  - *Natural Language Processing
+MH  - *Syphilis/prevention & control/epidemiology
+MH  - Ohio/epidemiology
+MH  - Machine Learning
+MH  - Electronic Health Records
+PMC - PMC12064372
+MID - NIHMS2056038
+COIS- Conflict of Interest and Sources of Funding: The authors report no conflicts of 
+      interest.
+EDAT- 2025/02/11 12:24
+MHDA- 2025/05/09 18:32
+PMCR- 2026/06/01
+CRDT- 2025/02/11 08:03
+PHST- 2025/05/09 18:32 [medline]
+PHST- 2025/02/11 12:24 [pubmed]
+PHST- 2025/02/11 08:03 [entrez]
+PHST- 2026/06/01 00:00 [pmc-release]
+AID - 00007435-990000000-00463 [pii]
+AID - 10.1097/OLQ.0000000000002135 [doi]
+PST - ppublish
+SO  - Sex Transm Dis. 2025 Jun 1;52(6):356-363. doi: 10.1097/OLQ.0000000000002135. Epub 
+      2025 Feb 11.
+
+PMID- 41990239
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20260715
+LR  - 20260715
+IS  - 1527-974X (Electronic)
+IS  - 1067-5027 (Print)
+IS  - 1067-5027 (Linking)
+VI  - 33
+IP  - 6
+DP  - 2026 Jun 1
+TI  - Applying natural language processing and large language models to clinical notes 
+      for phenotyping and diagnosing rare diseases: a systematic review.
+PG  - 1225-1235
+LID - 10.1093/jamia/ocag045 [doi]
+AB  - OBJECTIVES: Patients with rare diseases often face long delays before receiving a 
+      diagnosis. Using electronic health records for automated phenotyping and 
+      diagnosis of rare diseases is a promising approach but can be challenging because 
+      critical information is often recorded in unstructured notes rather than 
+      structured fields. This systematic review synthesizes the current literature 
+      applying natural language processing (NLP) and large language models (LLMs) for 
+      rare disease phenotyping and diagnosis from clinical text. MATERIALS AND METHODS: 
+      A systematic search was conducted in PubMed, ACM Digital Library, and IEEE 
+      Xplore. Two reviewers independently screened papers and extracted data. 
+      Methodological rigor and quality of the studies were evaluated using the MI-CLAIM 
+      framework. RESULTS: The search resulted in 135 studies; 27 of them met the 
+      inclusion criteria. Methods used spanned rule-based systems, classical ML/DL 
+      models, transformer architectures, and LLMs. Transformer- and LLM-based 
+      approaches outperformed earlier methods in entity recognition, phenotype 
+      extraction, and diagnostic ranking. Several studies demonstrated clinical impact, 
+      such as increased genetic testing and identification of undiagnosed cases. 
+      However, most studies relied on retrospective and single-center datasets. 
+      Reporting of preprocessing, evaluation, and reproducibility was largely 
+      inconsistent, and interpretability, fairness, and privacy were rarely addressed. 
+      DISCUSSION: Natural language processing and LLMs show strong potential to 
+      accelerate rare disease diagnosis. However, heterogeneity in methods and metrics 
+      hinders cross-study comparability. Data scarcity, lack of generalization, and 
+      limited transparency remain significant challenges. CONCLUSIONS: Natural language 
+      processing/LLM methods can support timely diagnosis of rare diseases using 
+      unstructured clinical text. Future research should prioritize multicenter 
+      studies, standardized evaluation frameworks, transparency, and fairness 
+      safeguards to enable reliable, equitable deployment.
+CI  - © The Author(s) 2026. Published by Oxford University Press on behalf of the 
+      American Medical Informatics Association. All rights reserved. For commercial 
+      re-use, please contact reprints@oup.com for reprints and translation rights for 
+      reprints. All other permissions can be obtained through our RightsLink service 
+      via the Permissions link on the article page on our site—for further information 
+      please contact journals.permissions@oup.com.
+FAU - Kim, Seungjun
+AU  - Kim S
+AD  - Department of Informatics, University of California, Irvine, Irvine, CA 92697, 
+      United States.
+FAU - Zhou, Yiliang
+AU  - Zhou Y
+AD  - Department of Informatics, University of California, Irvine, Irvine, CA 92697, 
+      United States.
+FAU - Guo, Yawen
+AU  - Guo Y
+AUID- ORCID: 0009-0006-2048-1798
+AD  - Department of Informatics, University of California, Irvine, Irvine, CA 92697, 
+      United States.
+FAU - Xiao, Changrui
+AU  - Xiao C
+AD  - Department of Neurology, University of California, Irvine, 101 The City Drive 
+      South, Building 30, Orange, CA, 92868, United States.
+FAU - Zheng, Kai
+AU  - Zheng K
+AD  - Department of Informatics, University of California, Irvine, Irvine, CA 92697, 
+      United States.
+LA  - eng
+PT  - Journal Article
+PT  - Systematic Review
+PL  - England
+TA  - J Am Med Inform Assoc
+JT  - Journal of the American Medical Informatics Association : JAMIA
+JID - 9430800
+SB  - IM
+MH  - *Natural Language Processing
+MH  - *Large Language Models
+MH  - *Rare Diseases/diagnosis
+MH  - *Electronic Health Records
+MH  - Humans
+MH  - *Phenotype
+PMC - PMC13197187
+OTO - NOTNLM
+OT  - electronic health records
+OT  - language models
+OT  - natural language processing
+OT  - phenotype
+OT  - rare diseases/diagnosis
+OT  - statistical
+COIS- The authors declare that they have no competing interests.
+EDAT- 2026/04/17 13:25
+MHDA- 2026/05/23 05:35
+PMCR- 2027/04/16
+CRDT- 2026/04/16 15:14
+PHST- 2025/11/18 00:00 [received]
+PHST- 2026/02/24 00:00 [accepted]
+PHST- 2026/05/23 05:35 [medline]
+PHST- 2026/04/17 13:25 [pubmed]
+PHST- 2026/04/16 15:14 [entrez]
+PHST- 2027/04/16 00:00 [pmc-release]
+AID - 8656008 [pii]
+AID - ocag045 [pii]
+AID - 10.1093/jamia/ocag045 [doi]
+PST - ppublish
+SO  - J Am Med Inform Assoc. 2026 Jun 1;33(6):1225-1235. doi: 10.1093/jamia/ocag045.

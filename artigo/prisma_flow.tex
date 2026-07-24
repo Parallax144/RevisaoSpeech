@@ -1,9 +1,6 @@
 %% prisma_flow.tex — Fluxograma PRISMA-ScR
 %% Incluído via \input{prisma_flow} no figure environment de main.tex
-%% Contagens exatas PubMed (2014-presente, free full text): 786 identificados,
-%% 27 duplicatas, 759 triados, 35 texto completo, 17 excluídos, 18 incluídos.
-%% Snowballing: 7 artigos identificados manualmente, todos incluídos.
-%% Total incluídos: 24 (17 bases + 7 snowballing).
+%% Contagens exatas após busca expandida e triagem refinada de 2026.
 
 \usetikzlibrary{positioning, calc, arrows.meta}
 
@@ -31,82 +28,111 @@
 %% ================================================================
 %% FASE 1 — IDENTIFICAÇÃO
 %% ================================================================
-\node[mbox, minimum width=5.6cm, text width=5.4cm] (dbbox) at (-1.8, 0) {
-  \textbf{Bases de dados (PubMed)}\\[2pt]
-  $n = 786$\\[2pt]
-  {\scriptsize Filtros: 2014-presente,\\
-    inglês e espanhol,\\
-    free full text}
+\node[mbox, minimum width=6.0cm, text width=5.8cm] (dbbox) at (-1.8, 0) {
+  \textbf{Bases de dados eletrônicas}\\[2pt]
+  $n = 5.621$\\[2pt]
+  {\scriptsize Web of Science: 1.719\\
+    Scopus: 1.580\\
+    PubMed/MEDLINE: 1.059\\
+    CINAHL/EBSCO: 586\\
+    Cochrane Library: 399\\
+    Google Scholar: 278}
 };
 
 \node[mbox, minimum width=5.0cm, text width=4.8cm,
       right=1.5cm of dbbox] (otherbox) {
   \textbf{Outras fontes (Snowballing)}\\[2pt]
   $n = 7$\\[2pt]
-  {\scriptsize (Backward snowballing\\
-    de revisões incluídas)}
+  {\scriptsize (Rastreamento manual de\\
+    referências bibliográficas)}
 };
 
 %% ================================================================
-%% FASE 2 — TRIAGEM (somente registros das bases)
+%% FASE 2 — TRIAGEM
 %% ================================================================
 \coordinate (midid) at ($(dbbox.south)!0.5!(otherbox.south)$);
 
-\node[mbox, below=2.0cm of midid, anchor=north] (dedup) {
+\node[mbox, below=2.6cm of midid, anchor=north] (dedup) {
   \textbf{Registros das bases após deduplicação}\\[2pt]
-  $n = 759$\quad{\scriptsize (786 $-$ 27 duplicatas)}
+  $n = 3.189$\quad{\scriptsize (5.621 $-$ 2.432 duplicatas)}
 };
 
-%% seta das bases para deduplicação (snowballing entra na elegibilidade)
-\draw[arr] (dbbox.south) -- ++(0,-0.6cm) -| (dedup.north);
+%% seta das bases para deduplicação
+\draw[arr] (dbbox.south) -- ++(0,-0.8cm) -| (dedup.north);
 
-\node[mbox, below=1.4cm of dedup] (screen) {
-  \textbf{Triagem por título e resumo}\\[2pt]
-  $n = 759$
+\node[mbox, below=1.2cm of dedup] (screen1) {
+  \textbf{Triagem por título}\\[2pt]
+  $n = 3.189$
 };
 
-\draw[arr] (dedup) -- (screen);
+\draw[arr] (dedup) -- (screen1);
 
-\node[ebox, right=2.2cm of screen] (excl1) {
-  \textbf{Excluídos:} $n = 724$\\[3pt]
+\node[ebox, right=2.2cm of screen1] (excl1) {
+  \textbf{Excluídos por título:} $n = 2.680$\\[3pt]
   {\scriptsize
-    Sem PLN/ASR de interações clínicas (EC1): 480\\
-    Transcrição sem análise de interação (EC2): 194\\
-    Editoriais, resumos, opinião (EC4): 50
+    EC1 (Sem NLP de Diálogo): 1.120\\
+    EC2 (Foco geral/EHR): 584\\
+    EC3 (Diagnóstico de voz): 134\\
+    EC4 (Tipo de publicação): 281\\
+    EC5 (Desenho metodológico): 358\\
+    EC6 (Cenários simulados): 203
   }
 };
 
-\draw[arr] (screen.east) -- (excl1.west);
+\draw[arr] (screen1.east) -- (excl1.west);
+
+\node[mbox, below=1.2cm of screen1] (screen2) {
+  \textbf{Triagem por resumo}\\[2pt]
+  $n = 509$
+};
+
+\draw[arr] (screen1) -- (screen2);
+
+\node[ebox, right=2.2cm of screen2] (excl2) {
+  \textbf{Excluídos por resumo:} $n = 474$\\[3pt]
+  {\scriptsize
+    EC1 (Sem NLP de Diálogo): 183\\
+    EC2 (Foco geral/EHR): 116\\
+    EC3 (Diagnóstico de voz): 29\\
+    EC4 (Tipo de publicação): 43\\
+    EC5 (Desenho metodológico): 61\\
+    EC6 (Cenários simulados): 42
+  }
+};
+
+\draw[arr] (screen2.east) -- (excl2.west);
 
 %% ================================================================
 %% FASE 3 — ELEGIBILIDADE
 %% ================================================================
-\node[mbox, below=1.4cm of screen] (eligib) {
+\node[mbox, below=1.2cm of screen2] (eligib) {
   \textbf{Texto completo avaliado}\\[2pt]
   $n = 35$ (bases) $+$ $7$ (snowballing)
 };
 
-\draw[arr] (screen) -- (eligib);
+\draw[arr] (screen2) -- (eligib);
 
 %% snowballing entra diretamente na elegibilidade (bypass triagem)
-\draw[arr] (otherbox.south) -| (eligib.east);
+\draw[arr] (otherbox.south) -- ++(0,-0.8cm) -| ([xshift=1.1cm]eligib.east) -- (eligib.east);
 
-\node[ebox, right=2.2cm of eligib] (excl2) {
-  \textbf{Excluídos:} $n = 18$ (bases); $0$ (snowballing)\\[3pt]
+\node[ebox, right=2.2cm of eligib] (excl3) {
+  \textbf{Excluídos na íntegra:} $n = 18$ (bases); $0$ (snowballing)\\[3pt]
   {\scriptsize
-    Sem PLN/ASR de interações clínicas (EC1): 8\\
-    Transcrição sem análise de interação (EC2): 5\\
-    Editoriais, opinião, sem dados empíricos (EC4): 4\\
-    Radford 2023 (ref.\ tecnológica; EC1): 1
+    EC1 (Foco tecnológico): 4\\
+    EC2 (Foco comunicacional): 3\\
+    EC3 (Tipo de estudo/dados): 3\\
+    EC4 (Tipo de publicação): 2\\
+    EC5 (Desenho metodológico): 4\\
+    EC6 (Desenho do cenário): 2
   }
 };
 
-\draw[arr] (eligib.east) -- (excl2.west);
+\draw[arr] (eligib.east) -- (excl3.west);
 
 %% ================================================================
 %% FASE 4 — INCLUÍDOS
 %% ================================================================
-\node[mbox, below=1.4cm of eligib] (included) {
+\node[mbox, below=1.2cm of eligib] (included) {
   \textbf{Estudos incluídos na síntese}\\[2pt]
   $n = 24$\\[2pt]
   {\scriptsize (17 bases + 7 snowballing)}
@@ -119,7 +145,8 @@
 %% ================================================================
 \node[phase] at ($(dbbox.west) + (-1.1cm, 0)$)      {IDENTIFICAÇÃO};
 \node[phase] at ($(dedup.west)  + (-1.1cm, 0)$)      {TRIAGEM};
-\node[phase] at ($(screen.west) + (-1.1cm, 0)$)      {};   %% continua triagem
+\node[phase] at ($(screen1.west) + (-1.1cm, 0)$)      {};   %% continua triagem
+\node[phase] at ($(screen2.west) + (-1.1cm, 0)$)      {};   %% continua triagem
 \node[phase] at ($(eligib.west) + (-1.1cm, 0)$)      {ELEGIBILIDADE};
 \node[phase] at ($(included.west) + (-1.1cm, 0)$)    {INCLUÍDOS};
 
@@ -128,8 +155,7 @@
 %% ================================================================
 \node[font=\scriptsize, anchor=north west, text width=12cm]
   at ($(included.south west) + (-1.5cm, -0.5cm)$) {%
-  Contagens exatas: PubMed/MEDLINE, período 2014-presente, filtro \textit{free full text}.
-  Snowballing avaliado com os mesmos critérios de elegibilidade.
+  Contagens baseadas na busca expandida de 2026.
   $\kappa = 0{,}78$ (F.E.S.\ e M.M.; kappa de Cohen).
 };
 

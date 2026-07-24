@@ -72,14 +72,16 @@ A revisão sistemática deve estabelecer o estado da arte e confirmar a lacuna q
 
 | Etapa | n | Status |
 |-------|---|--------|
-| Registros identificados (bases eletrônicas) | 786 | Final — PubMed/MEDLINE |
-| Registros de fontes adicionais (Snowballing) | 6 | Final — Rastreamento manual |
-| Após remoção de duplicatas | 759 | Final |
-| Triagem por título/resumo | 759 | Final |
-| Excluídos na triagem | 724 | Final |
-| Leitura completa (Texto completo avaliado) | 41 | Final (35 bases + 6 snowballing) |
-| Excluídos após leitura completa | 17 | Final (bases) |
-| Incluídos na síntese qualitativa | 24 | Final (18 bases + 6 snowballing) |
+| Registros identificados (bases eletrônicas) | 5.621 | Final (busca expandida 2026) |
+| Registros de fontes adicionais (Snowballing) | 7 | Final — Rastreamento manual piloto |
+| Após remoção de duplicatas | 3.189 | Final (2.432 duplicatas removidas) |
+| Triagem por título | 3.189 | Final (Triagem por dois revisores independentes) |
+| Excluídos na triagem por título | 2.680 | Final |
+| Triagem por resumo | 509 | Final (Triagem por dois revisores independentes) |
+| Excluídos na triagem por resumo | 474 | Final |
+| Leitura completa (Texto completo avaliado) | 42 | 35 bases + 7 snowballing |
+| Excluídos após leitura completa | 18 | Final (bases); 0 (snowballing) |
+| Incluídos na síntese qualitativa | 24 | Final piloto (17 bases + 7 snowballing) |
 | Incluídos na síntese quantitativa | 0 | Não aplicável (síntese narrativa) |
 
 **Fonte de verdade para contagens:** `contexto/busca.md` — atualizado.
